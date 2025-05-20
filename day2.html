@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第二天：論證與謬誤 - 邏輯學入門</title>
+    <title>第二天：論證 (Argument)與謬誤 (Fallacy) - 邏輯學 (Logic)入門</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -11,7 +11,7 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="index.html" class="logo">邏輯學入門</a>
+                <a href="index.html" class="logo">邏輯學 (Logic)入門</a>
                 <button class="mobile-menu-btn">☰</button>
                 <ul class="nav-links">
                     <li><a href="index.html">首頁</a></li>
@@ -29,11 +29,11 @@
                 <h3 class="sidebar-title">課程導覽</h3>
                 <ul class="sidebar-links">
                     <li><a href="#course-intro" class="active">課程介紹</a></li>
-                    <li><a href="#arguments">論證的結構與類型</a></li>
-                    <li><a href="#valid-invalid">有效論證與無效論證</a></li>
-                    <li><a href="#deductive-inductive">演繹推理與歸納推理</a></li>
-                    <li><a href="#fallacies">常見邏輯謬誤</a></li>
-                    <li><a href="#critical-thinking">批判性思考基礎</a></li>
+                    <li><a href="#arguments">論證 (Argument)的結構與類型</a></li>
+                    <li><a href="#valid-invalid">有效論證 (Argument) (Valid Argument)與無效論證 (Argument) (Invalid Argument)</a></li>
+                    <li><a href="#deductive-inductive">演繹推理 (Inference) (Deductive Reasoning)與歸納推理 (Inference) (Inductive Reasoning)</a></li>
+                    <li><a href="#fallacies">常見邏輯謬誤 (Fallacy) (Logical Fallacy)</a></li>
+                    <li><a href="#critical-thinking">批判性思考 (Critical Thinking)基礎</a></li>
                     <li><a href="#summary">課程總結</a></li>
                     <li><a href="day2_slides.html">查看投影片</a></li>
                     <li><a href="day2_quiz.html">練習測驗</a></li>
@@ -42,122 +42,122 @@
             
             <main class="course-content-main">
                 <div class="course-header">
-                    <h1>第二天：論證與謬誤</h1>
-                    <p>理解有效論證與無效論證的區別，認識演繹推理與歸納推理的特點，以及學習辨識常見的邏輯謬誤。</p>
+                    <h1>第二天：論證 (Argument)與謬誤 (Fallacy)</h1>
+                    <p>理解有效論證 (Argument) (Valid Argument)與無效論證 (Argument) (Invalid Argument)的區別，認識演繹推理 (Inference) (Deductive Reasoning)與歸納推理 (Inference) (Inductive Reasoning)的特點，以及學習辨識常見的邏輯謬誤 (Fallacy) (Logical Fallacy)。</p>
                 </div>
                 
                 <div class="mindmap-container">
-                    <img src="images/logic_mindmap_day2.png" alt="論證與謬誤心智圖" class="mindmap-image">
-                    <p class="mindmap-caption">論證與謬誤心智圖</p>
+                    <img src="images/logic_mindmap_day2.png" alt="論證 (Argument)與謬誤 (Fallacy)心智圖" class="mindmap-image">
+                    <p class="mindmap-caption">論證 (Argument)與謬誤 (Fallacy)心智圖</p>
                 </div>
                 
                 <section id="course-intro" class="course-section">
                     <h2>課程目標</h2>
-                    <p>本課程旨在幫助學生理解論證的結構與類型，區分有效論證與無效論證，認識演繹推理與歸納推理的特點，以及學習辨識常見的邏輯謬誤，從而培養批判性思考的基礎能力。</p>
+                    <p>本課程旨在幫助學生理解論證 (Argument)的結構與類型，區分有效論證 (Argument) (Valid Argument)與無效論證 (Argument) (Invalid Argument)，認識演繹推理 (Inference) (Deductive Reasoning)與歸納推理 (Inference) (Inductive Reasoning)的特點，以及學習辨識常見的邏輯謬誤 (Fallacy) (Logical Fallacy)，從而培養批判性思考 (Critical Thinking)的基礎能力。</p>
                     
                     <p>完成本課程後，學生將能夠：</p>
                     <ul>
-                        <li>分析論證的結構，識別前提與結論</li>
-                        <li>區分有效論證與無效論證</li>
-                        <li>理解演繹推理與歸納推理的區別</li>
-                        <li>辨識常見的邏輯謬誤</li>
-                        <li>運用批判性思考評估論證</li>
+                        <li>分析論證 (Argument)的結構，識別前提 (Premise)與結論 (Conclusion)</li>
+                        <li>區分有效論證 (Argument) (Valid Argument)與無效論證 (Argument) (Invalid Argument)</li>
+                        <li>理解演繹推理 (Inference) (Deductive Reasoning)與歸納推理 (Inference) (Inductive Reasoning)的區別</li>
+                        <li>辨識常見的邏輯謬誤 (Fallacy) (Logical Fallacy)</li>
+                        <li>運用批判性思考 (Critical Thinking)評估論證 (Argument)</li>
                     </ul>
                 </section>
                 
                 <section id="arguments" class="course-section">
-                    <h2>論證的結構與類型</h2>
-                    <p>論證是由一組陳述句組成的，其中一些陳述句（前提）用來支持另一個陳述句（結論）。在昨天的課程中，我們已經學習了如何識別前提和結論，今天我們將更深入地了解論證的結構和類型。</p>
+                    <h2>論證 (Argument)的結構與類型</h2>
+                    <p>論證 (Argument)是由一組陳述句 (Statement)組成的，其中一些陳述句 (Statement)（前提 (Premise)）用來支持另一個陳述句 (Statement)（結論 (Conclusion)）。在昨天的課程中，我們已經學習了如何識別前提 (Premise)和結論 (Conclusion)，今天我們將更深入地了解論證 (Argument)的結構和類型。</p>
                     
-                    <h3>論證的基本結構</h3>
-                    <p>一個完整的論證通常包含以下部分：</p>
+                    <h3>論證 (Argument)的基本結構</h3>
+                    <p>一個完整的論證 (Argument)通常包含以下部分：</p>
                     <ul>
-                        <li><strong>前提</strong>：用來支持結論的陳述句，可能有一個或多個</li>
-                        <li><strong>推理過程</strong>：從前提到結論的思維過程</li>
-                        <li><strong>結論</strong>：論證試圖證明或支持的陳述句</li>
+                        <li><strong>前提 (Premise)</strong>：用來支持結論 (Conclusion)的陳述句 (Statement)，可能有一個或多個</li>
+                        <li><strong>推理 (Inference)過程</strong>：從前提 (Premise)到結論 (Conclusion)的思維過程</li>
+                        <li><strong>結論 (Conclusion)</strong>：論證 (Argument)試圖證明或支持的陳述句 (Statement)</li>
                     </ul>
                     
-                    <h3>論證的類型</h3>
-                    <p>根據推理方式的不同，論證可以分為兩大類：</p>
+                    <h3>論證 (Argument)的類型</h3>
+                    <p>根據推理 (Inference)方式的不同，論證 (Argument)可以分為兩大類：</p>
                     <ul>
-                        <li><strong>演繹論證</strong>：如果前提為真，則結論必然為真</li>
-                        <li><strong>歸納論證</strong>：前提為真，結論可能為真，但不必然為真</li>
+                        <li><strong>演繹論證 (Argument)</strong>：如果前提 (Premise)為真，則結論 (Conclusion)必然為真</li>
+                        <li><strong>歸納論證 (Argument)</strong>：前提 (Premise)為真，結論 (Conclusion)可能為真，但不必然為真</li>
                     </ul>
                 </section>
                 
                 <section id="valid-invalid" class="course-section">
-                    <h2>有效論證與無效論證</h2>
-                    <p>論證的有效性是評估論證品質的重要標準之一。</p>
+                    <h2>有效論證 (Argument) (Valid Argument)與無效論證 (Argument) (Invalid Argument)</h2>
+                    <p>論證 (Argument)的有效性是評估論證 (Argument)品質的重要標準之一。</p>
                     
-                    <h3>有效論證</h3>
-                    <p>有效論證是指如果所有前提都為真，則結論必然為真的論證。換句話說，在有效論證中，結論必然地跟隨前提。</p>
+                    <h3>有效論證 (Argument) (Valid Argument)</h3>
+                    <p>有效論證 (Argument) (Valid Argument)是指如果所有前提 (Premise)都為真，則結論 (Conclusion)必然為真的論證 (Argument)。換句話說，在有效論證 (Argument) (Valid Argument)中，結論 (Conclusion)必然地跟隨前提 (Premise)。</p>
                     
-                    <p>有效論證的例子：</p>
+                    <p>有效論證 (Argument) (Valid Argument)的例子：</p>
                     <blockquote>
-                        所有人都會死。（前提）<br>
-                        蘇格拉底是人。（前提）<br>
-                        因此，蘇格拉底會死。（結論）
+                        所有人都會死。（前提 (Premise)）<br>
+                        蘇格拉底是人。（前提 (Premise)）<br>
+                        因此，蘇格拉底會死。（結論 (Conclusion)）
                     </blockquote>
                     
-                    <p>在這個論證中，如果前提「所有人都會死」和「蘇格拉底是人」都為真，則結論「蘇格拉底會死」必然為真。</p>
+                    <p>在這個論證 (Argument)中，如果前提 (Premise)「所有人都會死」和「蘇格拉底是人」都為真，則結論 (Conclusion)「蘇格拉底會死」必然為真。</p>
                     
-                    <h3>無效論證</h3>
-                    <p>無效論證是指即使所有前提都為真，結論仍可能為假的論證。</p>
+                    <h3>無效論證 (Argument) (Invalid Argument)</h3>
+                    <p>無效論證 (Argument) (Invalid Argument)是指即使所有前提 (Premise)都為真，結論 (Conclusion)仍可能為假的論證 (Argument)。</p>
                     
-                    <p>無效論證的例子：</p>
+                    <p>無效論證 (Argument) (Invalid Argument)的例子：</p>
                     <blockquote>
-                        如果下雨，地面會濕。（前提）<br>
-                        地面是濕的。（前提）<br>
-                        因此，下雨了。（結論）
+                        如果下雨，地面會濕。（前提 (Premise)）<br>
+                        地面是濕的。（前提 (Premise)）<br>
+                        因此，下雨了。（結論 (Conclusion)）
                     </blockquote>
                     
-                    <p>在這個論證中，即使前提「如果下雨，地面會濕」和「地面是濕的」都為真，結論「下雨了」也不必然為真，因為地面濕可能有其他原因，如灑水或水管破裂。</p>
+                    <p>在這個論證 (Argument)中，即使前提 (Premise)「如果下雨，地面會濕」和「地面是濕的」都為真，結論 (Conclusion)「下雨了」也不必然為真，因為地面濕可能有其他原因，如灑水或水管破裂。</p>
                     
-                    <h3>健全論證</h3>
-                    <p>健全論證是指既有效又具有真實前提的論證。換句話說，健全論證是有效論證，且其所有前提都為真。</p>
+                    <h3>健全論證 (Argument)</h3>
+                    <p>健全論證 (Argument)是指既有效又具有真實前提 (Premise)的論證 (Argument)。換句話說，健全論證 (Argument)是有效論證 (Argument) (Valid Argument)，且其所有前提 (Premise)都為真。</p>
                     
-                    <p>健全論證的例子：</p>
+                    <p>健全論證 (Argument)的例子：</p>
                     <blockquote>
-                        所有哺乳動物都有肺。（前提，真）<br>
-                        鯨魚是哺乳動物。（前提，真）<br>
-                        因此，鯨魚有肺。（結論，真）
+                        所有哺乳動物都有肺。（前提 (Premise)，真）<br>
+                        鯨魚是哺乳動物。（前提 (Premise)，真）<br>
+                        因此，鯨魚有肺。（結論 (Conclusion)，真）
                     </blockquote>
                     
-                    <p>這個論證不僅在形式上有效，而且其前提也都為真，因此是健全的。</p>
+                    <p>這個論證 (Argument)不僅在形式上有效，而且其前提 (Premise)也都為真，因此是健全的。</p>
                 </section>
                 
                 <section id="deductive-inductive" class="course-section">
-                    <h2>演繹推理與歸納推理</h2>
-                    <p>演繹推理和歸納推理是兩種基本的推理方式，它們在日常生活和科學研究中都有廣泛應用。</p>
+                    <h2>演繹推理 (Inference) (Deductive Reasoning)與歸納推理 (Inference) (Inductive Reasoning)</h2>
+                    <p>演繹推理 (Inference) (Deductive Reasoning)和歸納推理 (Inference) (Inductive Reasoning)是兩種基本的推理 (Inference)方式，它們在日常生活和科學研究中都有廣泛應用。</p>
                     
-                    <h3>演繹推理</h3>
-                    <p>演繹推理是從一般原則到特殊情況的推理過程。在演繹推理中，如果前提為真，則結論必然為真。</p>
+                    <h3>演繹推理 (Inference) (Deductive Reasoning)</h3>
+                    <p>演繹推理 (Inference) (Deductive Reasoning)是從一般原則到特殊情況的推理 (Inference)過程。在演繹推理 (Inference) (Deductive Reasoning)中，如果前提 (Premise)為真，則結論 (Conclusion)必然為真。</p>
                     
-                    <p>演繹推理的特點：</p>
+                    <p>演繹推理 (Inference) (Deductive Reasoning)的特點：</p>
                     <ul>
                         <li>從一般到特殊</li>
-                        <li>結論的確定性高</li>
-                        <li>不增加新的信息，只是揭示前提中隱含的信息</li>
+                        <li>結論 (Conclusion)的確定性高</li>
+                        <li>不增加新的信息，只是揭示前提 (Premise)中隱含的信息</li>
                     </ul>
                     
-                    <p>演繹推理的例子：</p>
+                    <p>演繹推理 (Inference) (Deductive Reasoning)的例子：</p>
                     <blockquote>
                         所有金屬受熱會膨脹。（一般原則）<br>
                         銅是金屬。（特殊情況）<br>
-                        因此，銅受熱會膨脹。（結論）
+                        因此，銅受熱會膨脹。（結論 (Conclusion)）
                     </blockquote>
                     
-                    <h3>歸納推理</h3>
-                    <p>歸納推理是從特殊情況到一般原則的推理過程。在歸納推理中，即使前提為真，結論也只是可能為真，而非必然為真。</p>
+                    <h3>歸納推理 (Inference) (Inductive Reasoning)</h3>
+                    <p>歸納推理 (Inference) (Inductive Reasoning)是從特殊情況到一般原則的推理 (Inference)過程。在歸納推理 (Inference) (Inductive Reasoning)中，即使前提 (Premise)為真，結論 (Conclusion)也只是可能為真，而非必然為真。</p>
                     
-                    <p>歸納推理的特點：</p>
+                    <p>歸納推理 (Inference) (Inductive Reasoning)的特點：</p>
                     <ul>
                         <li>從特殊到一般</li>
-                        <li>結論的確定性較低</li>
-                        <li>增加新的信息，超出前提的範圍</li>
+                        <li>結論 (Conclusion)的確定性較低</li>
+                        <li>增加新的信息，超出前提 (Premise)的範圍</li>
                     </ul>
                     
-                    <p>歸納推理的例子：</p>
+                    <p>歸納推理 (Inference) (Inductive Reasoning)的例子：</p>
                     <blockquote>
                         觀察到的所有烏鴉都是黑色的。（特殊情況）<br>
                         因此，所有烏鴉都是黑色的。（一般原則）
@@ -167,31 +167,31 @@
                 </section>
                 
                 <section id="fallacies" class="course-section">
-                    <h2>常見邏輯謬誤</h2>
-                    <p>邏輯謬誤是推理過程中的錯誤，它們使論證變得無效或不健全。了解常見的邏輯謬誤有助於我們識別和避免這些錯誤。</p>
+                    <h2>常見邏輯謬誤 (Fallacy) (Logical Fallacy)</h2>
+                    <p>邏輯謬誤 (Fallacy) (Logical Fallacy)是推理 (Inference)過程中的錯誤，它們使論證 (Argument)變得無效或不健全。了解常見的邏輯謬誤 (Fallacy) (Logical Fallacy)有助於我們識別和避免這些錯誤。</p>
                     
-                    <h3>人身攻擊謬誤</h3>
-                    <p>人身攻擊謬誤是指攻擊提出論點的人，而非論點本身。</p>
+                    <h3>人身攻擊 (Ad Hominem)謬誤 (Fallacy)</h3>
+                    <p>人身攻擊 (Ad Hominem)謬誤 (Fallacy)是指攻擊提出論點的人，而非論點本身。</p>
                     
                     <p>例子：</p>
                     <blockquote>
                         小明說我們應該多運動，但他自己很少運動，所以他的建議不值得聽。
                     </blockquote>
                     
-                    <p>這是一個謬誤，因為小明是否運動與他的建議是否合理無關。</p>
+                    <p>這是一個謬誤 (Fallacy)，因為小明是否運動與他的建議是否合理無關。</p>
                     
-                    <h3>訴諸權威謬誤</h3>
-                    <p>訴諸權威謬誤是指僅僅因為某個權威人士說了某事，就認為它一定是真的。</p>
+                    <h3>訴諸權威 (Appeal to Authority)謬誤 (Fallacy)</h3>
+                    <p>訴諸權威 (Appeal to Authority)謬誤 (Fallacy)是指僅僅因為某個權威人士說了某事，就認為它一定是真的。</p>
                     
                     <p>例子：</p>
                     <blockquote>
                         著名演員小華說這種減肥藥很有效，所以它一定有效。
                     </blockquote>
                     
-                    <p>這是一個謬誤，因為小華是演員，不是醫學專家，他對減肥藥的評價不具有專業權威性。</p>
+                    <p>這是一個謬誤 (Fallacy)，因為小華是演員，不是醫學專家，他對減肥藥的評價不具有專業權威性。</p>
                     
-                    <h3>稻草人謬誤</h3>
-                    <p>稻草人謬誤是指歪曲對方的論點，使其更容易被攻擊。</p>
+                    <h3>稻草人謬誤 (Fallacy) (Straw Man Fallacy)</h3>
+                    <p>稻草人謬誤 (Fallacy) (Straw Man Fallacy)是指歪曲對方的論點，使其更容易被攻擊。</p>
                     
                     <p>例子：</p>
                     <blockquote>
@@ -199,47 +199,47 @@
                         小張：你怎麼能認為學習不重要呢？我們來學校是為了學習，不是為了玩。
                     </blockquote>
                     
-                    <p>這是一個謬誤，因為小張歪曲了小李的論點。小李只是說應該提供更多的體育活動選擇，並沒有說學習不重要。</p>
+                    <p>這是一個謬誤 (Fallacy)，因為小張歪曲了小李的論點。小李只是說應該提供更多的體育活動選擇，並沒有說學習不重要。</p>
                     
-                    <h3>滑坡謬誤</h3>
-                    <p>滑坡謬誤是指認為一旦採取某一行動，就會導致一系列不可控的後果，最終導致災難性的結果。</p>
+                    <h3>滑坡謬誤 (Fallacy)</h3>
+                    <p>滑坡謬誤 (Fallacy)是指認為一旦採取某一行動，就會導致一系列不可控的後果，最終導致災難性的結果。</p>
                     
                     <p>例子：</p>
                     <blockquote>
                         如果我們允許學生在課堂上使用手機，他們就會整天玩手機，不學習，最終導致學業失敗。
                     </blockquote>
                     
-                    <p>這是一個謬誤，因為允許學生在課堂上使用手機不一定會導致他們整天玩手機，更不一定會導致學業失敗。</p>
+                    <p>這是一個謬誤 (Fallacy)，因為允許學生在課堂上使用手機不一定會導致他們整天玩手機，更不一定會導致學業失敗。</p>
                     
-                    <h3>訴諸情感謬誤</h3>
-                    <p>訴諸情感謬誤是指通過激發情感而非提供理性論據來說服他人。</p>
+                    <h3>訴諸情感 (Appeal to Emotion)謬誤 (Fallacy)</h3>
+                    <p>訴諸情感 (Appeal to Emotion)謬誤 (Fallacy)是指通過激發情感而非提供理性論據來說服他人。</p>
                     
                     <p>例子：</p>
                     <blockquote>
                         你不支持這項政策嗎？難道你不關心那些需要幫助的人嗎？
                     </blockquote>
                     
-                    <p>這是一個謬誤，因為它試圖通過激發內疚感而非提供理性論據來說服他人。</p>
+                    <p>這是一個謬誤 (Fallacy)，因為它試圖通過激發內疚感而非提供理性論據來說服他人。</p>
                 </section>
                 
                 <section id="critical-thinking" class="course-section">
-                    <h2>批判性思考基礎</h2>
-                    <p>批判性思考是一種理性、反思性的思維方式，它幫助我們做出更明智的判斷和決策。</p>
+                    <h2>批判性思考 (Critical Thinking)基礎</h2>
+                    <p>批判性思考 (Critical Thinking)是一種理性、反思性的思維方式，它幫助我們做出更明智的判斷和決策。</p>
                     
                     <div class="course-image-container">
-                        <img src="images/critical_thinking.png" alt="批判性思考過程" class="course-image">
+                        <img src="images/critical_thinking.png" alt="批判性思考 (Critical Thinking)過程" class="course-image">
                     </div>
                     
-                    <h3>批判性思考的基本步驟</h3>
+                    <h3>批判性思考 (Critical Thinking)的基本步驟</h3>
                     <ol>
                         <li><strong>識別問題</strong>：明確你要解決的問題或要評估的論點</li>
                         <li><strong>收集資訊</strong>：尋找相關的事實、數據和觀點</li>
                         <li><strong>評估證據</strong>：檢查證據的可靠性和相關性</li>
                         <li><strong>考慮替代解釋</strong>：思考其他可能的解釋或觀點</li>
-                        <li><strong>形成結論</strong>：基於證據和推理得出結論</li>
+                        <li><strong>形成結論 (Conclusion)</strong>：基於證據和推理 (Inference)得出結論 (Conclusion)</li>
                     </ol>
                     
-                    <h3>批判性思考的態度</h3>
+                    <h3>批判性思考 (Critical Thinking)的態度</h3>
                     <ul>
                         <li><strong>開放性</strong>：願意考慮不同的觀點和可能性</li>
                         <li><strong>好奇心</strong>：對事物的本質和原因保持好奇</li>
@@ -253,14 +253,14 @@
                     <h2>課程總結</h2>
                     <p>在今天的課程中，我們學習了：</p>
                     <ul>
-                        <li>論證的結構與類型，包括前提、推理過程和結論</li>
-                        <li>有效論證與無效論證的區別，以及健全論證的概念</li>
-                        <li>演繹推理與歸納推理的特點和區別</li>
-                        <li>常見的邏輯謬誤，包括人身攻擊、訴諸權威、稻草人、滑坡和訴諸情感</li>
-                        <li>批判性思考的基本步驟和態度</li>
+                        <li>論證 (Argument)的結構與類型，包括前提 (Premise)、推理 (Inference)過程和結論 (Conclusion)</li>
+                        <li>有效論證 (Argument) (Valid Argument)與無效論證 (Argument) (Invalid Argument)的區別，以及健全論證 (Argument)的概念</li>
+                        <li>演繹推理 (Inference) (Deductive Reasoning)與歸納推理 (Inference) (Inductive Reasoning)的特點和區別</li>
+                        <li>常見的邏輯謬誤 (Fallacy) (Logical Fallacy)，包括人身攻擊 (Ad Hominem)、訴諸權威 (Appeal to Authority)、稻草人、滑坡和訴諸情感 (Appeal to Emotion)</li>
+                        <li>批判性思考 (Critical Thinking)的基本步驟和態度</li>
                     </ul>
                     
-                    <p>這些知識和技能將幫助你更好地分析和評估論證，避免常見的邏輯謬誤，培養批判性思考能力。</p>
+                    <p>這些知識和技能將幫助你更好地分析和評估論證 (Argument)，避免常見的邏輯謬誤 (Fallacy) (Logical Fallacy)，培養批判性思考 (Critical Thinking)能力。</p>
                     
                     <div class="course-links">
                         <a href="day2_slides.html" class="course-btn">查看投影片</a>
@@ -275,8 +275,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>邏輯學入門</h3>
-                    <p>基於Irving M. Copi的《邏輯學入門》，為國中生設計的五天邏輯學課程。</p>
+                    <h3>邏輯學 (Logic)入門</h3>
+                    <p>基於Irving M. Copi的《邏輯學 (Logic)入門》，為國中生設計的五天邏輯學 (Logic)課程。</p>
                 </div>
                 <div class="footer-column">
                     <h3>快速連結</h3>
@@ -290,16 +290,16 @@
                 <div class="footer-column">
                     <h3>課程資源</h3>
                     <ul class="footer-links">
-                        <li><a href="day1.html">第一天：邏輯學基礎與語言</a></li>
-                        <li><a href="day2.html">第二天：論證與謬誤</a></li>
-                        <li><a href="day3.html">第三天：邏輯連接詞與複合陳述句</a></li>
-                        <li><a href="day4.html">第四天：演繹推理與邏輯規則</a></li>
-                        <li><a href="day5.html">第五天：歸納推理與批判性思考</a></li>
+                        <li><a href="day1.html">第一天：邏輯學 (Logic)基礎與語言</a></li>
+                        <li><a href="day2.html">第二天：論證 (Argument)與謬誤 (Fallacy)</a></li>
+                        <li><a href="day3.html">第三天：邏輯連接 (Conjunction)詞 (Connective)與複合陳述句 (Statement) (Compound Statement)</a></li>
+                        <li><a href="day4.html">第四天：演繹推理 (Inference) (Deductive Reasoning)與邏輯規則</a></li>
+                        <li><a href="day5.html">第五天：歸納推理 (Inference) (Inductive Reasoning)與批判性思考 (Critical Thinking)</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 邏輯學入門課程. 保留所有權利。</p>
+                <p>&copy; 2025 邏輯學 (Logic)入門課程. 保留所有權利。</p>
             </div>
         </div>
     </footer>
