@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一天：邏輯學基礎與語言 - 邏輯學入門</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">邏輯學入門</a>
+                <button class="mobile-menu-btn">☰</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="courses.html">課程內容</a></li>
+                    <li><a href="terminology.html">術語表</a></li>
+                    <li><a href="about.html">關於課程</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="course-container">
+            <aside class="sidebar">
+                <h3 class="sidebar-title">課程導覽</h3>
+                <ul class="sidebar-links">
+                    <li><a href="#course-intro" class="active">課程介紹</a></li>
+                    <li><a href="#what-is-logic">什麼是邏輯學</a></li>
+                    <li><a href="#statements">陳述句與非陳述句</a></li>
+                    <li><a href="#arguments">論證結構</a></li>
+                    <li><a href="#language-functions">語言的功能</a></li>
+                    <li><a href="#summary">課程總結</a></li>
+                    <li><a href="day1_slides.html">查看投影片</a></li>
+                    <li><a href="day1_quiz.html">練習測驗</a></li>
+                </ul>
+            </aside>
+            
+            <main class="course-content-main">
+                <div class="course-header">
+                    <h1>第一天：邏輯學基礎與語言</h1>
+                    <p>了解邏輯學的定義與重要性，學習辨識陳述句與非陳述句，以及識別論證中的前提與結論。</p>
+                </div>
+                
+                <div class="mindmap-container">
+                    <img src="images/logic_mindmap_day1_fixed.png" alt="邏輯學基礎與語言心智圖" class="mindmap-image">
+                    <p class="mindmap-caption">邏輯學基礎與語言心智圖</p>
+                </div>
+                
+                <section id="course-intro" class="course-section">
+                    <h2>課程目標</h2>
+                    <p>本課程旨在介紹邏輯學的基本概念，幫助學生理解邏輯學在日常生活和學術研究中的重要性。通過學習陳述句的辨識和論證的結構，培養學生初步的邏輯思維能力。</p>
+                    
+                    <p>完成本課程後，學生將能夠：</p>
+                    <ul>
+                        <li>理解邏輯學的定義和研究對象</li>
+                        <li>區分陳述句和非陳述句</li>
+                        <li>識別論證中的前提和結論</li>
+                        <li>了解語言的不同功能</li>
+                    </ul>
+                </section>
+                
+                <section id="what-is-logic" class="course-section">
+                    <h2>什麼是邏輯學</h2>
+                    <p>邏輯學是研究有效推理的學問。它關注的是論證的形式和結構，而非內容本身。邏輯學幫助我們區分好的論證和壞的論證，從而做出更合理的判斷和決策。</p>
+                    
+                    <p>邏輯學的核心問題包括：</p>
+                    <ul>
+                        <li>什麼是有效的推理？</li>
+                        <li>如何評估論證的品質？</li>
+                        <li>如何避免常見的邏輯謬誤？</li>
+                    </ul>
+                    
+                    <p>邏輯學在許多領域都有重要應用，包括數學、哲學、法律、科學研究和日常生活中的決策。</p>
+                </section>
+                
+                <section id="statements" class="course-section">
+                    <h2>陳述句與非陳述句</h2>
+                    <p>在邏輯學中，我們首先需要區分陳述句和非陳述句。</p>
+                    
+                    <h3>陳述句</h3>
+                    <p>陳述句是可以被判斷為真或假的句子。它們表達了一個完整的思想，並對某事物做出斷言。</p>
+                    
+                    <p>陳述句的例子：</p>
+                    <ul>
+                        <li>台北是台灣的首都。</li>
+                        <li>地球繞著太陽轉。</li>
+                        <li>所有人都會死。</li>
+                    </ul>
+                    
+                    <h3>非陳述句</h3>
+                    <p>非陳述句是不能被判斷為真或假的句子。它們可能是問句、命令句、感嘆句或表達願望的句子。</p>
+                    
+                    <p>非陳述句的例子：</p>
+                    <ul>
+                        <li>請關上門。（命令句）</li>
+                        <li>今天天氣如何？（問句）</li>
+                        <li>多美的風景啊！（感嘆句）</li>
+                        <li>祝你生日快樂。（表達願望）</li>
+                    </ul>
+                    
+                    <p>在邏輯學中，我們主要關注陳述句，因為只有陳述句才能成為論證的組成部分。</p>
+                </section>
+                
+                <section id="arguments" class="course-section">
+                    <h2>論證結構</h2>
+                    <p>論證是由一組陳述句組成的，其中一些陳述句（前提）用來支持另一個陳述句（結論）。</p>
+                    
+                    <h3>前提</h3>
+                    <p>前提是用來支持結論的陳述句。它們提供了我們接受結論的理由。</p>
+                    
+                    <h3>結論</h3>
+                    <p>結論是論證試圖證明或支持的陳述句。</p>
+                    
+                    <h3>論證示例</h3>
+                    <p>考慮以下論證：</p>
+                    <blockquote>
+                        所有人都會死。（前提）<br>
+                        蘇格拉底是人。（前提）<br>
+                        因此，蘇格拉底會死。（結論）
+                    </blockquote>
+                    
+                    <p>在這個論證中，「所有人都會死」和「蘇格拉底是人」是前提，而「蘇格拉底會死」是結論。</p>
+                    
+                    <h3>結論指示詞</h3>
+                    <p>在日常語言中，有一些詞語通常用來引導結論，這些詞語被稱為結論指示詞。常見的結論指示詞包括：</p>
+                    <ul>
+                        <li>因此</li>
+                        <li>所以</li>
+                        <li>可見</li>
+                        <li>因而</li>
+                        <li>由此可知</li>
+                    </ul>
+                    
+                    <h3>前提指示詞</h3>
+                    <p>同樣，有一些詞語通常用來引導前提，這些詞語被稱為前提指示詞。常見的前提指示詞包括：</p>
+                    <ul>
+                        <li>因為</li>
+                        <li>由於</li>
+                        <li>鑑於</li>
+                        <li>考慮到</li>
+                    </ul>
+                </section>
+                
+                <section id="language-functions" class="course-section">
+                    <h2>語言的功能</h2>
+                    <p>語言有多種功能，理解這些功能有助於我們更好地分析和使用語言。</p>
+                    
+                    <div class="course-image-container">
+                        <img src="images/language_functions.png" alt="語言的四種基本功能" class="course-image">
+                    </div>
+                    
+                    <h3>資訊功能</h3>
+                    <p>語言的資訊功能是用來傳達事實和信息。這是邏輯學最關注的功能，因為它與真假判斷直接相關。</p>
+                    <p>例如：「今天是星期一。」「水的化學式是H2O。」</p>
+                    
+                    <h3>指令功能</h3>
+                    <p>語言的指令功能是用來發出命令或請求，引導他人行動。</p>
+                    <p>例如：「請關上門。」「不要觸摸熱表面。」</p>
+                    
+                    <h3>表達功能</h3>
+                    <p>語言的表達功能是用來表達情感、態度和感受。</p>
+                    <p>例如：「我很高興見到你！」「這真令人失望。」</p>
+                    
+                    <h3>儀式功能</h3>
+                    <p>語言的儀式功能是用於社交禮儀和儀式場合。</p>
+                    <p>例如：「早安。」「祝你生日快樂。」「請多指教。」</p>
+                    
+                    <p>在邏輯學中，我們主要關注語言的資訊功能，因為只有這種功能與真假判斷直接相關。</p>
+                </section>
+                
+                <section id="summary" class="course-section">
+                    <h2>課程總結</h2>
+                    <p>在今天的課程中，我們學習了：</p>
+                    <ul>
+                        <li>邏輯學是研究有效推理的學問</li>
+                        <li>陳述句是可以被判斷為真或假的句子，而非陳述句則不能</li>
+                        <li>論證由前提和結論組成，前提用來支持結論</li>
+                        <li>結論指示詞和前提指示詞幫助我們識別論證的結構</li>
+                        <li>語言有多種功能，包括資訊功能、指令功能、表達功能和儀式功能</li>
+                    </ul>
+                    
+                    <p>這些基本概念為我們後續學習更複雜的邏輯概念奠定了基礎。</p>
+                    
+                    <div class="course-links">
+                        <a href="day1_slides.html" class="course-btn">查看投影片</a>
+                        <a href="day1_quiz.html" class="course-btn">練習測驗</a>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>邏輯學入門</h3>
+                    <p>基於Irving M. Copi的《邏輯學入門》，為國中生設計的五天邏輯學課程。</p>
+                </div>
+                <div class="footer-column">
+                    <h3>快速連結</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="courses.html">課程內容</a></li>
+                        <li><a href="terminology.html">術語表</a></li>
+                        <li><a href="about.html">關於課程</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>課程資源</h3>
+                    <ul class="footer-links">
+                        <li><a href="day1.html">第一天：邏輯學基礎與語言</a></li>
+                        <li><a href="day2.html">第二天：論證與謬誤</a></li>
+                        <li><a href="day3.html">第三天：邏輯連接詞與複合陳述句</a></li>
+                        <li><a href="day4.html">第四天：演繹推理與邏輯規則</a></li>
+                        <li><a href="day5.html">第五天：歸納推理與批判性思考</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 邏輯學入門課程. 保留所有權利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

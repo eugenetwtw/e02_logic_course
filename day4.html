@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第四天：演繹推理與邏輯規則 - 邏輯學入門</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">邏輯學入門</a>
+                <button class="mobile-menu-btn">☰</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="courses.html">課程內容</a></li>
+                    <li><a href="terminology.html">術語表</a></li>
+                    <li><a href="about.html">關於課程</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="course-container">
+            <aside class="sidebar">
+                <h3 class="sidebar-title">課程導覽</h3>
+                <ul class="sidebar-links">
+                    <li><a href="#course-intro" class="active">課程介紹</a></li>
+                    <li><a href="#deductive-reasoning">演繹推理基礎</a></li>
+                    <li><a href="#syllogism">三段論</a></li>
+                    <li><a href="#logical-symbols">基本邏輯符號</a></li>
+                    <li><a href="#inference-rules">基本推理規則</a></li>
+                    <li><a href="#validity-proof">有效性證明</a></li>
+                    <li><a href="#venn-diagrams">文氏圖</a></li>
+                    <li><a href="#summary">課程總結</a></li>
+                    <li><a href="day4_slides.html">查看投影片</a></li>
+                    <li><a href="day4_quiz.html">練習測驗</a></li>
+                </ul>
+            </aside>
+            
+            <main class="course-content-main">
+                <div class="course-header">
+                    <h1>第四天：演繹推理與邏輯規則</h1>
+                    <p>理解三段論的基本結構，學習基本邏輯符號的使用，掌握基本推理規則。</p>
+                </div>
+                
+                <div class="mindmap-container">
+                    <img src="images/logic_mindmap_day4.png" alt="演繹推理與邏輯規則心智圖" class="mindmap-image">
+                    <p class="mindmap-caption">演繹推理與邏輯規則心智圖</p>
+                </div>
+                
+                <section id="course-intro" class="course-section">
+                    <h2>課程目標</h2>
+                    <p>本課程旨在介紹演繹推理的基本結構和規則，幫助學生理解三段論的形式，學習基本邏輯符號的使用，以及掌握基本推理規則。</p>
+                    
+                    <p>完成本課程後，學生將能夠：</p>
+                    <ul>
+                        <li>理解演繹推理的特點和應用</li>
+                        <li>分析三段論的結構和有效性</li>
+                        <li>使用基本邏輯符號表達命題和論證</li>
+                        <li>應用基本推理規則進行有效推理</li>
+                        <li>使用文氏圖分析三段論的有效性</li>
+                    </ul>
+                </section>
+                
+                <section id="deductive-reasoning" class="course-section">
+                    <h2>演繹推理基礎</h2>
+                    <p>演繹推理是從一般原則到特殊情況的推理過程。在演繹推理中，如果前提為真，則結論必然為真。</p>
+                    
+                    <h3>演繹推理的特點</h3>
+                    <ul>
+                        <li><strong>從一般到特殊</strong>：從普遍原則推導出特殊情況</li>
+                        <li><strong>必然性</strong>：如果前提為真，則結論必然為真</li>
+                        <li><strong>確定性</strong>：結論的確定性高</li>
+                        <li><strong>不增加新信息</strong>：結論中的信息已隱含在前提中</li>
+                    </ul>
+                    
+                    <h3>演繹推理的例子</h3>
+                    <blockquote>
+                        所有哺乳動物都有心臟。（一般原則）<br>
+                        所有狗都是哺乳動物。（一般原則）<br>
+                        因此，所有狗都有心臟。（特殊情況）
+                    </blockquote>
+                    
+                    <p>在這個例子中，結論「所有狗都有心臟」是從前提「所有哺乳動物都有心臟」和「所有狗都是哺乳動物」必然推導出來的。如果這兩個前提為真，則結論必然為真。</p>
+                </section>
+                
+                <section id="syllogism" class="course-section">
+                    <h2>三段論</h2>
+                    <p>三段論是一種基本的演繹推理形式，由兩個前提和一個結論組成，涉及三個術語：大詞、中詞和小詞。</p>
+                    
+                    <h3>三段論的結構</h3>
+                    <ul>
+                        <li><strong>大前提</strong>：包含大詞和中詞的命題</li>
+                        <li><strong>小前提</strong>：包含小詞和中詞的命題</li>
+                        <li><strong>結論</strong>：包含小詞和大詞的命題</li>
+                    </ul>
+                    
+                    <p>其中：</p>
+                    <ul>
+                        <li><strong>大詞</strong>：在結論中作謂詞的術語</li>
+                        <li><strong>中詞</strong>：在兩個前提中出現但在結論中不出現的術語</li>
+                        <li><strong>小詞</strong>：在結論中作主詞的術語</li>
+                    </ul>
+                    
+                    <h3>三段論的例子</h3>
+                    <blockquote>
+                        所有人都會死。（大前提：中詞「人」和大詞「會死」）<br>
+                        蘇格拉底是人。（小前提：小詞「蘇格拉底」和中詞「人」）<br>
+                        因此，蘇格拉底會死。（結論：小詞「蘇格拉底」和大詞「會死」）
+                    </blockquote>
+                    
+                    <p>在這個例子中：</p>
+                    <ul>
+                        <li>大詞是「會死」</li>
+                        <li>中詞是「人」</li>
+                        <li>小詞是「蘇格拉底」</li>
+                    </ul>
+                    
+                    <h3>三段論的有效性</h3>
+                    <p>三段論的有效性取決於其形式，而不是內容。有效的三段論形式保證如果前提為真，則結論必然為真。</p>
+                    
+                    <p>三段論有效性的一些基本規則：</p>
+                    <ol>
+                        <li>中詞必須至少在一個前提中周延（指涉該類別的所有成員）</li>
+                        <li>如果一個術語在結論中周延，它也必須在相應的前提中周延</li>
+                        <li>至少有一個前提必須是肯定命題</li>
+                        <li>如果有一個前提是否定命題，則結論必須是否定命題</li>
+                        <li>兩個否定前提不能導出有效結論</li>
+                    </ol>
+                </section>
+                
+                <section id="logical-symbols" class="course-section">
+                    <h2>基本邏輯符號</h2>
+                    <p>邏輯符號是用來表示邏輯關係和操作的符號，它們使邏輯表達更加簡潔和精確。</p>
+                    
+                    <h3>命題邏輯符號</h3>
+                    <p>我們在昨天的課程中已經學習了以下命題邏輯符號：</p>
+                    <ul>
+                        <li><strong>∧</strong>：連言詞，表示「且」</li>
+                        <li><strong>∨</strong>：選言詞，表示「或」</li>
+                        <li><strong>¬</strong>：否定詞，表示「非」</li>
+                        <li><strong>→</strong>：條件詞，表示「如果...那麼...」</li>
+                        <li><strong>↔</strong>：雙條件詞，表示「當且僅當」</li>
+                    </ul>
+                    
+                    <h3>謂詞邏輯符號</h3>
+                    <p>除了命題邏輯符號外，謂詞邏輯還使用以下符號：</p>
+                    <ul>
+                        <li><strong>∀</strong>：全稱量詞，表示「對所有...」</li>
+                        <li><strong>∃</strong>：存在量詞，表示「存在...」</li>
+                        <li><strong>P(x)</strong>：謂詞，表示「x 具有性質 P」</li>
+                    </ul>
+                    
+                    <h3>使用邏輯符號表達命題</h3>
+                    <p>例如，「所有人都會死」可以表示為：</p>
+                    <p>∀x(H(x) → M(x))</p>
+                    <p>其中 H(x) 表示「x 是人」，M(x) 表示「x 會死」。</p>
+                    
+                    <p>「有些學生喜歡數學」可以表示為：</p>
+                    <p>∃x(S(x) ∧ L(x, m))</p>
+                    <p>其中 S(x) 表示「x 是學生」，L(x, m) 表示「x 喜歡數學」。</p>
+                </section>
+                
+                <section id="inference-rules" class="course-section">
+                    <h2>基本推理規則</h2>
+                    <p>推理規則是用來從已知前提推導出結論的規則。以下是一些基本的推理規則：</p>
+                    
+                    <h3>肯定前件（Modus Ponens）</h3>
+                    <p>如果 p → q 為真，且 p 為真，則 q 為真。</p>
+                    <blockquote>
+                        如果下雨，則地面濕。（p → q）<br>
+                        下雨了。（p）<br>
+                        因此，地面濕。（q）
+                    </blockquote>
+                    
+                    <h3>否定後件（Modus Tollens）</h3>
+                    <p>如果 p → q 為真，且 q 為假，則 p 為假。</p>
+                    <blockquote>
+                        如果下雨，則地面濕。（p → q）<br>
+                        地面不濕。（¬q）<br>
+                        因此，沒有下雨。（¬p）
+                    </blockquote>
+                    
+                    <h3>假言三段論（Hypothetical Syllogism）</h3>
+                    <p>如果 p → q 為真，且 q → r 為真，則 p → r 為真。</p>
+                    <blockquote>
+                        如果下雨，則地面濕。（p → q）<br>
+                        如果地面濕，則鞋子會髒。（q → r）<br>
+                        因此，如果下雨，則鞋子會髒。（p → r）
+                    </blockquote>
+                    
+                    <h3>選言三段論（Disjunctive Syllogism）</h3>
+                    <p>如果 p ∨ q 為真，且 ¬p 為真，則 q 為真。</p>
+                    <blockquote>
+                        要麼下雨，要麼下雪。（p ∨ q）<br>
+                        沒有下雨。（¬p）<br>
+                        因此，下雪了。（q）
+                    </blockquote>
+                    
+                    <h3>附加（Addition）</h3>
+                    <p>如果 p 為真，則 p ∨ q 為真（對任意 q）。</p>
+                    <blockquote>
+                        下雨了。（p）<br>
+                        因此，要麼下雨，要麼下雪。（p ∨ q）
+                    </blockquote>
+                    
+                    <h3>化簡（Simplification）</h3>
+                    <p>如果 p ∧ q 為真，則 p 為真且 q 為真。</p>
+                    <blockquote>
+                        下雨且刮風。（p ∧ q）<br>
+                        因此，下雨了。（p）<br>
+                        因此，刮風了。（q）
+                    </blockquote>
+                    
+                    <h3>合取（Conjunction）</h3>
+                    <p>如果 p 為真且 q 為真，則 p ∧ q 為真。</p>
+                    <blockquote>
+                        下雨了。（p）<br>
+                        刮風了。（q）<br>
+                        因此，下雨且刮風。（p ∧ q）
+                    </blockquote>
+                </section>
+                
+                <section id="validity-proof" class="course-section">
+                    <h2>有效性證明</h2>
+                    <p>有效性證明是一種用來證明論證有效性的方法。以下是一個簡單的有效性證明例子：</p>
+                    
+                    <h3>例子</h3>
+                    <p>證明以下論證的有效性：</p>
+                    <blockquote>
+                        1. 如果下雨，則地面濕。（p → q）<br>
+                        2. 如果地面濕，則鞋子會髒。（q → r）<br>
+                        3. 下雨了。（p）<br>
+                        4. 因此，鞋子會髒。（r）
+                    </blockquote>
+                    
+                    <h3>證明</h3>
+                    <ol>
+                        <li>p → q（前提1）</li>
+                        <li>q → r（前提2）</li>
+                        <li>p（前提3）</li>
+                        <li>q（由1和3，使用肯定前件規則）</li>
+                        <li>r（由2和4，使用肯定前件規則）</li>
+                    </ol>
+                    
+                    <p>因此，結論 r 是有效的。</p>
+                </section>
+                
+                <section id="venn-diagrams" class="course-section">
+                    <h2>文氏圖</h2>
+                    <p>文氏圖是一種用來表示集合關係的圖形，它可以用來分析三段論的有效性。</p>
+                    
+                    <h3>基本文氏圖</h3>
+                    <p>文氏圖使用圓圈表示集合，圓圈的重疊部分表示集合的交集。</p>
+                    
+                    <h3>使用文氏圖分析三段論</h3>
+                    <p>例如，我們可以使用文氏圖分析以下三段論：</p>
+                    <blockquote>
+                        所有人都會死。（大前提）<br>
+                        蘇格拉底是人。（小前提）<br>
+                        因此，蘇格拉底會死。（結論）
+                    </blockquote>
+                    
+                    <p>在文氏圖中：</p>
+                    <ul>
+                        <li>一個圓圈表示「人」的集合</li>
+                        <li>另一個圓圈表示「會死的事物」的集合</li>
+                        <li>「蘇格拉底」表示為一個點</li>
+                    </ul>
+                    
+                    <p>大前提「所有人都會死」表示「人」的圓圈完全包含在「會死的事物」的圓圈內。</p>
+                    <p>小前提「蘇格拉底是人」表示「蘇格拉底」這個點位於「人」的圓圈內。</p>
+                    <p>從文氏圖中，我們可以看到「蘇格拉底」這個點必然也位於「會死的事物」的圓圈內，這就是結論「蘇格拉底會死」。</p>
+                </section>
+                
+                <section id="summary" class="course-section">
+                    <h2>課程總結</h2>
+                    <p>在今天的課程中，我們學習了：</p>
+                    <ul>
+                        <li>演繹推理的特點和應用</li>
+                        <li>三段論的結構和有效性</li>
+                        <li>基本邏輯符號的使用</li>
+                        <li>基本推理規則，如肯定前件、否定後件、假言三段論等</li>
+                        <li>如何進行簡單的有效性證明</li>
+                        <li>如何使用文氏圖分析三段論的有效性</li>
+                    </ul>
+                    
+                    <p>這些知識和技能將幫助你更好地理解和分析演繹推理，提高邏輯思維能力。</p>
+                    
+                    <div class="course-links">
+                        <a href="day4_slides.html" class="course-btn">查看投影片</a>
+                        <a href="day4_quiz.html" class="course-btn">練習測驗</a>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>邏輯學入門</h3>
+                    <p>基於Irving M. Copi的《邏輯學入門》，為國中生設計的五天邏輯學課程。</p>
+                </div>
+                <div class="footer-column">
+                    <h3>快速連結</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="courses.html">課程內容</a></li>
+                        <li><a href="terminology.html">術語表</a></li>
+                        <li><a href="about.html">關於課程</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>課程資源</h3>
+                    <ul class="footer-links">
+                        <li><a href="day1.html">第一天：邏輯學基礎與語言</a></li>
+                        <li><a href="day2.html">第二天：論證與謬誤</a></li>
+                        <li><a href="day3.html">第三天：邏輯連接詞與複合陳述句</a></li>
+                        <li><a href="day4.html">第四天：演繹推理與邏輯規則</a></li>
+                        <li><a href="day5.html">第五天：歸納推理與批判性思考</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 邏輯學入門課程. 保留所有權利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
