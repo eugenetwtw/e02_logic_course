@@ -21,6 +21,7 @@ const termMapping = {
     '謬誤': 'Fallacy',
     '定義': 'Definition',
     '陳述句': 'Statement',
+    '非陳述句': 'not a statement',
     '複合陳述句': 'Compound Statement',
     '連接詞': 'Connective',
     '否定': 'Negation',
@@ -86,9 +87,15 @@ function updateTermsInContent(content) {
     const sortedTerms = Object.keys(termMapping).sort((a, b) => b.length - a.length);
     for (const chineseTerm of sortedTerms) {
         const englishTerm = termMapping[chineseTerm];
-        // Create a regex to match the Chinese term exactly, avoiding already translated terms
-        const regex = new RegExp(`\\b(${chineseTerm})\\b(?!\\s*\\(${englishTerm}\\))`, 'g');
-        updatedContent = updatedContent.replace(regex, `${chineseTerm} (${englishTerm})`);
+        // Use a less strict regex for "非陳述句" to ensure matching
+        if (chineseTerm === '非陳述句') {
+            const regex = new RegExp(`(${chineseTerm})(?!\\s*\\(${englishTerm}\\))`, 'g');
+            updatedContent = updatedContent.replace(regex, `${chineseTerm} (${englishTerm})`);
+        } else {
+            // Create a regex to match the Chinese term exactly, avoiding already translated terms
+            const regex = new RegExp(`\\b(${chineseTerm})\\b(?!\\s*\\(${englishTerm}\\))`, 'g');
+            updatedContent = updatedContent.replace(regex, `${chineseTerm} (${englishTerm})`);
+        }
     }
     return updatedContent;
 }
