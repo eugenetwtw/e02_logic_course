@@ -54,4 +54,8 @@
 
 如有任何問題或建議，歡迎聯絡課程團隊。我們致力於持續改進課程內容，確保學習體驗最佳化。
 
+## 授權條款
+
+本課程材料採用 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) 授權，允許您自由分享和改編這些材料（包括商業用途），只要您給予適當的署名。詳細授權條款請參閱 [LICENSE.md](LICENSE.md) 文件。
+
 &copy; 2025 邏輯學 (Logic) 入門課程。保留所有權利。
