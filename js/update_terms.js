@@ -86,8 +86,8 @@ function updateTermsInContent(content) {
     const sortedTerms = Object.keys(termMapping).sort((a, b) => b.length - a.length);
     for (const chineseTerm of sortedTerms) {
         const englishTerm = termMapping[chineseTerm];
-        // Create a regex to match the Chinese term, avoiding already translated terms
-        const regex = new RegExp(`(${chineseTerm})(?!\\s*\\(${englishTerm}\\))`, 'g');
+        // Create a regex to match the Chinese term exactly, avoiding already translated terms
+        const regex = new RegExp(`\\b(${chineseTerm})\\b(?!\\s*\\(${englishTerm}\\))`, 'g');
         updatedContent = updatedContent.replace(regex, `${chineseTerm} (${englishTerm})`);
     }
     return updatedContent;
