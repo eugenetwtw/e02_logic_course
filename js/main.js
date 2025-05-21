@@ -530,6 +530,69 @@ function updateDayPage() {
 
 // 更新測驗頁面內容
 function updateQuizPage() {
+    // 獲取當前是第幾天
+    const dayMatch = window.location.pathname.match(/day(\d+)/);
+    if (!dayMatch || !dayMatch[1]) return;
+    
+    const dayNum = dayMatch[1];
+    
+    // 更新頁面標題
+    const quizHeader = document.querySelector('.quiz-header h1');
+    if (quizHeader) quizHeader.textContent = t(`quiz.day${dayNum}.title`);
+    
+    // 更新測驗說明
+    const quizInstructions = document.querySelector('.quiz-instructions');
+    if (quizInstructions && translations.quiz[`day${dayNum}`] && translations.quiz[`day${dayNum}`].instructions) {
+        const instructions = t(`quiz.day${dayNum}.instructions`);
+        const paragraphs = quizInstructions.querySelectorAll('p');
+        
+        instructions.forEach((text, i) => {
+            if (i < paragraphs.length) {
+                paragraphs[i].textContent = text;
+            }
+        });
+    }
+    
+    // 更新問題和選項
+    const questions = document.querySelectorAll('.quiz-question');
+    if (questions.length > 0 && translations.quiz[`day${dayNum}`] && translations.quiz[`day${dayNum}`].questions) {
+        questions.forEach((question, index) => {
+            const questionNum = index + 1;
+            const questionKey = `quiz.day${dayNum}.questions.q${questionNum}`;
+            
+            // 更新問題文本
+            const questionText = question.querySelector('.question-text');
+            if (questionText && translations.quiz[`day${dayNum}`].questions[`q${questionNum}`]) {
+                questionText.textContent = t(`${questionKey}.text`);
+            }
+            
+            // 更新選項
+            const options = question.querySelectorAll('.quiz-option');
+            if (options.length > 0 && translations.quiz[`day${dayNum}`].questions[`q${questionNum}`] && translations.quiz[`day${dayNum}`].questions[`q${questionNum}`].options) {
+                const optionTexts = t(`${questionKey}.options`);
+                
+                options.forEach((option, i) => {
+                    if (i < optionTexts.length) {
+                        option.textContent = optionTexts[i];
+                    }
+                });
+            }
+        });
+    }
+    
+    // 更新複習要點
+    const reviewPoints = document.querySelector('.review-points ol');
+    if (reviewPoints && translations.quiz[`day${dayNum}`] && translations.quiz[`day${dayNum}`].reviewPoints) {
+        const points = t(`quiz.day${dayNum}.reviewPoints`);
+        const listItems = reviewPoints.querySelectorAll('li');
+        
+        points.forEach((point, i) => {
+            if (i < listItems.length) {
+                listItems[i].textContent = point;
+            }
+        });
+    }
+    
     // 更新提交按鈕
     const submitBtn = document.querySelector('.quiz-submit');
     if (submitBtn) submitBtn.textContent = t('quiz.submit');
@@ -540,16 +603,122 @@ function updateQuizPage() {
         const scoreValue = scoreLabel.textContent.match(/\d+/)[0];
         scoreLabel.textContent = `${scoreValue}/100 ${t('quiz.score')}`;
     }
+    
+    // 更新反饋文本
+    const feedbackElement = document.querySelector('.quiz-feedback');
+    if (feedbackElement) {
+        const feedbackText = feedbackElement.textContent.trim();
+        
+        if (feedbackText === t('quiz.feedback.excellent') || 
+            feedbackText === '太棒了！你對這個主題有很好的理解！' || 
+            feedbackText === 'Excellent! You have a great understanding of this topic!') {
+            feedbackElement.textContent = t('quiz.feedback.excellent');
+        } else if (feedbackText === t('quiz.feedback.good') || 
+                   feedbackText === '做得好！你掌握了大部分概念。' || 
+                   feedbackText === 'Well done! You\'ve mastered most of the concepts.') {
+            feedbackElement.textContent = t('quiz.feedback.good');
+        } else if (feedbackText === t('quiz.feedback.fair') || 
+                   feedbackText === '不錯的嘗試！請複習一下錯誤的題目。' || 
+                   feedbackText === 'Good try! Please review the questions you got wrong.') {
+            feedbackElement.textContent = t('quiz.feedback.fair');
+        } else if (feedbackText === t('quiz.feedback.needsWork') || 
+                   feedbackText === '需要更多練習。建議重新閱讀課程材料。' || 
+                   feedbackText === 'Needs more practice. It\'s recommended to re-read the course materials.') {
+            feedbackElement.textContent = t('quiz.feedback.needsWork');
+        }
+    }
 }
 
 // 更新投影片頁面內容
 function updateSlidesPage() {
+    // 獲取當前是第幾天
+    const dayMatch = window.location.pathname.match(/day(\d+)/);
+    if (!dayMatch || !dayMatch[1]) return;
+    
+    const dayNum = dayMatch[1];
+    
+    // 更新頁面標題
+    const slideTitle = document.querySelector('.slide-container h1');
+    if (slideTitle) slideTitle.textContent = t(`slides.day${dayNum}.title`);
+    
     // 更新上一張/下一張按鈕
     const prevBtn = document.querySelector('.slide-prev');
     const nextBtn = document.querySelector('.slide-next');
     
     if (prevBtn) prevBtn.textContent = t('slides.prev');
     if (nextBtn) nextBtn.textContent = t('slides.next');
+    
+    // 更新投影片內容
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach((slide, index) => {
+        const slideNum = index + 1;
+        const slideKey = `slides.day${dayNum}.slide${slideNum}`;
+        
+        // 更新標題
+        const slideHeading = slide.querySelector('h2');
+        if (slideHeading && translations.slides[`day${dayNum}`] && translations.slides[`day${dayNum}`][`slide${slideNum}`]) {
+            slideHeading.textContent = t(`${slideKey}.title`);
+        }
+        
+        // 更新內容
+        if (translations.slides[`day${dayNum}`] && translations.slides[`day${dayNum}`][`slide${slideNum}`]) {
+            // 處理目標列表
+            if (translations.slides[`day${dayNum}`][`slide${slideNum}`].goals) {
+                const goalsList = slide.querySelector('ul');
+                if (goalsList) {
+                    const goals = t(`${slideKey}.goals`);
+                    const listItems = goalsList.querySelectorAll('li');
+                    
+                    goals.forEach((goal, i) => {
+                        if (i < listItems.length) {
+                            listItems[i].textContent = goal;
+                        }
+                    });
+                }
+            }
+            
+            // 處理問題列表
+            if (translations.slides[`day${dayNum}`][`slide${slideNum}`].questions) {
+                const questionsList = slide.querySelector('ul');
+                if (questionsList) {
+                    const questions = t(`${slideKey}.questions`);
+                    const listItems = questionsList.querySelectorAll('li');
+                    
+                    questions.forEach((question, i) => {
+                        if (i < listItems.length) {
+                            listItems[i].textContent = question;
+                        }
+                    });
+                }
+            }
+            
+            // 處理一般內容
+            if (translations.slides[`day${dayNum}`][`slide${slideNum}`].content) {
+                const content = t(`${slideKey}.content`);
+                
+                // 處理段落
+                const paragraphs = slide.querySelectorAll('p');
+                if (paragraphs.length > 0) {
+                    content.forEach((text, i) => {
+                        if (i < paragraphs.length) {
+                            paragraphs[i].textContent = text;
+                        }
+                    });
+                }
+                
+                // 處理列表項
+                const listItems = slide.querySelectorAll('ul > li');
+                if (listItems.length > 0 && content.length > paragraphs.length) {
+                    for (let i = paragraphs.length; i < content.length; i++) {
+                        const listIndex = i - paragraphs.length;
+                        if (listIndex < listItems.length) {
+                            listItems[listIndex].textContent = content[i];
+                        }
+                    }
+                }
+            }
+        }
+    });
 }
 
 // 更新頁腳

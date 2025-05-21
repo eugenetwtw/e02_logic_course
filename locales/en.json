@@ -366,11 +366,246 @@
       "good": "Well done! You've mastered most of the concepts.",
       "fair": "Good try! Please review the questions you got wrong.",
       "needsWork": "Needs more practice. It's recommended to re-read the course materials."
+    },
+    "day1": {
+      "title": "Day 1 Quiz: Logic Basics and Language",
+      "instructions": [
+        "This quiz has 10 questions, for a total of 100 points",
+        "Each question is worth 10 points, with no penalty for wrong answers",
+        "For multiple choice questions, please select the most appropriate answer"
+      ],
+      "questions": {
+        "q1": {
+          "text": "What does logic primarily study?",
+          "options": [
+            "A. Human emotional expression",
+            "B. Methods of valid inference",
+            "C. Historical development of language",
+            "D. Analysis of literary works"
+          ]
+        },
+        "q2": {
+          "text": "Which of the following is a statement?",
+          "options": [
+            "A. Please close the door",
+            "B. How is the weather today?",
+            "C. Taipei is the capital of Taiwan",
+            "D. What a beautiful scenery!"
+          ]
+        },
+        "q3": {
+          "text": "Which of the following is NOT a statement?",
+          "options": [
+            "A. The Earth revolves around the Sun",
+            "B. The chemical formula for water is H2O",
+            "C. Happy birthday to you",
+            "D. All humans are mortal"
+          ]
+        },
+        "q4": {
+          "text": "In an argument, the statements used to support the conclusion are called:",
+          "options": [
+            "A. Premises",
+            "B. Assumptions",
+            "C. Inferences",
+            "D. Evidence"
+          ]
+        },
+        "q5": {
+          "text": "Which of the following words is typically used to introduce a conclusion?",
+          "options": [
+            "A. Because",
+            "B. Since",
+            "C. Considering that",
+            "D. Therefore"
+          ]
+        },
+        "q6": {
+          "text": "Which function of language is most relevant to logic?",
+          "options": [
+            "A. Expressive function",
+            "B. Informative function",
+            "C. Directive function",
+            "D. Ceremonial function"
+          ]
+        },
+        "q7": {
+          "text": "Read the following paragraph and identify the conclusion: \"Due to continuous rain, the water level of the river has risen. As the water level has risen, the embankment is in danger of breaking. Therefore, residents should evacuate to a safe area.\"",
+          "options": [
+            "A. Continuous rain",
+            "B. The water level of the river has risen",
+            "C. The embankment is in danger of breaking",
+            "D. Residents should evacuate to a safe area"
+          ]
+        },
+        "q8": {
+          "text": "Read the following paragraph and identify the premises: \"All mammals have lungs. Whales are mammals. Therefore, whales have lungs.\"",
+          "options": [
+            "A. All mammals have lungs; Whales are mammals",
+            "B. Whales have lungs",
+            "C. All mammals have lungs",
+            "D. Whales are mammals"
+          ]
+        },
+        "q9": {
+          "text": "The application of logic in daily life does NOT include:",
+          "options": [
+            "A. Evaluating the credibility of news reports",
+            "B. Analyzing arguments in debates",
+            "C. Expressing personal emotions",
+            "D. Solving mathematical problems"
+          ]
+        },
+        "q10": {
+          "text": "Which of the following best explains the importance of logic?",
+          "options": [
+            "A. It helps us better express emotions",
+            "B. It allows us to distinguish between good and bad arguments",
+            "C. It improves our social skills",
+            "D. It enhances our memory"
+          ]
+        }
+      },
+      "reviewPoints": [
+        "Logic is the study of valid inference, helping us distinguish between good and bad arguments",
+        "Statements can be judged as true or false, while non-statements cannot",
+        "Arguments consist of premises and conclusions, with premises supporting the conclusion",
+        "Conclusion indicators include: therefore, thus, hence, consequently, it follows that",
+        "Premise indicators include: because, since, given that, considering that",
+        "Language has multiple functions, including informative, directive, expressive, and ceremonial functions",
+        "In logic, we mainly focus on the informative function of language"
+      ]
     }
   },
   "slides": {
     "prev": "Previous",
-    "next": "Next"
+    "next": "Next",
+    "day1": {
+      "title": "Day 1: Logic Basics and Language",
+      "slide1": {
+        "title": "Course Objectives",
+        "goals": [
+          "Understand the definition and subject of logic",
+          "Distinguish between statements and non-statements",
+          "Identify premises and conclusions in arguments",
+          "Understand different functions of language"
+        ]
+      },
+      "slide2": {
+        "title": "What is Logic",
+        "content": [
+          "Logic is the study of valid inference.",
+          "It focuses on the form and structure of arguments, rather than their content.",
+          "Logic helps us distinguish between good and bad arguments, thereby making more reasonable judgments and decisions."
+        ]
+      },
+      "slide3": {
+        "title": "Core Questions in Logic",
+        "questions": [
+          "What is valid inference?",
+          "How to evaluate the quality of arguments?",
+          "How to avoid common logical fallacies?"
+        ]
+      },
+      "slide4": {
+        "title": "Statements",
+        "content": [
+          "Statements are sentences that can be judged as true or false.",
+          "For example:",
+          "Taipei is the capital of Taiwan.",
+          "The Earth revolves around the Sun.",
+          "All humans are mortal."
+        ]
+      },
+      "slide5": {
+        "title": "Non-statements",
+        "content": [
+          "Non-statements are sentences that cannot be judged as true or false.",
+          "For example:",
+          "Please close the door. (Command)",
+          "How is the weather today? (Question)",
+          "What a beautiful scenery! (Exclamation)",
+          "Happy birthday to you. (Expression of wish)"
+        ]
+      },
+      "slide6": {
+        "title": "Argument Structure",
+        "content": [
+          "An argument consists of a set of statements, some of which (premises) are used to support another statement (conclusion).",
+          "Premise: A statement used to support the conclusion",
+          "Conclusion: The statement that the argument attempts to prove or support"
+        ]
+      },
+      "slide7": {
+        "title": "Example of an Argument",
+        "content": [
+          "All humans are mortal. (Premise)",
+          "Socrates is human. (Premise)",
+          "Therefore, Socrates is mortal. (Conclusion)"
+        ]
+      },
+      "slide8": {
+        "title": "Conclusion Indicators",
+        "content": [
+          "In everyday language, there are certain words typically used to introduce conclusions, known as conclusion indicators.",
+          "Common conclusion indicators include:",
+          "Therefore",
+          "Thus",
+          "Hence",
+          "Consequently",
+          "It follows that"
+        ]
+      },
+      "slide9": {
+        "title": "Premise Indicators",
+        "content": [
+          "Similarly, there are words typically used to introduce premises, known as premise indicators.",
+          "Common premise indicators include:",
+          "Because",
+          "Since",
+          "Given that",
+          "Considering that"
+        ]
+      },
+      "slide10": {
+        "title": "Language Functions",
+        "content": [
+          "Language has multiple functions, understanding these functions helps us better analyze and use language."
+        ]
+      },
+      "slide11": {
+        "title": "Informative Function of Language",
+        "content": [
+          "The informative function of language is used to convey facts and information.",
+          "This is the function that logic is most concerned with, as it directly relates to truth-value judgments.",
+          "For example:",
+          "Today is Monday.",
+          "The chemical formula for water is H2O."
+        ]
+      },
+      "slide12": {
+        "title": "Other Functions of Language",
+        "content": [
+          "Directive Function: Used to issue commands or requests, guiding others to act.",
+          "Expressive Function: Used to express emotions, attitudes, and feelings.",
+          "Ceremonial Function: Used for social etiquette and ceremonial occasions."
+        ]
+      },
+      "slide13": {
+        "title": "Course Summary",
+        "content": [
+          "In today's course, we learned:",
+          "Logic is the study of valid inference",
+          "Statements can be judged as true or false, while non-statements cannot",
+          "Arguments consist of premises and conclusions, with premises supporting the conclusion",
+          "Conclusion indicators and premise indicators help us identify the structure of arguments",
+          "Language has multiple functions, including informative, directive, expressive, and ceremonial functions"
+        ]
+      },
+      "slide14": {
+        "title": "Mind Map Overview"
+      }
+    }
   },
   "terminology": {
     "search": "Search",
