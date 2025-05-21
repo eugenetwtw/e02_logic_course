@@ -54,9 +54,8 @@ async function initializeI18n() {
 // 載入翻譯文件
 async function loadTranslations(lang) {
     try {
-        // Get the base URL for the current site
-        const baseUrl = window.location.origin;
-        const response = await fetch(`${baseUrl}/locales/${lang}.json`);
+        // Use a relative path instead of an absolute path
+        const response = await fetch(`locales/${lang}.json`);
         if (!response.ok) {
             throw new Error(`Failed to load translations for ${lang}`);
         }

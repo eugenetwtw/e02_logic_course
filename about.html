@@ -120,34 +120,6 @@
         </div>
     </footer>
 
-    <script>
-        // Custom script to handle language selection without relying on the translation system
-        document.addEventListener('DOMContentLoaded', function() {
-            // Add language selector to the header
-            const navbar = document.querySelector('.nav-links');
-            const langSelector = document.createElement('li');
-            langSelector.className = 'language-selector';
-            langSelector.innerHTML = `
-                <span>Language:</span>
-                <select id="language-select">
-                    <option value="en" selected>English</option>
-                    <option value="zh">中文</option>
-                </select>
-            `;
-            navbar.appendChild(langSelector);
-            
-            // Handle language change
-            const langSelect = document.getElementById('language-select');
-            langSelect.addEventListener('change', function() {
-                const lang = this.value;
-                // Redirect to the appropriate language version
-                if (lang === 'zh') {
-                    window.location.href = window.location.pathname + '?lang=zh';
-                } else {
-                    window.location.href = window.location.pathname + '?lang=en';
-                }
-            });
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
