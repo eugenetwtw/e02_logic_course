@@ -194,6 +194,46 @@
       "quiz": "Practice Quiz"
     }
   },
+  "day2": {
+    "title": "Day 2: Arguments and Fallacies",
+    "description": "Understand the distinction between valid and invalid arguments, recognize the characteristics of deductive and inductive reasoning, and learn to identify common logical fallacies.",
+    "navigation": "Course Navigation",
+    "sections": {
+      "intro": "Course Introduction",
+      "arguments": "Argument Structure and Types",
+      "valid-invalid": "Valid and Invalid Arguments",
+      "deductive-inductive": "Deductive and Inductive Reasoning",
+      "fallacies": "Common Logical Fallacies",
+      "critical-thinking": "Critical Thinking Basics",
+      "summary": "Course Summary"
+    },
+    "courseGoals": {
+      "title": "Course Objectives",
+      "description": "This course aims to help students understand the structure and types of arguments, distinguish between valid and invalid arguments, recognize the characteristics of deductive and inductive reasoning, and learn to identify common logical fallacies, thereby developing basic critical thinking skills.",
+      "afterCompletion": "After completing this course, students will be able to:",
+      "goals": [
+        "Analyze the structure of arguments, identifying premises and conclusions",
+        "Distinguish between valid and invalid arguments",
+        "Understand the difference between deductive and inductive reasoning",
+        "Identify common logical fallacies",
+        "Apply critical thinking to evaluate arguments"
+      ]
+    },
+    "summary": {
+      "title": "Course Summary",
+      "description": "In today's course, we learned:",
+      "points": [
+        "The structure and types of arguments, including premises, inference process, and conclusion",
+        "The distinction between valid and invalid arguments, and the concept of sound arguments",
+        "The characteristics and differences between deductive and inductive reasoning",
+        "Common logical fallacies, including ad hominem, appeal to authority, straw man, slippery slope, and appeal to emotion",
+        "The basic steps and attitudes of critical thinking"
+      ],
+      "foundation": "These knowledge and skills will help you better analyze and evaluate arguments, avoid common logical fallacies, and develop critical thinking abilities.",
+      "slides": "View Slides",
+      "quiz": "Practice Quiz"
+    }
+  },
   "quiz": {
     "submit": "Submit",
     "score": "Score",
