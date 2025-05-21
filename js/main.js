@@ -510,8 +510,216 @@ function updateDayPage() {
     });
     
     // 更新各部分內容
-    // 這裡需要根據實際頁面結構進行更詳細的實現
+    // 更新課程目標部分
+    const courseIntroSection = document.querySelector('#course-intro');
+    if (courseIntroSection) {
+        const title = courseIntroSection.querySelector('h2');
+        const paragraphs = courseIntroSection.querySelectorAll('p');
+        const list = courseIntroSection.querySelector('ul');
+        const listItems = list ? list.querySelectorAll('li') : [];
+        
+        if (title) title.textContent = t(`day${dayNum}.courseGoals.title`);
+        if (paragraphs.length >= 1) paragraphs[0].textContent = t(`day${dayNum}.courseGoals.description`);
+        if (paragraphs.length >= 2) paragraphs[1].textContent = t(`day${dayNum}.courseGoals.afterCompletion`);
+        
+        const goals = t(`day${dayNum}.courseGoals.goals`);
+        if (Array.isArray(goals)) {
+            listItems.forEach((item, i) => {
+                if (i < goals.length) {
+                    item.textContent = goals[i];
+                }
+            });
+        }
+    }
     
+    // 更新什麼是邏輯學部分
+    const whatIsLogicSection = document.querySelector('#what-is-logic');
+    if (whatIsLogicSection) {
+        const title = whatIsLogicSection.querySelector('h2');
+        const paragraphs = whatIsLogicSection.querySelectorAll('p');
+        const list = whatIsLogicSection.querySelector('ul');
+        const listItems = list ? list.querySelectorAll('li') : [];
+        
+        if (title) title.textContent = t(`day${dayNum}.whatIsLogic.title`);
+        if (paragraphs.length >= 1) paragraphs[0].textContent = t(`day${dayNum}.whatIsLogic.description`);
+        if (paragraphs.length >= 2) paragraphs[1].textContent = t(`day${dayNum}.whatIsLogic.coreQuestions`);
+        if (paragraphs.length >= 3) paragraphs[2].textContent = t(`day${dayNum}.whatIsLogic.applications`);
+        
+        const questions = t(`day${dayNum}.whatIsLogic.questions`);
+        if (Array.isArray(questions)) {
+            listItems.forEach((item, i) => {
+                if (i < questions.length) {
+                    item.textContent = questions[i];
+                }
+            });
+        }
+    }
+    
+    // 更新陳述句部分
+    const statementsSection = document.querySelector('#statements');
+    if (statementsSection) {
+        const title = statementsSection.querySelector('h2');
+        const paragraphs = statementsSection.querySelectorAll('p');
+        const subTitles = statementsSection.querySelectorAll('h3');
+        const lists = statementsSection.querySelectorAll('ul');
+        
+        if (title) title.textContent = t(`day${dayNum}.statements.title`);
+        if (paragraphs.length >= 1) paragraphs[0].textContent = t(`day${dayNum}.statements.description`);
+        
+        // 更新陳述句子部分
+        if (subTitles.length >= 1) subTitles[0].textContent = t(`day${dayNum}.statements.statementsTitle`);
+        if (paragraphs.length >= 2) paragraphs[1].textContent = t(`day${dayNum}.statements.statementsDescription`);
+        if (paragraphs.length >= 3) paragraphs[2].textContent = t(`day${dayNum}.statements.statementsExamples`);
+        
+        if (lists.length >= 1) {
+            const statementsExamples = t(`day${dayNum}.statements.statementsExamplesList`);
+            const listItems = lists[0].querySelectorAll('li');
+            if (Array.isArray(statementsExamples)) {
+                listItems.forEach((item, i) => {
+                    if (i < statementsExamples.length) {
+                        item.textContent = statementsExamples[i];
+                    }
+                });
+            }
+        }
+        
+        // 更新非陳述句部分
+        if (subTitles.length >= 2) subTitles[1].textContent = t(`day${dayNum}.statements.nonStatementsTitle`);
+        if (paragraphs.length >= 4) paragraphs[3].textContent = t(`day${dayNum}.statements.nonStatementsDescription`);
+        if (paragraphs.length >= 5) paragraphs[4].textContent = t(`day${dayNum}.statements.nonStatementsExamples`);
+        
+        if (lists.length >= 2) {
+            const nonStatementsExamples = t(`day${dayNum}.statements.nonStatementsExamplesList`);
+            const listItems = lists[1].querySelectorAll('li');
+            if (Array.isArray(nonStatementsExamples)) {
+                listItems.forEach((item, i) => {
+                    if (i < nonStatementsExamples.length) {
+                        item.textContent = nonStatementsExamples[i];
+                    }
+                });
+            }
+        }
+        
+        if (paragraphs.length >= 6) paragraphs[5].textContent = t(`day${dayNum}.statements.importance`);
+    }
+    
+    // 更新論證結構部分
+    const argumentsSection = document.querySelector('#arguments');
+    if (argumentsSection) {
+        const title = argumentsSection.querySelector('h2');
+        const paragraphs = argumentsSection.querySelectorAll('p');
+        const subTitles = argumentsSection.querySelectorAll('h3');
+        const lists = argumentsSection.querySelectorAll('ul');
+        const blockquote = argumentsSection.querySelector('blockquote');
+        
+        if (title) title.textContent = t(`day${dayNum}.arguments.title`);
+        if (paragraphs.length >= 1) paragraphs[0].textContent = t(`day${dayNum}.arguments.description`);
+        
+        if (subTitles.length >= 1) subTitles[0].textContent = t(`day${dayNum}.arguments.premiseTitle`);
+        if (paragraphs.length >= 2) paragraphs[1].textContent = t(`day${dayNum}.arguments.premiseDescription`);
+        
+        if (subTitles.length >= 2) subTitles[1].textContent = t(`day${dayNum}.arguments.conclusionTitle`);
+        if (paragraphs.length >= 3) paragraphs[2].textContent = t(`day${dayNum}.arguments.conclusionDescription`);
+        
+        if (subTitles.length >= 3) subTitles[2].textContent = t(`day${dayNum}.arguments.exampleTitle`);
+        if (paragraphs.length >= 4) paragraphs[3].textContent = t(`day${dayNum}.arguments.exampleDescription`);
+        
+        if (blockquote) blockquote.innerHTML = t(`day${dayNum}.arguments.example`).replace(/\n/g, '<br>');
+        
+        if (subTitles.length >= 4) subTitles[3].textContent = t(`day${dayNum}.arguments.conclusionIndicatorsTitle`);
+        if (paragraphs.length >= 5) paragraphs[4].textContent = t(`day${dayNum}.arguments.conclusionIndicatorsDescription`);
+        
+        if (lists.length >= 1) {
+            const conclusionIndicators = t(`day${dayNum}.arguments.conclusionIndicators`);
+            const listItems = lists[0].querySelectorAll('li');
+            if (Array.isArray(conclusionIndicators)) {
+                listItems.forEach((item, i) => {
+                    if (i < conclusionIndicators.length) {
+                        item.textContent = conclusionIndicators[i];
+                    }
+                });
+            }
+        }
+        
+        if (subTitles.length >= 5) subTitles[4].textContent = t(`day${dayNum}.arguments.premiseIndicatorsTitle`);
+        if (paragraphs.length >= 6) paragraphs[5].textContent = t(`day${dayNum}.arguments.premiseIndicatorsDescription`);
+        
+        if (lists.length >= 2) {
+            const premiseIndicators = t(`day${dayNum}.arguments.premiseIndicators`);
+            const listItems = lists[1].querySelectorAll('li');
+            if (Array.isArray(premiseIndicators)) {
+                listItems.forEach((item, i) => {
+                    if (i < premiseIndicators.length) {
+                        item.textContent = premiseIndicators[i];
+                    }
+                });
+            }
+        }
+    }
+    
+    // 更新語言功能部分
+    const languageFunctionsSection = document.querySelector('#language-functions');
+    if (languageFunctionsSection) {
+        const title = languageFunctionsSection.querySelector('h2');
+        const paragraphs = languageFunctionsSection.querySelectorAll('p');
+        const subTitles = languageFunctionsSection.querySelectorAll('h3');
+        
+        if (title) title.textContent = t(`day${dayNum}.languageFunctions.title`);
+        if (paragraphs.length >= 1) paragraphs[0].textContent = t(`day${dayNum}.languageFunctions.description`);
+        
+        // 更新圖片說明
+        const imageCaption = languageFunctionsSection.querySelector('.course-image');
+        if (imageCaption) imageCaption.alt = t(`day${dayNum}.languageFunctions.title`);
+        
+        // 更新各功能部分
+        if (subTitles.length >= 1) subTitles[0].textContent = t(`day${dayNum}.languageFunctions.informativeTitle`);
+        if (paragraphs.length >= 2) paragraphs[1].textContent = t(`day${dayNum}.languageFunctions.informativeDescription`);
+        if (paragraphs.length >= 3) paragraphs[2].textContent = t(`day${dayNum}.languageFunctions.informativeExamples`);
+        
+        if (subTitles.length >= 2) subTitles[1].textContent = t(`day${dayNum}.languageFunctions.directiveTitle`);
+        if (paragraphs.length >= 4) paragraphs[3].textContent = t(`day${dayNum}.languageFunctions.directiveDescription`);
+        if (paragraphs.length >= 5) paragraphs[4].textContent = t(`day${dayNum}.languageFunctions.directiveExamples`);
+        
+        if (subTitles.length >= 3) subTitles[2].textContent = t(`day${dayNum}.languageFunctions.expressiveTitle`);
+        if (paragraphs.length >= 6) paragraphs[5].textContent = t(`day${dayNum}.languageFunctions.expressiveDescription`);
+        if (paragraphs.length >= 7) paragraphs[6].textContent = t(`day${dayNum}.languageFunctions.expressiveExamples`);
+        
+        if (subTitles.length >= 4) subTitles[3].textContent = t(`day${dayNum}.languageFunctions.ceremonialTitle`);
+        if (paragraphs.length >= 8) paragraphs[7].textContent = t(`day${dayNum}.languageFunctions.ceremonialDescription`);
+        if (paragraphs.length >= 9) paragraphs[8].textContent = t(`day${dayNum}.languageFunctions.ceremonialExamples`);
+        
+        if (paragraphs.length >= 10) paragraphs[9].textContent = t(`day${dayNum}.languageFunctions.logicFocus`);
+    }
+    
+    // 更新課程總結部分
+    const summarySection = document.querySelector('#summary');
+    if (summarySection) {
+        const title = summarySection.querySelector('h2');
+        const paragraphs = summarySection.querySelectorAll('p');
+        const list = summarySection.querySelector('ul');
+        const listItems = list ? list.querySelectorAll('li') : [];
+        
+        if (title) title.textContent = t(`day${dayNum}.summary.title`);
+        if (paragraphs.length >= 1) paragraphs[0].textContent = t(`day${dayNum}.summary.description`);
+        
+        const points = t(`day${dayNum}.summary.points`);
+        if (Array.isArray(points)) {
+            listItems.forEach((item, i) => {
+                if (i < points.length) {
+                    item.textContent = points[i];
+                }
+            });
+        }
+        
+        if (paragraphs.length >= 2) paragraphs[1].textContent = t(`day${dayNum}.summary.foundation`);
+    }
+    
+    // 更新心智圖說明
+    const mindmapCaption = document.querySelector('.mindmap-caption');
+    if (mindmapCaption) {
+        mindmapCaption.textContent = t(`day${dayNum}.title`) + " " + t('slides.day1.slide14.title');
+    }
+
     // 更新底部按鈕
     const slideBtn = document.querySelector('.course-links a[href*="slides"]');
     const quizBtn = document.querySelector('.course-links a[href*="quiz"]');
