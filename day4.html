@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第四天：演繹推理 (Inference) (Deductive Reasoning)與邏輯規則 - 邏輯學 (Logic)入門</title>
+    <title>Day 4: Deductive Reasoning and Logical Rules - Introduction to Logic</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -11,13 +11,13 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="index.html" class="logo">邏輯學 (Logic)入門</a>
+                <a href="index.html" class="logo">Introduction to Logic</a>
                 <button class="mobile-menu-btn">☰</button>
                 <ul class="nav-links">
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="courses.html">課程內容</a></li>
-                    <li><a href="terminology.html">術語表</a></li>
-                    <li><a href="about.html">關於課程</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="terminology.html">Terminology</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,194 +43,194 @@
             
             <main class="course-content-main">
                 <div class="course-header">
-                    <h1>第四天：演繹推理 (Inference) (Deductive Reasoning)與邏輯規則</h1>
-                    <p>理解三段論 (Syllogism)的基本結構，學習基本邏輯符號的使用，掌握基本推理 (Inference)規則。</p>
+                    <h1>Day 4: Deductive Reasoning and Logical Rules</h1>
+                    <p>Understand the basic structure of syllogisms, learn common logical symbols, and master fundamental rules of inference.</p>
                 </div>
                 
                 <div class="mindmap-container">
-                    <img src="images/logic_mindmap_day4.png" alt="演繹推理 (Inference) (Deductive Reasoning)與邏輯規則心智圖" class="mindmap-image">
-                    <p class="mindmap-caption">演繹推理 (Inference) (Deductive Reasoning)與邏輯規則心智圖</p>
+                    <img src="images/logic_mindmap_day4.png" alt="Deductive reasoning and logical rules mind map" class="mindmap-image">
+                    <p class="mindmap-caption">Mind map of deductive reasoning and logical rules</p>
                 </div>
-                
+
                 <section id="course-intro" class="course-section">
-                    <h2>課程目標</h2>
-                    <p>本課程旨在介紹演繹推理 (Inference) (Deductive Reasoning)的基本結構和規則，幫助學生理解三段論 (Syllogism)的形式，學習基本邏輯符號的使用，以及掌握基本推理 (Inference)規則。</p>
-                    
-                    <p>完成本課程後，學生將能夠：</p>
+                    <h2>Course Objectives</h2>
+                    <p>This lesson introduces the basic structure and rules of deductive reasoning. Students will understand the form of syllogisms, learn basic logical symbols, and practice essential inference rules.</p>
+
+                    <p>After completing this lesson, students will be able to:</p>
                     <ul>
-                        <li>理解演繹推理 (Inference) (Deductive Reasoning)的特點和應用</li>
-                        <li>分析三段論 (Syllogism)的結構和有效性</li>
-                        <li>使用基本邏輯符號表達命題 (Proposition)和論證 (Argument)</li>
-                        <li>應用基本推理 (Inference)規則進行有效推理 (Inference)</li>
-                        <li>使用文氏圖分析三段論 (Syllogism)的有效性</li>
+                        <li>Understand the features and applications of deductive reasoning</li>
+                        <li>Analyze the structure and validity of syllogisms</li>
+                        <li>Use basic logical symbols to express propositions and arguments</li>
+                        <li>Apply fundamental inference rules</li>
+                        <li>Use Venn diagrams to test syllogistic validity</li>
                     </ul>
                 </section>
                 
                 <section id="deductive-reasoning" class="course-section">
-                    <h2>演繹推理 (Inference) (Deductive Reasoning)基礎</h2>
-                    <p>演繹推理 (Inference) (Deductive Reasoning)是從一般原則到特殊情況的推理 (Inference)過程。在演繹推理 (Inference) (Deductive Reasoning)中，如果前提 (Premise)為真，則結論 (Conclusion)必然為真。</p>
+                    <h2>Basics of Deductive Reasoning</h2>
+                    <p>Deductive reasoning moves from general principles to specific cases. If the premises are true, the conclusion must be true.</p>
                     
-                    <h3>演繹推理 (Inference) (Deductive Reasoning)的特點</h3>
+                    <h3>Characteristics of Deductive Reasoning</h3>
                     <ul>
-                        <li><strong>從一般到特殊</strong>：從普遍原則推導出特殊情況</li>
-                        <li><strong>必然性</strong>：如果前提 (Premise)為真，則結論 (Conclusion)必然為真</li>
-                        <li><strong>確定性</strong>：結論 (Conclusion)的確定性高</li>
-                        <li><strong>不增加新信息</strong>：結論 (Conclusion)中的信息已隱含在前提 (Premise)中</li>
+                        <li><strong>From general to specific</strong>: deriving particular cases from general principles</li>
+                        <li><strong>Necessity</strong>: if the premises are true, the conclusion must be true</li>
+                        <li><strong>Certainty</strong>: the conclusion has high certainty</li>
+                        <li><strong>No new information</strong>: the conclusion contains nothing not already implicit in the premises</li>
                     </ul>
-                    
-                    <h3>演繹推理 (Inference) (Deductive Reasoning)的例子</h3>
+
+                    <h3>Example of Deductive Reasoning</h3>
                     <blockquote>
-                        所有哺乳動物都有心臟。（一般原則）<br>
-                        所有狗都是哺乳動物。（一般原則）<br>
-                        因此，所有狗都有心臟。（特殊情況）
+                        All mammals have hearts. (General principle)<br>
+                        All dogs are mammals. (General principle)<br>
+                        Therefore, all dogs have hearts. (Specific case)
                     </blockquote>
-                    
-                    <p>在這個例子中，結論 (Conclusion)「所有狗都有心臟」是從前提 (Premise)「所有哺乳動物都有心臟」和「所有狗都是哺乳動物」必然推導出來的。如果這兩個前提 (Premise)為真，則結論 (Conclusion)必然為真。</p>
+
+                    <p>In this example the conclusion "All dogs have hearts" follows necessarily from the premises "All mammals have hearts" and "All dogs are mammals." If those premises are true, the conclusion must be true.</p>
                 </section>
                 
                 <section id="syllogism" class="course-section">
-                    <h2>三段論 (Syllogism)</h2>
-                    <p>三段論 (Syllogism)是一種基本的演繹推理 (Inference) (Deductive Reasoning)形式，由兩個前提 (Premise)和一個結論 (Conclusion)組成，涉及三個術語：大詞、中詞和小詞。</p>
+                    <h2>Syllogism</h2>
+                    <p>A syllogism is a fundamental deductive form consisting of two premises and a conclusion involving three terms: the major, the minor, and the middle.</p>
                     
-                    <h3>三段論 (Syllogism)的結構</h3>
+                    <h3>Structure of a Syllogism</h3>
                     <ul>
-                        <li><strong>大前提 (Premise)</strong>：包含大詞和中詞的命題 (Proposition)</li>
-                        <li><strong>小前提 (Premise)</strong>：包含小詞和中詞的命題 (Proposition)</li>
-                        <li><strong>結論 (Conclusion)</strong>：包含小詞和大詞的命題 (Proposition)</li>
+                        <li><strong>Major premise</strong>: contains the major and middle terms</li>
+                        <li><strong>Minor premise</strong>: contains the minor and middle terms</li>
+                        <li><strong>Conclusion</strong>: contains the minor and major terms</li>
+                    </ul>
+
+                    <p>Where:</p>
+                    <ul>
+                        <li><strong>Major term</strong>: appears as predicate of the conclusion</li>
+                        <li><strong>Middle term</strong>: appears in both premises but not in the conclusion</li>
+                        <li><strong>Minor term</strong>: appears as subject of the conclusion</li>
                     </ul>
                     
-                    <p>其中：</p>
-                    <ul>
-                        <li><strong>大詞</strong>：在結論 (Conclusion)中作謂詞的術語</li>
-                        <li><strong>中詞</strong>：在兩個前提 (Premise)中出現但在結論 (Conclusion)中不出現的術語</li>
-                        <li><strong>小詞</strong>：在結論 (Conclusion)中作主詞的術語</li>
-                    </ul>
-                    
-                    <h3>三段論 (Syllogism)的例子</h3>
+                    <h3>Example</h3>
                     <blockquote>
-                        所有人都會死。（大前提 (Premise)：中詞「人」和大詞「會死」）<br>
-                        蘇格拉底是人。（小前提 (Premise)：小詞「蘇格拉底」和中詞「人」）<br>
-                        因此，蘇格拉底會死。（結論 (Conclusion)：小詞「蘇格拉底」和大詞「會死」）
+                        All men are mortal. (Major premise)<br>
+                        Socrates is a man. (Minor premise)<br>
+                        Therefore, Socrates is mortal. (Conclusion)
                     </blockquote>
-                    
-                    <p>在這個例子中：</p>
+
+                    <p>In this example:</p>
                     <ul>
-                        <li>大詞是「會死」</li>
-                        <li>中詞是「人」</li>
-                        <li>小詞是「蘇格拉底」</li>
+                        <li>The major term is "mortal"</li>
+                        <li>The middle term is "men"</li>
+                        <li>The minor term is "Socrates"</li>
                     </ul>
                     
-                    <h3>三段論 (Syllogism)的有效性</h3>
-                    <p>三段論 (Syllogism)的有效性取決於其形式，而不是內容。有效的三段論 (Syllogism)形式保證如果前提 (Premise)為真，則結論 (Conclusion)必然為真。</p>
+                    <h3>Syllogistic Validity</h3>
+                    <p>The validity of a syllogism depends on its form rather than its content. A valid form guarantees that if the premises are true, the conclusion must also be true.</p>
                     
-                    <p>三段論 (Syllogism)有效性的一些基本規則：</p>
+                    <p>Some basic rules for syllogistic validity:</p>
                     <ol>
-                        <li>中詞必須至少在一個前提 (Premise)中周延（指涉該類別的所有成員）</li>
-                        <li>如果一個術語在結論 (Conclusion)中周延，它也必須在相應的前提 (Premise)中周延</li>
-                        <li>至少有一個前提 (Premise)必須是肯定命題 (Proposition)</li>
-                        <li>如果有一個前提 (Premise)是否定 (Negation)命題 (Proposition)，則結論 (Conclusion)必須是否定 (Negation)命題 (Proposition)</li>
-                        <li>兩個否定 (Negation)前提 (Premise)不能導出有效結論 (Conclusion)</li>
+                        <li>The middle term must be distributed in at least one premise</li>
+                        <li>If a term is distributed in the conclusion it must be distributed in its premise</li>
+                        <li>At least one premise must be affirmative</li>
+                        <li>If one premise is negative, the conclusion must be negative</li>
+                        <li>Two negative premises cannot yield a valid conclusion</li>
                     </ol>
                 </section>
                 
                 <section id="logical-symbols" class="course-section">
-                    <h2>基本邏輯符號</h2>
-                    <p>邏輯符號是用來表示邏輯關係和操作的符號，它們使邏輯表達更加簡潔和精確。</p>
+                    <h2>Basic Logical Symbols</h2>
+                    <p>Logical symbols represent relationships and operations, making arguments concise and precise.</p>
                     
-                    <h3>命題 (Proposition)邏輯符號</h3>
-                    <p>我們在昨天的課程中已經學習了以下命題 (Proposition)邏輯符號：</p>
+                    <h3>Propositional Symbols</h3>
+                    <p>Yesterday we learned these propositional symbols:</p>
                     <ul>
-                        <li><strong>∧</strong>：連言詞，表示「且」</li>
-                        <li><strong>∨</strong>：選言 (Disjunction)詞，表示「或」</li>
-                        <li><strong>¬</strong>：否定 (Negation)詞，表示「非」</li>
-                        <li><strong>→</strong>：條件詞，表示「如果...那麼...」</li>
-                        <li><strong>↔</strong>：雙條件詞，表示「當且僅當」</li>
+                        <li><strong>∧</strong>: conjunction (and)</li>
+                        <li><strong>∨</strong>: disjunction (or)</li>
+                        <li><strong>¬</strong>: negation (not)</li>
+                        <li><strong>→</strong>: conditional (if...then)</li>
+                        <li><strong>↔</strong>: biconditional (if and only if)</li>
                     </ul>
                     
-                    <h3>謂詞邏輯符號</h3>
-                    <p>除了命題 (Proposition)邏輯符號外，謂詞邏輯還使用以下符號：</p>
+                    <h3>Predicate Logic Symbols</h3>
+                    <p>Predicate logic also uses these symbols:</p>
                     <ul>
-                        <li><strong>∀</strong>：全稱量詞，表示「對所有...」</li>
-                        <li><strong>∃</strong>：存在量詞，表示「存在...」</li>
-                        <li><strong>P(x)</strong>：謂詞，表示「x 具有性質 P」</li>
+                        <li><strong>∀</strong>: universal quantifier (for all)</li>
+                        <li><strong>∃</strong>: existential quantifier (there exists)</li>
+                        <li><strong>P(x)</strong>: predicate meaning "x has property P"</li>
                     </ul>
                     
-                    <h3>使用邏輯符號表達命題 (Proposition)</h3>
-                    <p>例如，「所有人都會死」可以表示為：</p>
+                    <h3>Expressing Propositions with Symbols</h3>
+                    <p>For example, "All humans are mortal" can be written as:</p>
                     <p>∀x(H(x) → M(x))</p>
-                    <p>其中 H(x) 表示「x 是人」，M(x) 表示「x 會死」。</p>
-                    
-                    <p>「有些學生喜歡數學」可以表示為：</p>
+                    <p>where H(x) means "x is human" and M(x) means "x is mortal."</p>
+
+                    <p>"Some students like math" can be written as:</p>
                     <p>∃x(S(x) ∧ L(x, m))</p>
-                    <p>其中 S(x) 表示「x 是學生」，L(x, m) 表示「x 喜歡數學」。</p>
+                    <p>where S(x) means "x is a student" and L(x, m) means "x likes math."</p>
                 </section>
                 
                 <section id="inference-rules" class="course-section">
-                    <h2>基本推理 (Inference)規則</h2>
-                    <p>推理 (Inference)規則是用來從已知前提 (Premise)推導出結論 (Conclusion)的規則。以下是一些基本的推理 (Inference)規則：</p>
+                    <h2>Basic Inference Rules</h2>
+                    <p>Inference rules allow us to derive conclusions from given premises. Here are several important ones:</p>
                     
-                    <h3>肯定前件（Modus Ponens）</h3>
-                    <p>如果 p → q 為真，且 p 為真，則 q 為真。</p>
+                    <h3>Modus Ponens</h3>
+                    <p>If p → q is true and p is true, then q is true.</p>
                     <blockquote>
-                        如果下雨，則地面濕。（p → q）<br>
-                        下雨了。（p）<br>
-                        因此，地面濕。（q）
+                        If it rains, the ground is wet. (p → q)<br>
+                        It is raining. (p)<br>
+                        Therefore, the ground is wet. (q)
                     </blockquote>
                     
-                    <h3>否定 (Negation)後件（Modus Tollens）</h3>
-                    <p>如果 p → q 為真，且 q 為假，則 p 為假。</p>
+                    <h3>Modus Tollens</h3>
+                    <p>If p → q is true and q is false, then p is false.</p>
                     <blockquote>
-                        如果下雨，則地面濕。（p → q）<br>
-                        地面不濕。（¬q）<br>
-                        因此，沒有下雨。（¬p）
+                        If it rains, the ground is wet. (p → q)<br>
+                        The ground is not wet. (¬q)<br>
+                        Therefore, it is not raining. (¬p)
                     </blockquote>
                     
-                    <h3>假言三段論 (Syllogism) (Hypothetical Syllogism)（Hypothetical Syllogism）</h3>
-                    <p>如果 p → q 為真，且 q → r 為真，則 p → r 為真。</p>
+                    <h3>Hypothetical Syllogism</h3>
+                    <p>If p → q and q → r are true, then p → r is true.</p>
                     <blockquote>
-                        如果下雨，則地面濕。（p → q）<br>
-                        如果地面濕，則鞋子會髒。（q → r）<br>
-                        因此，如果下雨，則鞋子會髒。（p → r）
+                        If it rains, the ground is wet. (p → q)<br>
+                        If the ground is wet, shoes get dirty. (q → r)<br>
+                        Therefore, if it rains, shoes get dirty. (p → r)
                     </blockquote>
                     
-                    <h3>選言 (Disjunction)三段論 (Syllogism) (Disjunctive Syllogism)（Disjunctive Syllogism）</h3>
-                    <p>如果 p ∨ q 為真，且 ¬p 為真，則 q 為真。</p>
+                    <h3>Disjunctive Syllogism</h3>
+                    <p>If p ∨ q is true and ¬p is true, then q is true.</p>
                     <blockquote>
-                        要麼下雨，要麼下雪。（p ∨ q）<br>
-                        沒有下雨。（¬p）<br>
-                        因此，下雪了。（q）
+                        Either it rains or it snows. (p ∨ q)<br>
+                        It is not raining. (¬p)<br>
+                        Therefore, it snows. (q)
                     </blockquote>
                     
-                    <h3>附加（Addition）</h3>
-                    <p>如果 p 為真，則 p ∨ q 為真（對任意 q）。</p>
+                    <h3>Addition</h3>
+                    <p>If p is true, then p ∨ q is true (for any q).</p>
                     <blockquote>
-                        下雨了。（p）<br>
-                        因此，要麼下雨，要麼下雪。（p ∨ q）
+                        It is raining. (p)<br>
+                        Therefore, it rains or it snows. (p ∨ q)
                     </blockquote>
                     
-                    <h3>化簡（Simplification）</h3>
-                    <p>如果 p ∧ q 為真，則 p 為真且 q 為真。</p>
+                    <h3>Simplification</h3>
+                    <p>If p ∧ q is true, then p is true and q is true.</p>
                     <blockquote>
-                        下雨且刮風。（p ∧ q）<br>
-                        因此，下雨了。（p）<br>
-                        因此，刮風了。（q）
+                        It is raining and windy. (p ∧ q)<br>
+                        Therefore, it is raining. (p)<br>
+                        Therefore, it is windy. (q)
                     </blockquote>
                     
-                    <h3>合取（Conjunction）</h3>
-                    <p>如果 p 為真且 q 為真，則 p ∧ q 為真。</p>
+                    <h3>Conjunction</h3>
+                    <p>If p is true and q is true, then p ∧ q is true.</p>
                     <blockquote>
-                        下雨了。（p）<br>
-                        刮風了。（q）<br>
-                        因此，下雨且刮風。（p ∧ q）
+                        It is raining. (p)<br>
+                        It is windy. (q)<br>
+                        Therefore, it is raining and windy. (p ∧ q)
                     </blockquote>
                 </section>
                 
                 <section id="validity-proof" class="course-section">
-                    <h2>有效性證明</h2>
-                    <p>有效性證明是一種用來證明論證 (Argument)有效性的方法。以下是一個簡單的有效性證明例子：</p>
+                    <h2>Validity Proof</h2>
+                    <p>A proof of validity demonstrates that an argument is logically sound. Here is a simple example:</p>
                     
-                    <h3>例子</h3>
-                    <p>證明以下論證 (Argument)的有效性：</p>
+                    <h3>Example</h3>
+                    <p>Prove the following argument is valid:</p>
                     <blockquote>
                         1. 如果下雨，則地面濕。（p → q）<br>
                         2. 如果地面濕，則鞋子會髒。（q → r）<br>
@@ -238,58 +238,58 @@
                         4. 因此，鞋子會髒。（r）
                     </blockquote>
                     
-                    <h3>證明</h3>
+                    <h3>Proof</h3>
                     <ol>
-                        <li>p → q（前提 (Premise)1）</li>
-                        <li>q → r（前提 (Premise)2）</li>
-                        <li>p（前提 (Premise)3）</li>
-                        <li>q（由1和3，使用肯定前件規則）</li>
-                        <li>r（由2和4，使用肯定前件規則）</li>
+                        <li>p → q (premise 1)</li>
+                        <li>q → r (premise 2)</li>
+                        <li>p (premise 3)</li>
+                        <li>q (from 1 and 3 by modus ponens)</li>
+                        <li>r (from 2 and 4 by modus ponens)</li>
                     </ol>
                     
-                    <p>因此，結論 (Conclusion) r 是有效的。</p>
+                    <p>Therefore the conclusion r is valid.</p>
                 </section>
                 
                 <section id="venn-diagrams" class="course-section">
-                    <h2>文氏圖</h2>
-                    <p>文氏圖是一種用來表示集合關係的圖形，它可以用來分析三段論 (Syllogism)的有效性。</p>
+                    <h2>Venn Diagrams</h2>
+                    <p>Venn diagrams visually represent set relations and can be used to test the validity of syllogisms.</p>
                     
-                    <h3>基本文氏圖</h3>
-                    <p>文氏圖使用圓圈表示集合，圓圈的重疊部分表示集合的交集。</p>
+                    <h3>Basic Venn Diagram</h3>
+                    <p>Circles represent sets and their overlaps show intersections.</p>
                     
-                    <h3>使用文氏圖分析三段論 (Syllogism)</h3>
-                    <p>例如，我們可以使用文氏圖分析以下三段論 (Syllogism)：</p>
+                    <h3>Analyzing a Syllogism with Venn Diagrams</h3>
+                    <p>For example, we can use a Venn diagram to analyze this syllogism:</p>
                     <blockquote>
-                        所有人都會死。（大前提 (Premise)）<br>
-                        蘇格拉底是人。（小前提 (Premise)）<br>
-                        因此，蘇格拉底會死。（結論 (Conclusion)）
+                        All humans are mortal. (Major premise)<br>
+                        Socrates is human. (Minor premise)<br>
+                        Therefore, Socrates is mortal. (Conclusion)
                     </blockquote>
                     
-                    <p>在文氏圖中：</p>
+                    <p>In the diagram:</p>
                     <ul>
-                        <li>一個圓圈表示「人」的集合</li>
-                        <li>另一個圓圈表示「會死的事物」的集合</li>
-                        <li>「蘇格拉底」表示為一個點</li>
+                        <li>One circle represents the set of humans</li>
+                        <li>Another circle represents the set of mortal things</li>
+                        <li>"Socrates" is shown as a point</li>
                     </ul>
                     
-                    <p>大前提 (Premise)「所有人都會死」表示「人」的圓圈完全包含在「會死的事物」的圓圈內。</p>
-                    <p>小前提 (Premise)「蘇格拉底是人」表示「蘇格拉底」這個點位於「人」的圓圈內。</p>
-                    <p>從文氏圖中，我們可以看到「蘇格拉底」這個點必然也位於「會死的事物」的圓圈內，這就是結論 (Conclusion)「蘇格拉底會死」。</p>
+                    <p>The major premise places the "human" circle entirely inside the "mortal" circle.</p>
+                    <p>The minor premise locates the point "Socrates" inside the human circle.</p>
+                    <p>Thus Socrates must also lie inside the mortal circle, showing the conclusion is valid.</p>
                 </section>
                 
                 <section id="summary" class="course-section">
-                    <h2>課程總結</h2>
-                    <p>在今天的課程中，我們學習了：</p>
+                    <h2>Course Summary</h2>
+                    <p>Today we covered:</p>
                     <ul>
-                        <li>演繹推理 (Inference) (Deductive Reasoning)的特點和應用</li>
-                        <li>三段論 (Syllogism)的結構和有效性</li>
-                        <li>基本邏輯符號的使用</li>
-                        <li>基本推理 (Inference)規則，如肯定前件、否定 (Negation)後件、假言三段論 (Syllogism) (Hypothetical Syllogism)等</li>
-                        <li>如何進行簡單的有效性證明</li>
-                        <li>如何使用文氏圖分析三段論 (Syllogism)的有效性</li>
+                        <li>Characteristics and uses of deductive reasoning</li>
+                        <li>The structure and validity of syllogisms</li>
+                        <li>The use of basic logical symbols</li>
+                        <li>Key inference rules such as modus ponens, modus tollens, and hypothetical syllogism</li>
+                        <li>How to carry out a simple validity proof</li>
+                        <li>How to use Venn diagrams to analyze syllogisms</li>
                     </ul>
-                    
-                    <p>這些知識和技能將幫助你更好地理解和分析演繹推理 (Inference) (Deductive Reasoning)，提高邏輯思維能力。</p>
+
+                    <p>These skills will help you better understand and analyze deductive reasoning and strengthen your logical thinking.</p>
                     
                     <div class="course-links">
                         <a href="day4_slides.html" class="course-btn">View Slides</a>
@@ -304,31 +304,31 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>邏輯學 (Logic)入門</h3>
-                    <p>基於Irving M. Copi的《邏輯學 (Logic)入門》，為國中生設計的五天邏輯學 (Logic)課程。</p>
+                    <h3>Introduction to Logic</h3>
+                    <p>A five-day logic course for middle school students inspired by Irving M. Copi's "Introduction to Logic."</p>
                 </div>
                 <div class="footer-column">
-                    <h3>快速連結</h3>
+                    <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="index.html">首頁</a></li>
-                        <li><a href="courses.html">課程內容</a></li>
-                        <li><a href="terminology.html">術語表</a></li>
-                        <li><a href="about.html">關於課程</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="terminology.html">Terminology</a></li>
+                        <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>課程資源</h3>
+                    <h3>Course Resources</h3>
                     <ul class="footer-links">
-                        <li><a href="day1.html">第一天：邏輯學 (Logic)基礎與語言</a></li>
-                        <li><a href="day2.html">第二天：論證 (Argument)與謬誤 (Fallacy)</a></li>
-                        <li><a href="day3.html">第三天：邏輯連接 (Conjunction)詞 (Connective)與複合陳述句 (Statement) (Compound Statement)</a></li>
-                        <li><a href="day4.html">第四天：演繹推理 (Inference) (Deductive Reasoning)與邏輯規則</a></li>
-                        <li><a href="day5.html">第五天：歸納推理 (Inference) (Inductive Reasoning)與批判性思考 (Critical Thinking)</a></li>
+                        <li><a href="day1.html">Day 1: Logic Basics and Language</a></li>
+                        <li><a href="day2.html">Day 2: Arguments and Fallacies</a></li>
+                        <li><a href="day3.html">Day 3: Logical Connectives and Compound Statements</a></li>
+                        <li><a href="day4.html">Day 4: Deductive Reasoning and Logical Rules</a></li>
+                        <li><a href="day5.html">Day 5: Inductive Reasoning and Critical Thinking</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 邏輯學 (Logic)入門課程. 保留所有權利。</p>
+                <p>&copy; 2025 Introduction to Logic Course. All rights reserved.</p>
             </div>
         </div>
     </footer>
