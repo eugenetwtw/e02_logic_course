@@ -262,5 +262,50 @@
       "en": "English",
       "zh": "中文"
     }
+  },
+  "about": {
+    "title": "About the Course",
+    "introduction": {
+      "title": "Course Introduction",
+      "paragraph1": "'Introduction to Logic' is a five-day logic course designed for middle school students, based on Irving M. Copi's classic work 'Introduction to Logic'. Each day's lesson is half an hour, with content progressing from basic to advanced, gradually introducing the basic concepts and applications of logic.",
+      "paragraph2": "This course aims to develop students' critical thinking skills and logical reasoning techniques, helping them make more reasonable judgments and decisions in learning and life."
+    },
+    "features": {
+      "title": "Course Features",
+      "item1": "Easy-to-understand materials: Teaching materials designed for middle school students' cognitive level, making abstract logical concepts easy to understand.",
+      "item2": "Rich visual aids: Each day's lesson comes with mind maps and visual slides to help students better understand and memorize.",
+      "item3": "Interactive exercises: Targeted exercises after each day's lesson to help students consolidate knowledge.",
+      "item4": "English-Chinese terminology: Complete English-Chinese glossary of logical terminology to help students master professional vocabulary.",
+      "item5": "Real-life examples: Help students understand abstract logical concepts through examples from daily life."
+    },
+    "structure": {
+      "title": "Course Structure",
+      "day1": "Day 1: Logic Basics and Language - Understand the definition and importance of logic, learn to identify statements and non-statements, and recognize premises and conclusions in arguments.",
+      "day2": "Day 2: Arguments and Fallacies - Understand the distinction between valid and invalid arguments, recognize the characteristics of deductive and inductive reasoning, and learn to identify common logical fallacies.",
+      "day3": "Day 3: Logical Connectives and Compound Statements - Learn logical connectives and their application in constructing compound statements, understand the logical structure of conditionals and biconditionals.",
+      "day4": "Day 4: Deductive Reasoning and Logical Rules - Understand the basic structure of syllogisms, learn to use basic logical symbols, master basic rules of inference.",
+      "day5": "Day 5: Inductive Reasoning and Critical Thinking - Understand the characteristics and applications of inductive reasoning, learn the principles of analogical reasoning and causal reasoning, comprehensively apply critical thinking skills."
+    },
+    "originalWork": {
+      "title": "About the Original Work",
+      "paragraph1": "This course references Irving M. Copi's 'Introduction to Logic'. Copi is a renowned American logician and philosopher, and his work is a classic textbook in the field of logic, widely used in university logic courses.",
+      "paragraph2": "We have appropriately simplified and adjusted the content of the original work according to the cognitive level and learning needs of middle school students, making it more suitable for middle school students."
+    },
+    "learningTips": {
+      "title": "Learning Tips",
+      "tip1": "Learn according to the course sequence, completing one topic each day.",
+      "tip2": "Read the materials carefully to understand the basic concepts.",
+      "tip3": "View the slides to deepen your understanding of the concepts.",
+      "tip4": "Refer to the mind maps to understand the relationships between concepts.",
+      "tip5": "Complete the exercises to consolidate what you've learned.",
+      "tip6": "Consult the terminology list to familiarize yourself with professional vocabulary.",
+      "tip7": "Apply what you've learned to daily life to cultivate critical thinking habits."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "paragraph": "If you have any questions or suggestions about the course, please feel free to contact us. We will do our best to help you.",
+      "email": "Email: contact@greenworksgroup.com",
+      "phone": "Phone: (04)22380017"
+    }
   }
 }

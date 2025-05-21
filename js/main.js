@@ -54,7 +54,9 @@ async function initializeI18n() {
 // 載入翻譯文件
 async function loadTranslations(lang) {
     try {
-        const response = await fetch(`/locales/${lang}.json`);
+        // Get the base URL for the current site
+        const baseUrl = window.location.origin;
+        const response = await fetch(`${baseUrl}/locales/${lang}.json`);
         if (!response.ok) {
             throw new Error(`Failed to load translations for ${lang}`);
         }
@@ -396,7 +398,82 @@ function updateTerminologyPage() {
 
 // 更新關於頁面內容
 function updateAboutPage() {
-    // 實現關於頁面的翻譯
+    // 更新頁面標題
+    const pageTitle = document.querySelector('.course-header h1');
+    if (pageTitle) pageTitle.textContent = t('about.title');
+    
+    // 更新課程簡介部分
+    const sections = document.querySelectorAll('.course-section');
+    if (sections.length >= 1) {
+        const introTitle = sections[0].querySelector('h2');
+        const introParagraphs = sections[0].querySelectorAll('p');
+        
+        if (introTitle) introTitle.textContent = t('about.introduction.title');
+        if (introParagraphs.length >= 1) introParagraphs[0].textContent = t('about.introduction.paragraph1');
+        if (introParagraphs.length >= 2) introParagraphs[1].textContent = t('about.introduction.paragraph2');
+    }
+    
+    // 更新課程特色部分
+    if (sections.length >= 2) {
+        const featuresTitle = sections[1].querySelector('h2');
+        const featureItems = sections[1].querySelectorAll('li');
+        
+        if (featuresTitle) featuresTitle.textContent = t('about.features.title');
+        if (featureItems.length >= 1) featureItems[0].innerHTML = `<strong>${t('about.features.item1').split('：')[0]}</strong>：${t('about.features.item1').split('：')[1]}`;
+        if (featureItems.length >= 2) featureItems[1].innerHTML = `<strong>${t('about.features.item2').split('：')[0]}</strong>：${t('about.features.item2').split('：')[1]}`;
+        if (featureItems.length >= 3) featureItems[2].innerHTML = `<strong>${t('about.features.item3').split('：')[0]}</strong>：${t('about.features.item3').split('：')[1]}`;
+        if (featureItems.length >= 4) featureItems[3].innerHTML = `<strong>${t('about.features.item4').split('：')[0]}</strong>：${t('about.features.item4').split('：')[1]}`;
+        if (featureItems.length >= 5) featureItems[4].innerHTML = `<strong>${t('about.features.item5').split('：')[0]}</strong>：${t('about.features.item5').split('：')[1]}`;
+    }
+    
+    // 更新課程結構部分
+    if (sections.length >= 3) {
+        const structureTitle = sections[2].querySelector('h2');
+        const structureItems = sections[2].querySelectorAll('li');
+        
+        if (structureTitle) structureTitle.textContent = t('about.structure.title');
+        if (structureItems.length >= 1) structureItems[0].innerHTML = `<strong>${t('about.structure.day1').split('：')[0]}</strong>：${t('about.structure.day1').split('：')[1]}`;
+        if (structureItems.length >= 2) structureItems[1].innerHTML = `<strong>${t('about.structure.day2').split('：')[0]}</strong>：${t('about.structure.day2').split('：')[1]}`;
+        if (structureItems.length >= 3) structureItems[2].innerHTML = `<strong>${t('about.structure.day3').split('：')[0]}</strong>：${t('about.structure.day3').split('：')[1]}`;
+        if (structureItems.length >= 4) structureItems[3].innerHTML = `<strong>${t('about.structure.day4').split('：')[0]}</strong>：${t('about.structure.day4').split('：')[1]}`;
+        if (structureItems.length >= 5) structureItems[4].innerHTML = `<strong>${t('about.structure.day5').split('：')[0]}</strong>：${t('about.structure.day5').split('：')[1]}`;
+    }
+    
+    // 更新關於原著部分
+    if (sections.length >= 4) {
+        const originalWorkTitle = sections[3].querySelector('h2');
+        const originalWorkParagraphs = sections[3].querySelectorAll('p');
+        
+        if (originalWorkTitle) originalWorkTitle.textContent = t('about.originalWork.title');
+        if (originalWorkParagraphs.length >= 1) originalWorkParagraphs[0].textContent = t('about.originalWork.paragraph1');
+        if (originalWorkParagraphs.length >= 2) originalWorkParagraphs[1].textContent = t('about.originalWork.paragraph2');
+    }
+    
+    // 更新學習建議部分
+    if (sections.length >= 5) {
+        const learningTipsTitle = sections[4].querySelector('h2');
+        const learningTipsItems = sections[4].querySelectorAll('li');
+        
+        if (learningTipsTitle) learningTipsTitle.textContent = t('about.learningTips.title');
+        if (learningTipsItems.length >= 1) learningTipsItems[0].textContent = t('about.learningTips.tip1');
+        if (learningTipsItems.length >= 2) learningTipsItems[1].textContent = t('about.learningTips.tip2');
+        if (learningTipsItems.length >= 3) learningTipsItems[2].textContent = t('about.learningTips.tip3');
+        if (learningTipsItems.length >= 4) learningTipsItems[3].textContent = t('about.learningTips.tip4');
+        if (learningTipsItems.length >= 5) learningTipsItems[4].textContent = t('about.learningTips.tip5');
+        if (learningTipsItems.length >= 6) learningTipsItems[5].textContent = t('about.learningTips.tip6');
+        if (learningTipsItems.length >= 7) learningTipsItems[6].textContent = t('about.learningTips.tip7');
+    }
+    
+    // 更新聯絡我們部分
+    if (sections.length >= 6) {
+        const contactTitle = sections[5].querySelector('h2');
+        const contactParagraphs = sections[5].querySelectorAll('p');
+        
+        if (contactTitle) contactTitle.textContent = t('about.contact.title');
+        if (contactParagraphs.length >= 1) contactParagraphs[0].textContent = t('about.contact.paragraph');
+        if (contactParagraphs.length >= 2) contactParagraphs[1].textContent = t('about.contact.email');
+        if (contactParagraphs.length >= 3) contactParagraphs[2].textContent = t('about.contact.phone');
+    }
 }
 
 // 更新課程日頁面內容
