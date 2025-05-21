@@ -367,6 +367,113 @@
       "fair": "Good try! Please review the questions you got wrong.",
       "needsWork": "Needs more practice. It's recommended to re-read the course materials."
     },
+    "day4": {
+      "title": "Day 4 Quiz: Deductive Reasoning and Logical Rules",
+      "instructions": [
+        "This quiz has 10 questions, for a total of 100 points",
+        "Each question is worth 10 points, with no penalty for wrong answers",
+        "For multiple choice questions, please select the most appropriate answer"
+      ],
+      "questions": {
+        "q1": {
+          "text": "The characteristic of Deductive Reasoning is:",
+          "options": [
+            "A. From specific to general",
+            "B. From general to specific",
+            "C. Lower certainty of conclusion",
+            "D. Adding new information"
+          ]
+        },
+        "q2": {
+          "text": "In a Syllogism, the \"middle term\" refers to:",
+          "options": [
+            "A. The term that serves as the predicate in the conclusion",
+            "B. The term that serves as the subject in the conclusion",
+            "C. The term that appears in both premises but not in the conclusion",
+            "D. The term that appears in the conclusion but not in the premises"
+          ]
+        },
+        "q3": {
+          "text": "In logical symbols, \"∀\" represents:",
+          "options": [
+            "A. Universal quantifier, \"for all...\"",
+            "B. Existential quantifier, \"there exists...\"",
+            "C. Conjunction, \"and\"",
+            "D. Disjunction, \"or\""
+          ]
+        },
+        "q4": {
+          "text": "In logical symbols, \"∃\" represents:",
+          "options": [
+            "A. Universal quantifier, \"for all...\"",
+            "B. Existential quantifier, \"there exists...\"",
+            "C. Conjunction, \"and\"",
+            "D. Disjunction, \"or\""
+          ]
+        },
+        "q5": {
+          "text": "The \"Modus Ponens\" rule is:",
+          "options": [
+            "A. If p → q is true, and p is true, then q is true",
+            "B. If p → q is true, and q is false, then p is false",
+            "C. If p → q is true, and q → r is true, then p → r is true",
+            "D. If p ∨ q is true, and ¬p is true, then q is true"
+          ]
+        },
+        "q6": {
+          "text": "The \"Modus Tollens\" rule is:",
+          "options": [
+            "A. If p → q is true, and p is true, then q is true",
+            "B. If p → q is true, and q is false, then p is false",
+            "C. If p → q is true, and q → r is true, then p → r is true",
+            "D. If p ∨ q is true, and ¬p is true, then q is true"
+          ]
+        },
+        "q7": {
+          "text": "The \"Disjunctive Syllogism\" rule is:",
+          "options": [
+            "A. If p → q is true, and p is true, then q is true",
+            "B. If p → q is true, and q is false, then p is false",
+            "C. If p → q is true, and q → r is true, then p → r is true",
+            "D. If p ∨ q is true, and ¬p is true, then q is true"
+          ]
+        },
+        "q8": {
+          "text": "The \"Hypothetical Syllogism\" rule is:",
+          "options": [
+            "A. If p → q is true, and p is true, then q is true",
+            "B. If p → q is true, and q is false, then p is false",
+            "C. If p → q is true, and q → r is true, then p → r is true",
+            "D. If p ∨ q is true, and ¬p is true, then q is true"
+          ]
+        },
+        "q9": {
+          "text": "In the following syllogism, which is the middle term? \"All humans are mortal. Socrates is human. Therefore, Socrates is mortal.\"",
+          "options": [
+            "A. Human",
+            "B. Socrates",
+            "C. Mortal",
+            "D. All"
+          ]
+        },
+        "q10": {
+          "text": "Venn diagrams are primarily used for:",
+          "options": [
+            "A. Representing relationships between propositions",
+            "B. Proving the validity of arguments",
+            "C. Representing set relationships and analyzing the validity of syllogisms",
+            "D. Representing the meaning of logical symbols"
+          ]
+        }
+      },
+      "reviewPoints": [
+        "Deductive Reasoning: From general to specific, if the premises are true, then the conclusion must be true",
+        "Syllogism: Consists of major premise, minor premise, and conclusion, involving major term, middle term, and minor term",
+        "Logical symbols: ∀ (universal quantifier), ∃ (existential quantifier), ∧ (AND), ∨ (OR), ¬ (NOT), → (IF-THEN), ↔ (IF AND ONLY IF)",
+        "Basic inference rules: Modus Ponens, Modus Tollens, Hypothetical Syllogism, Disjunctive Syllogism, Addition, Simplification, Conjunction",
+        "Venn diagrams: Used to represent set relationships and analyze the validity of syllogisms"
+      ]
+    },
     "day1": {
       "title": "Day 1 Quiz: Logic Basics and Language",
       "instructions": [

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第五天投影片：歸納推理 (Inference) (Inductive Reasoning)與批判性思考 (Critical Thinking) - 邏輯學 (Logic)入門</title>
+    <title>Day 5 Slides: Inductive Reasoning and Critical Thinking - Introduction to Logic</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -11,13 +11,13 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="index.html" class="logo">邏輯學 (Logic)入門</a>
+                <a href="index.html" class="logo">Introduction to Logic</a>
                 <button class="mobile-menu-btn">☰</button>
                 <ul class="nav-links">
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="courses.html">課程內容</a></li>
-                    <li><a href="terminology.html">術語表</a></li>
-                    <li><a href="about.html">關於課程</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="terminology.html">Terminology</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -25,231 +25,231 @@
 
     <div class="container">
         <div class="slide-container">
-            <h1>第五天：歸納推理 (Inference) (Inductive Reasoning)與批判性思考 (Critical Thinking)</h1>
+            <h1>Day 5: Inductive Reasoning and Critical Thinking</h1>
             
             <div class="slide-content">
                 <div class="slide" id="slide-1">
-                    <h2>課程目標</h2>
+                    <h2>Course Objectives</h2>
                     <ul>
-                        <li>理解歸納推理 (Inference) (Inductive Reasoning)的特點和應用</li>
-                        <li>分析類比推理 (Inference) (Argument by Analogy)的結構和評估其強度</li>
-                        <li>理解因果關係 (Causal Connection)推理 (Inference)的原理和密爾方法</li>
-                        <li>運用批判性思考 (Critical Thinking)技能評估論證 (Argument)和信息</li>
-                        <li>理解科學方法與假設的關係</li>
+                        <li>Understand the characteristics and applications of inductive reasoning</li>
+                        <li>Analyze the structure of analogical arguments and evaluate their strength</li>
+                        <li>Understand the principles of causal reasoning and Mill's methods</li>
+                        <li>Apply critical thinking skills to evaluate arguments and information</li>
+                        <li>Understand the relationship between scientific method and hypotheses</li>
                     </ul>
                 </div>
                 
                 <div class="slide" id="slide-2" style="display: none;">
-                    <h2>歸納推理 (Inference) (Inductive Reasoning)基礎</h2>
-                    <p>歸納推理 (Inference) (Inductive Reasoning)是從特殊情況到一般原則的推理 (Inference)過程。</p>
-                    <p>特點：</p>
+                    <h2>Inductive Reasoning Basics</h2>
+                    <p>Inductive reasoning is the process of reasoning from specific instances to general principles.</p>
+                    <p>Characteristics:</p>
                     <ul>
-                        <li>從特殊到一般</li>
-                        <li>或然性：結論 (Conclusion)只是可能為真，而非必然為真</li>
-                        <li>不確定性：結論 (Conclusion)的確定性較低</li>
-                        <li>增加新信息：結論 (Conclusion)中包含前提 (Premise)中沒有的新信息</li>
+                        <li>From specific to general</li>
+                        <li>Probability: The conclusion is only probably true, not necessarily true</li>
+                        <li>Uncertainty: Lower certainty of conclusion</li>
+                        <li>New information: The conclusion contains new information not present in the premises</li>
                     </ul>
                 </div>
                 
                 <div class="slide" id="slide-3" style="display: none;">
-                    <h2>歸納推理 (Inference) (Inductive Reasoning)的例子</h2>
+                    <h2>Example of Inductive Reasoning</h2>
                     <blockquote>
-                        觀察到的所有烏鴉都是黑色的。（特殊情況）<br>
-                        因此，所有烏鴉都是黑色的。（一般原則）
+                        All observed ravens are black. (Specific instances)<br>
+                        Therefore, all ravens are black. (General principle)
                     </blockquote>
-                    <p>在這個例子中，結論 (Conclusion)「所有烏鴉都是黑色的」是從前提 (Premise)「觀察到的所有烏鴉都是黑色的」推導出來的。這個結論 (Conclusion)是可能為真的，但不是必然為真的，因為我們不可能觀察到所有的烏鴉。</p>
+                    <p>In this example, the conclusion "all ravens are black" is derived from the premise "all observed ravens are black." This conclusion is probably true, but not necessarily true, because we cannot observe all ravens.</p>
                 </div>
                 
                 <div class="slide" id="slide-4" style="display: none;">
-                    <h2>歸納推理 (Inference) (Inductive Reasoning)的強度</h2>
-                    <p>歸納推理 (Inference) (Inductive Reasoning)的強度取決於以下因素：</p>
+                    <h2>Strength of Inductive Reasoning</h2>
+                    <p>The strength of inductive reasoning depends on the following factors:</p>
                     <ul>
-                        <li>樣本數量：樣本越多，推理 (Inference)越強</li>
-                        <li>樣本代表性：樣本越具代表性，推理 (Inference)越強</li>
-                        <li>反例的缺乏：沒有反例或反例很少，推理 (Inference)越強</li>
-                        <li>結論 (Conclusion)的範圍：結論 (Conclusion)範圍越窄，推理 (Inference)越強</li>
+                        <li>Sample size: The larger the sample, the stronger the reasoning</li>
+                        <li>Sample representativeness: The more representative the sample, the stronger the reasoning</li>
+                        <li>Lack of counterexamples: The fewer counterexamples, the stronger the reasoning</li>
+                        <li>Scope of conclusion: The narrower the scope of the conclusion, the stronger the reasoning</li>
                     </ul>
                 </div>
                 
                 <div class="slide" id="slide-5" style="display: none;">
-                    <h2>類比推理 (Inference) (Argument by Analogy)</h2>
-                    <p>類比推理 (Inference) (Argument by Analogy)是基於兩個或多個事物之間的相似性進行推理 (Inference)的方法。</p>
-                    <p>類比推理 (Inference) (Argument by Analogy)的結構：</p>
+                    <h2>Argument by Analogy</h2>
+                    <p>Argument by analogy is a method of reasoning based on the similarities between two or more things.</p>
+                    <p>Structure of argument by analogy:</p>
                     <ol>
-                        <li>A 具有特性 P、Q、R、S...</li>
-                        <li>B 具有特性 P、Q、R...</li>
-                        <li>因此，B 可能也具有特性 S</li>
+                        <li>A has properties P, Q, R, S...</li>
+                        <li>B has properties P, Q, R...</li>
+                        <li>Therefore, B probably also has property S</li>
                     </ol>
                 </div>
                 
                 <div class="slide" id="slide-6" style="display: none;">
-                    <h2>類比推理 (Inference) (Argument by Analogy)的例子</h2>
+                    <h2>Example of Argument by Analogy</h2>
                     <blockquote>
-                        地球具有大氣層、水、適宜的溫度，並且有生命。<br>
-                        火星具有大氣層（雖然稀薄）、水（雖然是冰）、相對適宜的溫度。<br>
-                        因此，火星可能也有生命。
+                        Earth has an atmosphere, water, suitable temperature, and life.<br>
+                        Mars has an atmosphere (though thin), water (though frozen), and relatively suitable temperature.<br>
+                        Therefore, Mars might also have life.
                     </blockquote>
                 </div>
                 
                 <div class="slide" id="slide-7" style="display: none;">
-                    <h2>評估類比推理 (Inference) (Argument by Analogy)的強度</h2>
-                    <p>類比推理 (Inference) (Argument by Analogy)的強度取決於以下因素：</p>
+                    <h2>Evaluating the Strength of Arguments by Analogy</h2>
+                    <p>The strength of an argument by analogy depends on the following factors:</p>
                     <ul>
-                        <li>相似性的數量：相似點越多，推理 (Inference)越強</li>
-                        <li>相似性的相關性：相似點與結論 (Conclusion)越相關，推理 (Inference)越強</li>
-                        <li>差異性的數量：差異點越少，推理 (Inference)越強</li>
-                        <li>差異性的相關性：差異點與結論 (Conclusion)越不相關，推理 (Inference)越強</li>
-                        <li>結論 (Conclusion)的範圍：結論 (Conclusion)範圍越窄，推理 (Inference)越強</li>
+                        <li>Number of similarities: The more similarities, the stronger the argument</li>
+                        <li>Relevance of similarities: The more relevant the similarities are to the conclusion, the stronger the argument</li>
+                        <li>Number of differences: The fewer differences, the stronger the argument</li>
+                        <li>Relevance of differences: The less relevant the differences are to the conclusion, the stronger the argument</li>
+                        <li>Scope of conclusion: The narrower the scope of the conclusion, the stronger the argument</li>
                     </ul>
                 </div>
                 
                 <div class="slide" id="slide-8" style="display: none;">
-                    <h2>因果關係 (Causal Connection)推理 (Inference)</h2>
-                    <p>因果關係 (Causal Connection)推理 (Inference)是關於事件之間因果關係 (Causal Connection)的推理 (Inference)。</p>
-                    <p>因果關係 (Causal Connection)的基本概念：</p>
+                    <h2>Causal Reasoning</h2>
+                    <p>Causal reasoning is reasoning about cause-and-effect relationships between events.</p>
+                    <p>Basic concepts of causality:</p>
                     <ul>
-                        <li>原因：導致結果發生的事件或條件</li>
-                        <li>結果：由原因導致的事件或狀態</li>
-                        <li>必要條件 (Necessary Condition)：如果沒有它，結果就不會發生的條件</li>
-                        <li>充分條件 (Sufficient Condition)：如果有它，結果就一定會發生的條件</li>
+                        <li>Cause: An event or condition that brings about an effect</li>
+                        <li>Effect: An event or state brought about by a cause</li>
+                        <li>Necessary condition: A condition without which the effect would not occur</li>
+                        <li>Sufficient condition: A condition which, if present, guarantees the effect will occur</li>
                     </ul>
                 </div>
                 
                 <div class="slide" id="slide-9" style="display: none;">
-                    <h2>因果關係 (Causal Connection)推理 (Inference)的常見謬誤 (Fallacy)</h2>
+                    <h2>Common Fallacies in Causal Reasoning</h2>
                     <ul>
-                        <li>後此謬誤 (Fallacy)：認為如果 B 發生在 A 之後，那麼 A 就是 B 的原因</li>
-                        <li>相關性謬誤 (Fallacy) (Fallacies of Relevance)：認為如果 A 和 B 相關，那麼 A 就是 B 的原因（或 B 就是 A 的原因）</li>
-                        <li>忽略共同原因：忽略 A 和 B 可能有共同原因 C</li>
-                        <li>忽略複雜因果關係 (Causal Connection)：忽略因果關係 (Causal Connection)可能是複雜的，涉及多個因素</li>
+                        <li>Post hoc fallacy: Assuming that if B follows A, then A caused B</li>
+                        <li>Correlation fallacy: Assuming that if A and B are correlated, then A caused B (or B caused A)</li>
+                        <li>Ignoring common cause: Ignoring that A and B might have a common cause C</li>
+                        <li>Ignoring complex causality: Ignoring that causality might be complex, involving multiple factors</li>
                     </ul>
                 </div>
                 
                 <div class="slide" id="slide-10" style="display: none;">
-                    <h2>密爾方法：一致法</h2>
-                    <p>如果在所有導致某結果的情況中都有一個共同的因素，那麼這個因素可能是該結果的原因。</p>
+                    <h2>Mill's Method of Agreement</h2>
+                    <p>If in all cases where an effect occurs, there is a single common factor, then that factor might be the cause of the effect.</p>
                     <blockquote>
-                        情況1：A、B、C 存在，結果 X 發生<br>
-                        情況2：A、D、E 存在，結果 X 發生<br>
-                        情況3：A、F、G 存在，結果 X 發生<br>
-                        因此，A 可能是 X 的原因
+                        Case 1: A, B, C are present, effect X occurs<br>
+                        Case 2: A, D, E are present, effect X occurs<br>
+                        Case 3: A, F, G are present, effect X occurs<br>
+                        Therefore, A might be the cause of X
                     </blockquote>
                 </div>
                 
                 <div class="slide" id="slide-11" style="display: none;">
-                    <h2>密爾方法：差異法</h2>
-                    <p>如果兩種情況只有一個因素不同，而結果也不同，那麼這個不同的因素可能是結果差異的原因。</p>
+                    <h2>Mill's Method of Difference</h2>
+                    <p>If two cases differ only in one factor, and the effect is present in one case but not the other, then that factor might be the cause of the effect.</p>
                     <blockquote>
-                        情況1：A、B、C 存在，結果 X 發生<br>
-                        情況2：B、C 存在（沒有 A），結果 X 不發生<br>
-                        因此，A 可能是 X 的原因
+                        Case 1: A, B, C are present, effect X occurs<br>
+                        Case 2: B, C are present (without A), effect X does not occur<br>
+                        Therefore, A might be the cause of X
                     </blockquote>
                 </div>
                 
                 <div class="slide" id="slide-12" style="display: none;">
-                    <h2>密爾方法：共變法</h2>
-                    <p>如果一個因素的變化伴隨著結果的變化，那麼這個因素可能是結果的原因。</p>
+                    <h2>Mill's Method of Concomitant Variation</h2>
+                    <p>If variations in a factor are accompanied by variations in the effect, then that factor might be the cause of the effect.</p>
                     <blockquote>
-                        情況1：A 強度為 1，結果 X 強度為 10<br>
-                        情況2：A 強度為 2，結果 X 強度為 20<br>
-                        情況3：A 強度為 3，結果 X 強度為 30<br>
-                        因此，A 可能是 X 的原因
+                        Case 1: A has intensity 1, effect X has intensity 10<br>
+                        Case 2: A has intensity 2, effect X has intensity 20<br>
+                        Case 3: A has intensity 3, effect X has intensity 30<br>
+                        Therefore, A might be the cause of X
                     </blockquote>
                 </div>
                 
                 <div class="slide" id="slide-13" style="display: none;">
-                    <h2>密爾方法：剩餘法</h2>
-                    <p>如果已知某些因素導致結果的一部分，那麼剩餘的結果部分可能是由其他因素導致的。</p>
+                    <h2>Mill's Method of Residues</h2>
+                    <p>If certain factors are known to cause part of an effect, then the remaining part of the effect might be caused by other factors.</p>
                     <blockquote>
-                        結果 X 有部分 X1 和 X2<br>
-                        已知 A 導致 X1<br>
-                        因此，其他因素（如 B）可能導致 X2
+                        Effect X has parts X1 and X2<br>
+                        A is known to cause X1<br>
+                        Therefore, other factors (such as B) might cause X2
                     </blockquote>
                 </div>
                 
                 <div class="slide" id="slide-14" style="display: none;">
-                    <h2>批判性思考 (Critical Thinking)</h2>
-                    <p>批判性思考 (Critical Thinking)是一種理性、反思性的思維方式，它幫助我們做出更明智的判斷和決策。</p>
-                    <p>批判性思考 (Critical Thinking)的基本步驟：</p>
+                    <h2>Critical Thinking</h2>
+                    <p>Critical thinking is a rational, reflective way of thinking that helps us make more informed judgments and decisions.</p>
+                    <p>Basic steps of critical thinking:</p>
                     <ol>
-                        <li>識別問題：明確你要解決的問題或要評估的論點</li>
-                        <li>收集資訊：尋找相關的事實、數據和觀點</li>
-                        <li>評估證據：檢查證據的可靠性和相關性</li>
-                        <li>考慮替代解釋：思考其他可能的解釋或觀點</li>
-                        <li>形成結論 (Conclusion)：基於證據和推理 (Inference)得出結論 (Conclusion)</li>
+                        <li>Identify the problem: Clarify the problem you want to solve or the argument you want to evaluate</li>
+                        <li>Gather information: Look for relevant facts, data, and perspectives</li>
+                        <li>Evaluate evidence: Check the reliability and relevance of the evidence</li>
+                        <li>Consider alternative explanations: Think about other possible explanations or perspectives</li>
+                        <li>Form a conclusion: Draw a conclusion based on evidence and reasoning</li>
                     </ol>
                 </div>
                 
                 <div class="slide" id="slide-15" style="display: none;">
-                    <h2>批判性思考 (Critical Thinking)的態度</h2>
+                    <h2>Attitudes of Critical Thinking</h2>
                     <ul>
-                        <li>開放性：願意考慮不同的觀點和可能性</li>
-                        <li>好奇心：對事物的本質和原因保持好奇</li>
-                        <li>懷疑精神：不輕易接受未經證實的說法</li>
-                        <li>謙遜：承認自己的知識和理解有限</li>
-                        <li>系統性：有條理地思考問題</li>
+                        <li>Open-mindedness: Willingness to consider different viewpoints and possibilities</li>
+                        <li>Curiosity: Maintaining curiosity about the nature and causes of things</li>
+                        <li>Skepticism: Not readily accepting unverified claims</li>
+                        <li>Humility: Acknowledging the limitations of one's knowledge and understanding</li>
+                        <li>Systematicity: Thinking about problems in an organized way</li>
                     </ul>
                 </div>
                 
                 <div class="slide" id="slide-16" style="display: none;">
-                    <h2>科學方法與假設</h2>
-                    <p>科學方法是一種系統性的方法，用於獲取知識和解決問題。</p>
-                    <p>科學方法的步驟：</p>
+                    <h2>Scientific Method and Hypotheses</h2>
+                    <p>The scientific method is a systematic approach to acquiring knowledge and solving problems.</p>
+                    <p>Steps of the scientific method:</p>
                     <ol>
-                        <li>觀察：收集關於現象的數據</li>
-                        <li>提出問題：基於觀察提出問題</li>
-                        <li>形成假設：提出可能的解釋</li>
-                        <li>預測：如果假設為真，應該觀察到什麼</li>
-                        <li>測試：通過實驗或進一步觀察來測試預測</li>
-                        <li>分析：分析測試結果</li>
-                        <li>結論 (Conclusion)：得出結論 (Conclusion)，支持或拒絕假設</li>
-                        <li>重複：重複這個過程以驗證結果</li>
+                        <li>Observation: Collect data about a phenomenon</li>
+                        <li>Question: Formulate a question based on observations</li>
+                        <li>Hypothesis: Propose a possible explanation</li>
+                        <li>Prediction: Predict what should be observed if the hypothesis is true</li>
+                        <li>Testing: Test the prediction through experiment or further observation</li>
+                        <li>Analysis: Analyze the test results</li>
+                        <li>Conclusion: Draw a conclusion, supporting or rejecting the hypothesis</li>
+                        <li>Repetition: Repeat the process to verify the results</li>
                     </ol>
                 </div>
                 
                 <div class="slide" id="slide-17" style="display: none;">
-                    <h2>假設的特點</h2>
-                    <p>好的科學假設 (Scientific Hypothesis)應該具有以下特點：</p>
+                    <h2>Characteristics of Hypotheses</h2>
+                    <p>A good scientific hypothesis should have the following characteristics:</p>
                     <ul>
-                        <li>可證偽性：可以被證明為假</li>
-                        <li>解釋力：能夠解釋觀察到的現象</li>
-                        <li>簡潔性：盡可能簡單</li>
-                        <li>一致性 (Consistency)：與已知事實和理論一致</li>
-                        <li>可測試性：可以通過實驗或觀察進行測試</li>
+                        <li>Falsifiability: It can be proven false</li>
+                        <li>Explanatory power: It can explain observed phenomena</li>
+                        <li>Simplicity: It is as simple as possible</li>
+                        <li>Consistency: It is consistent with known facts and theories</li>
+                        <li>Testability: It can be tested through experiment or observation</li>
                     </ul>
                 </div>
                 
                 <div class="slide" id="slide-18" style="display: none;">
-                    <h2>科學方法中的邏輯推理 (Inference)</h2>
-                    <p>科學方法結合了演繹推理 (Inference) (Deductive Reasoning)和歸納推理 (Inference) (Inductive Reasoning)：</p>
+                    <h2>Logical Reasoning in the Scientific Method</h2>
+                    <p>The scientific method combines deductive and inductive reasoning:</p>
                     <ul>
-                        <li>演繹推理 (Inference) (Deductive Reasoning)：從假設推導出預測（如果假設為真，則預測為真）</li>
-                        <li>歸納推理 (Inference) (Inductive Reasoning)：從觀察和實驗結果推導出一般原則或理論</li>
+                        <li>Deductive reasoning: Deriving predictions from hypotheses (if the hypothesis is true, then the prediction is true)</li>
+                        <li>Inductive reasoning: Deriving general principles or theories from observations and experimental results</li>
                     </ul>
                 </div>
                 
                 <div class="slide" id="slide-19" style="display: none;">
-                    <h2>課程總結</h2>
-                    <p>在今天的課程中，我們學習了：</p>
+                    <h2>Course Summary</h2>
+                    <p>In today's course, we learned:</p>
                     <ul>
-                        <li>歸納推理 (Inference) (Inductive Reasoning)的特點和應用</li>
-                        <li>類比推理 (Inference) (Argument by Analogy)的結構和評估方法</li>
-                        <li>因果關係 (Causal Connection)推理 (Inference)的原理和常見謬誤 (Fallacy)</li>
-                        <li>密爾的五種方法：一致法、差異法、共變法、剩餘法和合併法</li>
-                        <li>批判性思考 (Critical Thinking)的基本步驟和態度</li>
-                        <li>科學方法的步驟和假設的特點</li>
+                        <li>The characteristics and applications of inductive reasoning</li>
+                        <li>The structure and evaluation methods of analogical arguments</li>
+                        <li>The principles of causal reasoning and common fallacies</li>
+                        <li>Mill's five methods: method of agreement, method of difference, method of concomitant variation, method of residues, and joint method</li>
+                        <li>The basic steps and attitudes of critical thinking</li>
+                        <li>The steps of scientific method and characteristics of hypotheses</li>
                     </ul>
                 </div>
                 
                 <div class="slide" id="slide-20" style="display: none;">
-                    <h2>心智圖總覽</h2>
-                    <img src="images/logic_mindmap_day5.png" alt="歸納推理 (Inference) (Inductive Reasoning)與批判性思考 (Critical Thinking)心智圖">
+                    <h2>Mind Map Overview</h2>
+                    <img src="images/logic_mindmap_day5.png" alt="Inductive Reasoning and Critical Thinking Mind Map">
                 </div>
             </div>
             
             <div class="slide-controls">
-                <button class="quiz-btn secondary slide-prev" disabled>上一頁</button>
-                <button class="quiz-btn slide-next">下一頁</button>
+                <button class="quiz-btn secondary slide-prev" disabled>Previous</button>
+                <button class="quiz-btn slide-next">Next</button>
             </div>
         </div>
     </div>
@@ -258,35 +258,76 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>邏輯學 (Logic)入門</h3>
-                    <p>基於Irving M. Copi的《邏輯學 (Logic)入門》，為國中生設計的五天邏輯學 (Logic)課程。</p>
+                    <h3>Introduction to Logic</h3>
+                    <p>Based on Irving M. Copi's "Introduction to Logic", a five-day logic course designed for middle school students.</p>
                 </div>
                 <div class="footer-column">
-                    <h3>快速連結</h3>
+                    <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="index.html">首頁</a></li>
-                        <li><a href="courses.html">課程內容</a></li>
-                        <li><a href="terminology.html">術語表</a></li>
-                        <li><a href="about.html">關於課程</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="terminology.html">Terminology</a></li>
+                        <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>課程資源</h3>
+                    <h3>Course Resources</h3>
                     <ul class="footer-links">
-                        <li><a href="day1.html">第一天：邏輯學 (Logic)基礎與語言</a></li>
-                        <li><a href="day2.html">第二天：論證 (Argument)與謬誤 (Fallacy)</a></li>
-                        <li><a href="day3.html">第三天：邏輯連接 (Conjunction)詞 (Connective)與複合陳述句 (Statement) (Compound Statement)</a></li>
-                        <li><a href="day4.html">第四天：演繹推理 (Inference) (Deductive Reasoning)與邏輯規則</a></li>
-                        <li><a href="day5.html">第五天：歸納推理 (Inference) (Inductive Reasoning)與批判性思考 (Critical Thinking)</a></li>
+                        <li><a href="day1.html">Day 1: Logic Fundamentals and Language</a></li>
+                        <li><a href="day2.html">Day 2: Arguments and Fallacies</a></li>
+                        <li><a href="day3.html">Day 3: Logical Connectives and Compound Statements</a></li>
+                        <li><a href="day4.html">Day 4: Deductive Reasoning and Logical Rules</a></li>
+                        <li><a href="day5.html">Day 5: Inductive Reasoning and Critical Thinking</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 邏輯學 (Logic)入門課程. 保留所有權利。</p>
+                <p>&copy; 2025 Introduction to Logic Course. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script>
+        // Custom script to handle slide navigation without relying on the translation system
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.querySelector('.slide-prev');
+            const nextBtn = document.querySelector('.slide-next');
+            let currentSlide = 0;
+            
+            function showSlide(index) {
+                // Hide all slides
+                slides.forEach(slide => {
+                    slide.style.display = 'none';
+                });
+                
+                // Show the current slide
+                slides[index].style.display = 'block';
+                
+                // Update button states
+                prevBtn.disabled = index === 0;
+                nextBtn.textContent = index === slides.length - 1 ? 'Finish' : 'Next';
+            }
+            
+            // Initialize with the first slide
+            showSlide(currentSlide);
+            
+            // Previous button click handler
+            prevBtn.addEventListener('click', function() {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+            
+            // Next button click handler
+            nextBtn.addEventListener('click', function() {
+                if (currentSlide < slides.length - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
