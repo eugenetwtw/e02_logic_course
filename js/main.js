@@ -997,13 +997,7 @@ function addLanguageSelector() {
         select.appendChild(option);
     });
     
-    // 添加標籤
-    const label = document.createElement('label');
-    label.htmlFor = 'language-select';
-    label.textContent = t('languageSelector.label') + ': ';
-    
     // 將元素添加到容器
-    languageSelector.appendChild(label);
     languageSelector.appendChild(select);
     
     // 將語言選擇器添加到導航欄
