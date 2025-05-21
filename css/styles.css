@@ -77,8 +77,16 @@ header {
   display: none;
   background: none;
   border: none;
+
   font-size: 1.5rem;
   cursor: pointer;
+}
+.lang-switcher {
+  margin-left: 20px;
+}
+.lang-switcher select {
+  padding: 5px;
+  border-radius: var(--border-radius);
 }
 
 /* 英雄區塊 */
