@@ -7,7 +7,8 @@
 本課程包含以下主要內容：
 - **第一天：邏輯學基礎與語言** - 介紹邏輯學 (Logic) 的定義與重要性，學習陳述句 (Statement) 的辨識，以及論證 (Argument) 中的前提 (Premise) 與結論 (Conclusion)。
 - **第二天：論證與謬誤** - 探討有效論證 (Valid Argument) 與無效論證 (Invalid Argument)，以及常見的邏輯謬誤 (Fallacy)。
-- **第三天：邏輯連接詞與複合陳述句** - 學習連接詞 (Connective)、否定 (Negation)、連接 (Conjunction)、選言 (Disjunction) 等概念，以及複合陳述句 (Compound Statement)。
+- **第三天：邏輯連接詞與複合陳述句** - 學習連接詞 (Connective)、否定 (Negation)、連接 (Conjunction)、選言 (Disjunction) 等概念，
+  以及複合陳述句 (Compound Statement)。
 - **第四天：演繹推理與邏輯規則** - 深入了解演繹推理 (Deductive Reasoning)、三段論 (Syllogism) 及其應用。
 - **第五天：歸納推理與批判性思考** - 探討歸納推理 (Inductive Reasoning)、類比推理 (Argument by Analogy)，以及批判性思考 (Critical Thinking) 的技巧。
 
