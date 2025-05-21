@@ -234,6 +234,130 @@
       "quiz": "Practice Quiz"
     }
   },
+  "day3": {
+    "title": "Day 3: Logical Connectives and Compound Statements",
+    "description": "Learn logical connectives and their application in constructing compound statements, understand the logical structure of conditionals and biconditionals.",
+    "navigation": "Course Navigation",
+    "sections": {
+      "intro": "Course Introduction",
+      "logical-connectives": "Logical Connectives Basics",
+      "conjunction": "Conjunction (AND)",
+      "disjunction": "Disjunction (OR)",
+      "negation": "Negation (NOT)",
+      "conditional": "Conditional Statements",
+      "biconditional": "Biconditional Statements",
+      "truth-tables": "Truth Tables",
+      "summary": "Course Summary"
+    },
+    "courseGoals": {
+      "title": "Course Objectives",
+      "description": "This course aims to introduce the basic concepts and applications of logical connectives, helping students understand how to use logical connectives to construct compound statements, and how to analyze the truth conditions of compound statements.",
+      "afterCompletion": "After completing this course, students will be able to:",
+      "goals": [
+        "Understand the meaning and usage of the five basic logical connectives",
+        "Use logical connectives to construct compound statements",
+        "Analyze the logical structure of conditional and biconditional statements",
+        "Use truth tables to analyze the truth conditions of compound statements"
+      ]
+    },
+    "summary": {
+      "title": "Course Summary",
+      "description": "In today's course, we learned:",
+      "points": [
+        "The five basic logical connectives: conjunction (AND, ∧), disjunction (OR, ∨), negation (NOT, ¬), conditional (IF...THEN, →), and biconditional (IF AND ONLY IF, ↔)",
+        "The meaning and truth conditions of each logical connective",
+        "How to use logical connectives to construct compound statements",
+        "How to use truth tables to analyze the truth conditions of compound statements"
+      ],
+      "foundation": "This knowledge lays the foundation for understanding more complex logical structures and rules of inference.",
+      "slides": "View Slides",
+      "quiz": "Practice Quiz"
+    }
+  },
+  "day4": {
+    "title": "Day 4: Deductive Reasoning and Logical Rules",
+    "description": "Understand the basic structure of syllogisms, learn to use basic logical symbols, master basic rules of inference.",
+    "navigation": "Course Navigation",
+    "sections": {
+      "intro": "Course Introduction",
+      "deductive-reasoning": "Deductive Reasoning Basics",
+      "syllogism": "Syllogisms",
+      "logical-symbols": "Basic Logical Symbols",
+      "inference-rules": "Basic Rules of Inference",
+      "validity-proof": "Validity Proofs",
+      "venn-diagrams": "Venn Diagrams",
+      "summary": "Course Summary"
+    },
+    "courseGoals": {
+      "title": "Course Objectives",
+      "description": "This course aims to introduce the basic structure and rules of deductive reasoning, helping students understand the form of syllogisms, learn to use basic logical symbols, and master basic rules of inference.",
+      "afterCompletion": "After completing this course, students will be able to:",
+      "goals": [
+        "Understand the characteristics and applications of deductive reasoning",
+        "Analyze the structure and validity of syllogisms",
+        "Use basic logical symbols to express propositions and arguments",
+        "Apply basic rules of inference for valid reasoning",
+        "Use Venn diagrams to analyze the validity of syllogisms"
+      ]
+    },
+    "summary": {
+      "title": "Course Summary",
+      "description": "In today's course, we learned:",
+      "points": [
+        "The characteristics and applications of deductive reasoning",
+        "The structure and validity of syllogisms",
+        "The use of basic logical symbols",
+        "Basic rules of inference, such as modus ponens, modus tollens, hypothetical syllogism, etc.",
+        "How to conduct simple validity proofs",
+        "How to use Venn diagrams to analyze the validity of syllogisms"
+      ],
+      "foundation": "These knowledge and skills will help you better understand and analyze deductive reasoning, improving your logical thinking abilities.",
+      "slides": "View Slides",
+      "quiz": "Practice Quiz"
+    }
+  },
+  "day5": {
+    "title": "Day 5: Inductive Reasoning and Critical Thinking",
+    "description": "Understand the characteristics and applications of inductive reasoning, learn the principles of analogical reasoning and causal reasoning, comprehensively apply critical thinking skills.",
+    "navigation": "Course Navigation",
+    "sections": {
+      "intro": "Course Introduction",
+      "inductive-reasoning": "Inductive Reasoning Basics",
+      "analogy": "Argument by Analogy",
+      "causal-reasoning": "Causal Reasoning",
+      "mills-methods": "Mill's Methods",
+      "critical-thinking": "Critical Thinking",
+      "scientific-method": "Scientific Method and Hypotheses",
+      "summary": "Course Summary"
+    },
+    "courseGoals": {
+      "title": "Course Objectives",
+      "description": "This course aims to introduce the basic concepts and applications of inductive reasoning, helping students understand the principles of analogical reasoning and causal reasoning, and develop critical thinking skills.",
+      "afterCompletion": "After completing this course, students will be able to:",
+      "goals": [
+        "Understand the characteristics and applications of inductive reasoning",
+        "Analyze the structure of analogical arguments and evaluate their strength",
+        "Understand the principles of causal reasoning and Mill's methods",
+        "Apply critical thinking skills to evaluate arguments and information",
+        "Understand the relationship between scientific method and hypotheses"
+      ]
+    },
+    "summary": {
+      "title": "Course Summary",
+      "description": "In today's course, we learned:",
+      "points": [
+        "The characteristics and applications of inductive reasoning",
+        "The structure and evaluation methods of analogical arguments",
+        "The principles of causal reasoning and common fallacies",
+        "Mill's five methods: method of agreement, method of difference, method of concomitant variation, method of residues, and joint method",
+        "The basic steps and attitudes of critical thinking",
+        "The steps of scientific method and characteristics of hypotheses"
+      ],
+      "foundation": "These knowledge and skills will help you better understand and analyze inductive reasoning, improve critical thinking abilities, and better understand the role of scientific method and hypotheses.",
+      "slides": "View Slides",
+      "quiz": "Practice Quiz"
+    }
+  },
   "quiz": {
     "submit": "Submit",
     "score": "Score",
