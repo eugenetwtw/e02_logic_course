@@ -475,12 +475,37 @@ function updateAboutPage() {
     }
 }
 
+// 將連字號樣式字串轉為駝峰式
+function toCamel(str) {
+    return str.replace(/-([a-z])/g, (_, c) => c.toUpperCase());
+}
+
+// 通用更新課程區塊
+function updateGenericSection(sectionId, data) {
+    const section = document.querySelector(`#${sectionId}`);
+    if (!section || !data) return;
+
+    const title = section.querySelector('h2');
+    if (title && data.title) title.textContent = data.title;
+
+    const paragraphs = section.querySelectorAll('p');
+    if (Array.isArray(data.paragraphs)) {
+        data.paragraphs.forEach((text, i) => {
+            if (i < paragraphs.length) {
+                paragraphs[i].textContent = text;
+            }
+        });
+    } else if (data.description && paragraphs.length > 0) {
+        paragraphs[0].textContent = data.description;
+    }
+}
+
 // 更新課程日頁面內容
 function updateDayPage() {
     // 獲取當前是第幾天
     const dayMatch = window.location.pathname.match(/day(\d+)/);
     if (!dayMatch || !dayMatch[1]) return;
-    
+
     const dayNum = dayMatch[1];
     
     // 更新頁面標題
@@ -502,14 +527,25 @@ function updateDayPage() {
             const key = sectionKeys[index];
             link.textContent = t(`day${dayNum}.sections.${key}`);
         }
-        
+
         // 更新鏈接以包含語言參數
         if (link.getAttribute('href').includes('.html')) {
             link.setAttribute('href', updateUrlWithLanguage(link.getAttribute('href')));
         }
     });
-    
-    // 更新各部分內容
+
+    // 如果不是第一天，嘗試以通用方式更新各部分內容
+    if (dayNum !== '1') {
+        sectionKeys.forEach(key => {
+            const sectionData = translations[`day${dayNum}`][key] || translations[`day${dayNum}`][toCamel(key)];
+            if (sectionData) {
+                updateGenericSection(key, sectionData);
+            }
+        });
+    }
+
+    // 更新各部分內容（第一天使用詳細邏輯）
+    if (dayNum === '1') {
     // 更新課程目標部分
     const courseIntroSection = document.querySelector('#course-intro');
     if (courseIntroSection) {
@@ -713,7 +749,10 @@ function updateDayPage() {
         
         if (paragraphs.length >= 2) paragraphs[1].textContent = t(`day${dayNum}.summary.foundation`);
     }
-    
+
+    // 結束第一天特殊處理
+    }
+
     // 更新心智圖說明
     const mindmapCaption = document.querySelector('.mindmap-caption');
     if (mindmapCaption) {
