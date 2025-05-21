@@ -207,6 +207,32 @@
       "critical-thinking": "批判性思考基礎",
       "summary": "課程總結"
     },
+    "deductiveReasoning": {
+      "fromGeneralToSpecific": "從一般到特殊：從一般原則推理到特殊情況",
+      "highCertainty": "結論確定性高：如果前提為真，則結論必然為真",
+      "noNewInfo": "不增加新信息：只揭示前提中隱含的信息"
+    },
+    "inductiveReasoning": {
+      "fromSpecificToGeneral": "從特殊到一般：從特殊情況推理到一般原則",
+      "lowerCertainty": "結論確定性較低：即使前提為真，結論也只是可能為真",
+      "addsNewInfo": "增加新信息：超出前提中包含的信息"
+    },
+    "criticalThinking": {
+      "steps": {
+        "identifyProblem": "識別問題：明確你要解決的問題或要評估的論點",
+        "gatherInfo": "收集信息：尋找相關的事實、數據和觀點",
+        "evaluateEvidence": "評估證據：檢查證據的可靠性和相關性",
+        "considerAlternatives": "考慮替代解釋：思考其他可能的解釋或觀點",
+        "formConclusion": "形成結論：基於證據和推理得出結論"
+      },
+      "attitudes": {
+        "openness": "開放性：願意考慮不同的觀點和可能性",
+        "curiosity": "好奇心：對事物的本質和原因保持好奇",
+        "skepticism": "懷疑精神：不輕易接受未經證實的說法",
+        "humility": "謙遜：承認自己的知識和理解有限",
+        "systematicity": "系統性：有條理地思考問題"
+      }
+    },
     "courseGoals": {
       "title": "課程目標",
       "description": "本課程旨在幫助學生理解論證的結構與類型，區分有效論證與無效論證，認識演繹推理與歸納推理的特點，以及學習辨識常見的邏輯謬誤，從而培養批判性思考的基礎能力。",
@@ -218,6 +244,16 @@
         "辨識常見的邏輯謬誤",
         "運用批判性思考評估論證"
       ]
+    },
+    "arguments": {
+      "title": "論證的結構與類型",
+      "description": "論證是由一組陳述句組成的，其中一些陳述句（前提）用來支持另一個陳述句（結論）。在昨天的課程中，我們已經學習了如何識別前提和結論，今天我們將更深入地了解論證的結構和類型。",
+      "premiseTitle": "前提",
+      "premiseDescription": "前提是用來支持結論的陳述句。它們提供了我們接受結論的理由。",
+      "conclusionTitle": "結論",
+      "conclusionDescription": "結論是論證試圖證明或支持的陳述句。",
+      "conclusionIndicators": "因此、所以、可見、因而、由此可知",
+      "premiseIndicators": "因為、由於、鑑於、考慮到"
     },
     "summary": {
       "title": "課程總結",

@@ -207,6 +207,32 @@
       "critical-thinking": "Critical Thinking Basics",
       "summary": "Course Summary"
     },
+    "deductiveReasoning": {
+      "fromGeneralToSpecific": "From general to specific: Reasoning from general principles to specific cases",
+      "highCertainty": "High certainty of conclusion: If the premises are true, the conclusion must be true",
+      "noNewInfo": "No new information: Only reveals information already implicit in the premises"
+    },
+    "inductiveReasoning": {
+      "fromSpecificToGeneral": "From specific to general: Reasoning from specific cases to general principles",
+      "lowerCertainty": "Lower certainty of conclusion: Even if the premises are true, the conclusion may not be true",
+      "addsNewInfo": "Adds new information: Goes beyond the information contained in the premises"
+    },
+    "criticalThinking": {
+      "steps": {
+        "identifyProblem": "Identify the problem: Clearly define the problem you want to solve or the argument you want to evaluate",
+        "gatherInfo": "Gather information: Find relevant facts, data, and perspectives",
+        "evaluateEvidence": "Evaluate evidence: Check the reliability and relevance of the evidence",
+        "considerAlternatives": "Consider alternative explanations: Think about other possible explanations or viewpoints",
+        "formConclusion": "Form a conclusion: Draw a conclusion based on evidence and reasoning"
+      },
+      "attitudes": {
+        "openness": "Openness: Willingness to consider different perspectives and possibilities",
+        "curiosity": "Curiosity: Maintaining curiosity about the nature and causes of things",
+        "skepticism": "Skepticism: Not easily accepting unverified claims",
+        "humility": "Humility: Acknowledging the limitations of one's knowledge and understanding",
+        "systematicity": "Systematicity: Thinking about problems in an organized way"
+      }
+    },
     "courseGoals": {
       "title": "Course Objectives",
       "description": "This course aims to help students understand the structure and types of arguments, distinguish between valid and invalid arguments, recognize the characteristics of deductive and inductive reasoning, and learn to identify common logical fallacies, thereby developing basic critical thinking skills.",
@@ -218,6 +244,16 @@
         "Identify common logical fallacies",
         "Apply critical thinking to evaluate arguments"
       ]
+    },
+    "arguments": {
+      "title": "Argument Structure and Types",
+      "description": "Arguments are composed of a set of statements, some of which (premises) are used to support another statement (conclusion). In yesterday's lesson, we learned how to identify premises and conclusions. Today, we will delve deeper into the structure and types of arguments.",
+      "premiseTitle": "Premise",
+      "premiseDescription": "Premises are statements used to support the conclusion. They provide reasons for accepting the conclusion.",
+      "conclusionTitle": "Conclusion",
+      "conclusionDescription": "The conclusion is the statement that the argument attempts to prove or support.",
+      "conclusionIndicators": "Therefore, Thus, Hence, Consequently, It follows that",
+      "premiseIndicators": "Because, Since, Given that, Considering that"
     },
     "summary": {
       "title": "Course Summary",
