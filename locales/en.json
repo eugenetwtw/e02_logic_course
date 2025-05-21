@@ -1,0 +1,266 @@
+{
+  "meta": {
+    "language": "en",
+    "languageName": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "courses": "Courses",
+    "terminology": "Terminology",
+    "about": "About"
+  },
+  "home": {
+    "title": "Introduction to Logic",
+    "subtitle": "A Five-Day Logic Course for Middle School Students",
+    "description": "Based on Irving M. Copi's 'Introduction to Logic', this course will help you develop critical thinking skills and logical reasoning techniques.",
+    "startLearning": "Start Learning",
+    "features": {
+      "title": "Course Features",
+      "item1": {
+        "title": "Easy to Understand",
+        "description": "Teaching materials designed for middle school students' cognitive level, making abstract logical concepts easy to understand."
+      },
+      "item2": {
+        "title": "Step by Step",
+        "description": "Five-day course progressing from basic to advanced, half an hour each day, easily mastering the basics of logic."
+      },
+      "item3": {
+        "title": "Visual Learning",
+        "description": "Rich mind maps and visual aids to help understand and memorize abstract concepts."
+      },
+      "item4": {
+        "title": "Interactive Exercises",
+        "description": "Targeted exercises after each day's lesson to help consolidate knowledge."
+      }
+    },
+    "courseOverview": {
+      "title": "Course Overview",
+      "day1": {
+        "title": "Logic Basics and Language",
+        "description": "Understand the definition and importance of logic, learn to identify statements and non-statements, and recognize premises and conclusions in arguments.",
+        "link": "View Details"
+      },
+      "day2": {
+        "title": "Arguments and Fallacies",
+        "description": "Understand the distinction between valid and invalid arguments, recognize the characteristics of deductive and inductive reasoning, and learn to identify common logical fallacies.",
+        "link": "View Details"
+      },
+      "day3": {
+        "title": "Logical Connectives and Compound Statements",
+        "description": "Learn logical connectives and their application in constructing compound statements, understand the logical structure of conditionals and biconditionals.",
+        "link": "View Details"
+      },
+      "day4": {
+        "title": "Deductive Reasoning and Logical Rules",
+        "description": "Understand the basic structure of syllogisms, learn to use basic logical symbols, master basic rules of inference.",
+        "link": "View Details"
+      },
+      "day5": {
+        "title": "Inductive Reasoning and Critical Thinking",
+        "description": "Understand the characteristics and applications of inductive reasoning, learn the principles of analogical reasoning and causal reasoning, comprehensively apply critical thinking skills.",
+        "link": "View Details"
+      }
+    },
+    "cta": {
+      "title": "Ready to start learning logic?",
+      "description": "Logic is not just a subject, but a way of thinking. It can help you make more reasonable judgments and decisions in learning and life.",
+      "button": "Start Now"
+    }
+  },
+  "footer": {
+    "description": "Based on Irving M. Copi's 'Introduction to Logic', a five-day logic course designed for middle school students.",
+    "quickLinks": "Quick Links",
+    "courseResources": "Course Resources",
+    "day1": "Day 1: Logic Basics and Language",
+    "day2": "Day 2: Arguments and Fallacies",
+    "day3": "Day 3: Logical Connectives and Compound Statements",
+    "day4": "Day 4: Deductive Reasoning and Logical Rules",
+    "day5": "Day 5: Inductive Reasoning and Critical Thinking",
+    "copyright": "© 2025 Introduction to Logic Course. All rights reserved."
+  },
+  "day1": {
+    "title": "Day 1: Logic Basics and Language",
+    "description": "Understand the definition and importance of logic, learn to identify statements and non-statements, and recognize premises and conclusions in arguments.",
+    "navigation": "Course Navigation",
+    "sections": {
+      "intro": "Course Introduction",
+      "whatIsLogic": "What is Logic",
+      "statements": "Statements and Non-statements",
+      "arguments": "Argument Structure",
+      "languageFunctions": "Language Functions",
+      "summary": "Course Summary"
+    },
+    "courseGoals": {
+      "title": "Course Objectives",
+      "description": "This course aims to introduce the basic concepts of logic, helping students understand the importance of logic in daily life and academic research. By learning to identify statements and understand the structure of arguments, students will develop preliminary logical thinking skills.",
+      "afterCompletion": "After completing this course, students will be able to:",
+      "goals": [
+        "Understand the definition and subject of logic",
+        "Distinguish between statements and non-statements",
+        "Identify premises and conclusions in arguments",
+        "Understand different functions of language"
+      ]
+    },
+    "whatIsLogic": {
+      "title": "What is Logic",
+      "description": "Logic is the study of valid inference. It focuses on the form and structure of arguments, rather than their content. Logic helps us distinguish between good and bad arguments, thereby making more reasonable judgments and decisions.",
+      "coreQuestions": "Core questions in logic include:",
+      "questions": [
+        "What is valid inference?",
+        "How to evaluate the quality of arguments?",
+        "How to avoid common logical fallacies?"
+      ],
+      "applications": "Logic has important applications in many fields, including mathematics, philosophy, law, scientific research, and decision-making in daily life."
+    },
+    "statements": {
+      "title": "Statements and Non-statements",
+      "description": "In logic, we first need to distinguish between statements and non-statements.",
+      "statementsTitle": "Statements",
+      "statementsDescription": "Statements are sentences that can be judged as true or false. They express a complete thought and make an assertion about something.",
+      "statementsExamples": "Examples of statements:",
+      "statementsExamplesList": [
+        "Taipei is the capital of Taiwan.",
+        "The Earth revolves around the Sun.",
+        "All humans are mortal."
+      ],
+      "nonStatementsTitle": "Non-statements",
+      "nonStatementsDescription": "Non-statements are sentences that cannot be judged as true or false. They may be questions, commands, exclamations, or expressions of wishes.",
+      "nonStatementsExamples": "Examples of non-statements:",
+      "nonStatementsExamplesList": [
+        "Please close the door. (Command)",
+        "How is the weather today? (Question)",
+        "What a beautiful scenery! (Exclamation)",
+        "Happy birthday to you. (Expression of wish)"
+      ],
+      "importance": "In logic, we mainly focus on statements, because only statements can be components of arguments."
+    },
+    "arguments": {
+      "title": "Argument Structure",
+      "description": "An argument consists of a set of statements, some of which (premises) are used to support another statement (conclusion).",
+      "premiseTitle": "Premise",
+      "premiseDescription": "Premises are statements used to support the conclusion. They provide reasons for accepting the conclusion.",
+      "conclusionTitle": "Conclusion",
+      "conclusionDescription": "The conclusion is the statement that the argument attempts to prove or support.",
+      "exampleTitle": "Example of an Argument",
+      "exampleDescription": "Consider the following argument:",
+      "example": "All humans are mortal. (Premise)\nSocrates is human. (Premise)\nTherefore, Socrates is mortal. (Conclusion)",
+      "conclusionIndicatorsTitle": "Conclusion Indicators",
+      "conclusionIndicatorsDescription": "In everyday language, there are certain words typically used to introduce conclusions, known as conclusion indicators. Common conclusion indicators include:",
+      "conclusionIndicators": [
+        "Therefore",
+        "Thus",
+        "Hence",
+        "Consequently",
+        "It follows that"
+      ],
+      "premiseIndicatorsTitle": "Premise Indicators",
+      "premiseIndicatorsDescription": "Similarly, there are words typically used to introduce premises, known as premise indicators. Common premise indicators include:",
+      "premiseIndicators": [
+        "Because",
+        "Since",
+        "Given that",
+        "Considering that"
+      ]
+    },
+    "languageFunctions": {
+      "title": "Language Functions",
+      "description": "Language has multiple functions, understanding these functions helps us better analyze and use language.",
+      "informativeTitle": "Informative Function",
+      "informativeDescription": "The informative function of language is used to convey facts and information. This is the function that logic is most concerned with, as it directly relates to truth-value judgments.",
+      "informativeExamples": "For example: \"Today is Monday.\" \"The chemical formula for water is H2O.\"",
+      "directiveTitle": "Directive Function",
+      "directiveDescription": "The directive function of language is used to issue commands or requests, guiding others to act.",
+      "directiveExamples": "For example: \"Please close the door.\" \"Do not touch the hot surface.\"",
+      "expressiveTitle": "Expressive Function",
+      "expressiveDescription": "The expressive function of language is used to express emotions, attitudes, and feelings.",
+      "expressiveExamples": "For example: \"I'm happy to see you!\" \"This is disappointing.\"",
+      "ceremonialTitle": "Ceremonial Function",
+      "ceremonialDescription": "The ceremonial function of language is used for social etiquette and ceremonial occasions.",
+      "ceremonialExamples": "For example: \"Good morning.\" \"Happy birthday.\" \"Nice to meet you.\"",
+      "logicFocus": "In logic, we mainly focus on the informative function of language, as only this function directly relates to truth-value judgments."
+    },
+    "summary": {
+      "title": "Course Summary",
+      "description": "In today's course, we learned:",
+      "points": [
+        "Logic is the study of valid inference",
+        "Statements can be judged as true or false, while non-statements cannot",
+        "Arguments consist of premises and conclusions, with premises supporting the conclusion",
+        "Conclusion indicators and premise indicators help us identify the structure of arguments",
+        "Language has multiple functions, including informative, directive, expressive, and ceremonial functions"
+      ],
+      "foundation": "These basic concepts lay the foundation for our subsequent study of more complex logical concepts.",
+      "slides": "View Slides",
+      "quiz": "Practice Quiz"
+    }
+  },
+  "quiz": {
+    "submit": "Submit",
+    "score": "Score",
+    "feedback": {
+      "excellent": "Excellent! You have a great understanding of this topic!",
+      "good": "Well done! You've mastered most of the concepts.",
+      "fair": "Good try! Please review the questions you got wrong.",
+      "needsWork": "Needs more practice. It's recommended to re-read the course materials."
+    }
+  },
+  "slides": {
+    "prev": "Previous",
+    "next": "Next"
+  },
+  "terminology": {
+    "search": "Search",
+    "searchPlaceholder": "Search for terms..."
+  },
+  "courses": {
+    "title": "Five-Day Course Content",
+    "day1": {
+      "title": "Day 1: Logic Basics and Language",
+      "description": "Understand the definition and importance of logic, learn to identify statements and non-statements, and recognize premises and conclusions in arguments."
+    },
+    "day2": {
+      "title": "Day 2: Arguments and Fallacies",
+      "description": "Understand the distinction between valid and invalid arguments, recognize the characteristics of deductive and inductive reasoning, and learn to identify common logical fallacies."
+    },
+    "day3": {
+      "title": "Day 3: Logical Connectives and Compound Statements",
+      "description": "Learn logical connectives and their application in constructing compound statements, understand the logical structure of conditionals and biconditionals."
+    },
+    "day4": {
+      "title": "Day 4: Deductive Reasoning and Logical Rules",
+      "description": "Understand the basic structure of syllogisms, learn to use basic logical symbols, master basic rules of inference."
+    },
+    "day5": {
+      "title": "Day 5: Inductive Reasoning and Critical Thinking",
+      "description": "Understand the characteristics and applications of inductive reasoning, learn the principles of analogical reasoning and causal reasoning, comprehensively apply critical thinking skills."
+    },
+    "materials": "Course Materials",
+    "slides": "Slides",
+    "quiz": "Practice Quiz",
+    "overview": "Course Overview",
+    "overviewDescription": "This course is based on Irving M. Copi's 'Introduction to Logic', a five-day logic course designed for middle school students. Each day's lesson is half an hour, with content progressing from basic to advanced, gradually introducing the basic concepts and applications of logic.",
+    "objectives": "Course Objectives",
+    "objectivesList": [
+      "Understand the basic concepts and principles of logic",
+      "Develop the ability to identify and evaluate arguments",
+      "Learn to identify and avoid common logical fallacies",
+      "Master basic logical reasoning rules",
+      "Develop critical thinking skills"
+    ],
+    "features": "Course Features",
+    "featuresList": [
+      "Each day's lesson comes with rich visual aids, including mind maps and slides",
+      "Interactive exercises and quizzes to help consolidate knowledge",
+      "Complete English-Chinese glossary of logical terminology",
+      "Real-life examples to help understand abstract concepts",
+      "Teaching design suitable for middle school students' cognitive level"
+    ]
+  },
+  "languageSelector": {
+    "label": "Language",
+    "languages": {
+      "en": "English",
+      "zh": "中文"
+    }
+  }
+}
