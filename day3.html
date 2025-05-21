@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第三天：邏輯連接 (Conjunction)詞 (Connective)與複合陳述句 (Statement) (Compound Statement) - 邏輯學 (Logic)入門</title>
+    <title>Day 3: Logical Connectives and Compound Statements - Introduction to Logic</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -11,13 +11,13 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="index.html" class="logo">邏輯學 (Logic)入門</a>
+                <a href="index.html" class="logo">Introduction to Logic</a>
                 <button class="mobile-menu-btn">☰</button>
                 <ul class="nav-links">
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="courses.html">課程內容</a></li>
-                    <li><a href="terminology.html">術語表</a></li>
-                    <li><a href="about.html">關於課程</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="terminology.html">Terminology</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,383 +33,84 @@
                     <li><a href="#conjunction">Conjunction (AND)</a></li>
                     <li><a href="#disjunction">Disjunction (OR)</a></li>
                     <li><a href="#negation">Negation (NOT)</a></li>
-                    <li><a href="#conditional">Conditional Statement (IF-THEN)</a></li>
-                    <li><a href="#biconditional">Biconditional Statement (IF AND ONLY IF)</a></li>
+                    <li><a href="#conditional">Conditional Statements</a></li>
+                    <li><a href="#biconditional">Biconditional Statements</a></li>
                     <li><a href="#truth-tables">Truth Tables</a></li>
                     <li><a href="#summary">Course Summary</a></li>
                     <li><a href="day3_slides.html">View Slides</a></li>
                     <li><a href="day3_quiz.html">Practice Quiz</a></li>
                 </ul>
             </aside>
-            
+
             <main class="course-content-main">
                 <div class="course-header">
-                    <h1>第三天：邏輯連接 (Conjunction)詞 (Connective)與複合陳述句 (Statement) (Compound Statement)</h1>
-                    <p>學習邏輯連接 (Conjunction)詞 (Connective)及其在構建複合陳述句 (Statement) (Compound Statement)中的應用，理解條件句 (Conditional Statement)與雙條件句 (Conditional Statement) (Biconditional Statement)的邏輯結構。</p>
+                    <h1>Day 3: Logical Connectives and Compound Statements</h1>
+                    <p>Learn how logical connectives combine simple statements into compound statements and how conditionals and biconditionals work.</p>
                 </div>
-                
+
                 <div class="mindmap-container">
-                    <img src="images/logic_mindmap_day3.png" alt="邏輯連接 (Conjunction)詞 (Connective)與複合陳述句 (Statement) (Compound Statement)心智圖" class="mindmap-image">
-                    <p class="mindmap-caption">邏輯連接 (Conjunction)詞 (Connective)與複合陳述句 (Statement) (Compound Statement)心智圖</p>
+                    <img src="images/logic_mindmap_day3.png" alt="Logical connectives mind map" class="mindmap-image">
+                    <p class="mindmap-caption">Mind map of logical connectives</p>
                 </div>
-                
+
                 <section id="course-intro" class="course-section">
-                    <h2>課程目標</h2>
-                    <p>本課程旨在介紹邏輯連接 (Conjunction)詞 (Connective)的基本概念和應用，幫助學生理解如何使用邏輯連接 (Conjunction)詞 (Connective)構建複合陳述句 (Statement) (Compound Statement)，以及如何分析複合陳述句 (Statement) (Compound Statement)的真值 (Truth Value)條件。</p>
-                    
-                    <p>完成本課程後，學生將能夠：</p>
+                    <h2>Course Objectives</h2>
+                    <p>This lesson introduces the five basic logical connectives and shows how to analyze the truth of compound statements.</p>
+                    <p>After completing this lesson, students will be able to:</p>
                     <ul>
-                        <li>理解五種基本邏輯連接 (Conjunction)詞 (Connective)的含義和用法</li>
-                        <li>使用邏輯連接 (Conjunction)詞 (Connective)構建複合陳述句 (Statement) (Compound Statement)</li>
-                        <li>分析條件句 (Conditional Statement)和雙條件句 (Conditional Statement) (Biconditional Statement)的邏輯結構</li>
-                        <li>使用真值 (Truth Value)表分析複合陳述句 (Statement) (Compound Statement)的真值 (Truth Value)條件</li>
+                        <li>Understand conjunction, disjunction, negation, conditionals, and biconditionals</li>
+                        <li>Build compound statements using these connectives</li>
+                        <li>Analyze conditionals and biconditionals</li>
+                        <li>Use truth tables to evaluate compound statements</li>
                     </ul>
                 </section>
-                
+
                 <section id="logical-connectives" class="course-section">
-                    <h2>邏輯連接 (Conjunction)詞 (Connective)基礎</h2>
-                    <p>邏輯連接 (Conjunction)詞 (Connective)是用來連接 (Conjunction)簡單陳述句 (Statement)，形成複合陳述句 (Statement) (Compound Statement)的詞語。在邏輯學 (Logic)中，有五種基本的邏輯連接 (Conjunction)詞 (Connective)：</p>
-                    
-                    <ul>
-                        <li><strong>連言詞（且，∧）</strong>：表示「和」、「並且」的關係</li>
-                        <li><strong>選言 (Disjunction)詞（或，∨）</strong>：表示「或者」的關係</li>
-                        <li><strong>否定 (Negation)詞（非，¬）</strong>：表示「不是」的關係</li>
-                        <li><strong>條件詞（如果...那麼，→）</strong>：表示「如果...那麼...」的關係</li>
-                        <li><strong>雙條件詞（當且僅當，↔）</strong>：表示「當且僅當」的關係</li>
-                    </ul>
-                    
-                    <p>這些邏輯連接 (Conjunction)詞 (Connective)可以用來構建各種複合陳述句 (Statement) (Compound Statement)，並且每種連接 (Conjunction)詞 (Connective)都有特定的真值 (Truth Value)條件。</p>
+                    <h2>Logical Connectives Basics</h2>
+                    <p>Logical connectives link simple statements to form more complex ones. The main connectives are AND (∧), OR (∨), NOT (¬), IF-THEN (→), and IF AND ONLY IF (↔).</p>
                 </section>
-                
+
                 <section id="conjunction" class="course-section">
-                    <h2>連言詞（且，∧）</h2>
-                    <p>連言詞用來表示「和」、「並且」的關係，它連接 (Conjunction)兩個陳述句 (Statement)，形成一個複合陳述句 (Statement) (Compound Statement)。</p>
-                    
-                    <h3>符號與表示</h3>
-                    <p>連言詞通常用符號「∧」表示。如果 p 和 q 是兩個陳述句 (Statement)，那麼「p ∧ q」表示「p 且 q」。</p>
-                    
-                    <h3>真值 (Truth Value)條件</h3>
-                    <p>連言句「p ∧ q」為真的條件是：p 為真且 q 為真。如果 p 和 q 中有任何一個為假，那麼「p ∧ q」就為假。</p>
-                    
-                    <p>連言詞的真值 (Truth Value)表：</p>
-                    <table class="truth-table">
-                        <tr>
-                            <th>p</th>
-                            <th>q</th>
-                            <th>p ∧ q</th>
-                        </tr>
-                        <tr>
-                            <td>真</td>
-                            <td>真</td>
-                            <td>真</td>
-                        </tr>
-                        <tr>
-                            <td>真</td>
-                            <td>假</td>
-                            <td>假</td>
-                        </tr>
-                        <tr>
-                            <td>假</td>
-                            <td>真</td>
-                            <td>假</td>
-                        </tr>
-                        <tr>
-                            <td>假</td>
-                            <td>假</td>
-                            <td>假</td>
-                        </tr>
-                    </table>
-                    
-                    <h3>例子</h3>
-                    <p>例如，考慮以下陳述句 (Statement)：</p>
-                    <ul>
-                        <li>p：台北是台灣的首都。</li>
-                        <li>q：台灣是一個島嶼。</li>
-                    </ul>
-                    
-                    <p>那麼「p ∧ q」表示「台北是台灣的首都，且台灣是一個島嶼」。由於 p 和 q 都為真，所以「p ∧ q」也為真。</p>
+                    <h2>Conjunction (AND)</h2>
+                    <p>The conjunction p ∧ q is true only when both p and q are true.</p>
                 </section>
-                
+
                 <section id="disjunction" class="course-section">
-                    <h2>選言 (Disjunction)詞（或，∨）</h2>
-                    <p>選言 (Disjunction)詞用來表示「或者」的關係，它連接 (Conjunction)兩個陳述句 (Statement)，形成一個複合陳述句 (Statement) (Compound Statement)。</p>
-                    
-                    <h3>符號與表示</h3>
-                    <p>選言 (Disjunction)詞通常用符號「∨」表示。如果 p 和 q 是兩個陳述句 (Statement)，那麼「p ∨ q」表示「p 或 q」。</p>
-                    
-                    <h3>真值 (Truth Value)條件</h3>
-                    <p>選言 (Disjunction)句「p ∨ q」為真的條件是：p 為真或 q 為真（或兩者都為真）。只有當 p 和 q 都為假時，「p ∨ q」才為假。</p>
-                    
-                    <p>選言 (Disjunction)詞的真值 (Truth Value)表：</p>
-                    <table class="truth-table">
-                        <tr>
-                            <th>p</th>
-                            <th>q</th>
-                            <th>p ∨ q</th>
-                        </tr>
-                        <tr>
-                            <td>真</td>
-                            <td>真</td>
-                            <td>真</td>
-                        </tr>
-                        <tr>
-                            <td>真</td>
-                            <td>假</td>
-                            <td>真</td>
-                        </tr>
-                        <tr>
-                            <td>假</td>
-                            <td>真</td>
-                            <td>真</td>
-                        </tr>
-                        <tr>
-                            <td>假</td>
-                            <td>假</td>
-                            <td>假</td>
-                        </tr>
-                    </table>
-                    
-                    <h3>例子</h3>
-                    <p>例如，考慮以下陳述句 (Statement)：</p>
-                    <ul>
-                        <li>p：今天是星期六。</li>
-                        <li>q：今天是星期日。</li>
-                    </ul>
-                    
-                    <p>那麼「p ∨ q」表示「今天是星期六或今天是星期日」。如果今天是星期六，那麼 p 為真，q 為假，所以「p ∨ q」為真。如果今天是星期日，那麼 p 為假，q 為真，所以「p ∨ q」也為真。如果今天既不是星期六也不是星期日，那麼 p 和 q 都為假，所以「p ∨ q」為假。</p>
+                    <h2>Disjunction (OR)</h2>
+                    <p>The disjunction p ∨ q is true when at least one of p or q is true.</p>
                 </section>
-                
+
                 <section id="negation" class="course-section">
-                    <h2>否定 (Negation)詞（非，¬）</h2>
-                    <p>否定 (Negation)詞用來表示「不是」的關係，它作用於一個陳述句 (Statement)，形成該陳述句 (Statement)的否定 (Negation)。</p>
-                    
-                    <h3>符號與表示</h3>
-                    <p>否定 (Negation)詞通常用符號「¬」表示。如果 p 是一個陳述句 (Statement)，那麼「¬p」表示「非 p」或「p 不成立」。</p>
-                    
-                    <h3>真值 (Truth Value)條件</h3>
-                    <p>否定 (Negation)句「¬p」的真值 (Truth Value)與原陳述句 (Statement) p 的真值 (Truth Value)相反。如果 p 為真，那麼「¬p」為假；如果 p 為假，那麼「¬p」為真。</p>
-                    
-                    <p>否定 (Negation)詞的真值 (Truth Value)表：</p>
-                    <table class="truth-table">
-                        <tr>
-                            <th>p</th>
-                            <th>¬p</th>
-                        </tr>
-                        <tr>
-                            <td>真</td>
-                            <td>假</td>
-                        </tr>
-                        <tr>
-                            <td>假</td>
-                            <td>真</td>
-                        </tr>
-                    </table>
-                    
-                    <h3>例子</h3>
-                    <p>例如，考慮以下陳述句 (Statement)：</p>
-                    <ul>
-                        <li>p：地球是圓的。</li>
-                    </ul>
-                    
-                    <p>那麼「¬p」表示「地球不是圓的」。由於 p 為真，所以「¬p」為假。</p>
+                    <h2>Negation (NOT)</h2>
+                    <p>The negation ¬p is true when p is false and false when p is true.</p>
                 </section>
-                
+
                 <section id="conditional" class="course-section">
-                    <h2>條件句 (Conditional Statement)</h2>
-                    <p>條件句 (Conditional Statement)用來表示「如果...那麼...」的關係，它連接 (Conjunction)兩個陳述句 (Statement)，形成一個複合陳述句 (Statement) (Compound Statement)。</p>
-                    
-                    <h3>符號與表示</h3>
-                    <p>條件詞通常用符號「→」表示。如果 p 和 q 是兩個陳述句 (Statement)，那麼「p → q」表示「如果 p，那麼 q」。</p>
-                    
-                    <h3>真值 (Truth Value)條件</h3>
-                    <p>條件句 (Conditional Statement)「p → q」為假的唯一情況是：p 為真且 q 為假。在其他所有情況下，「p → q」都為真。</p>
-                    
-                    <p>條件詞的真值 (Truth Value)表：</p>
-                    <table class="truth-table">
-                        <tr>
-                            <th>p</th>
-                            <th>q</th>
-                            <th>p → q</th>
-                        </tr>
-                        <tr>
-                            <td>真</td>
-                            <td>真</td>
-                            <td>真</td>
-                        </tr>
-                        <tr>
-                            <td>真</td>
-                            <td>假</td>
-                            <td>假</td>
-                        </tr>
-                        <tr>
-                            <td>假</td>
-                            <td>真</td>
-                            <td>真</td>
-                        </tr>
-                        <tr>
-                            <td>假</td>
-                            <td>假</td>
-                            <td>真</td>
-                        </tr>
-                    </table>
-                    
-                    <h3>例子</h3>
-                    <p>例如，考慮以下陳述句 (Statement)：</p>
-                    <ul>
-                        <li>p：下雨。</li>
-                        <li>q：地面濕。</li>
-                    </ul>
-                    
-                    <p>那麼「p → q」表示「如果下雨，那麼地面濕」。這個條件句 (Conditional Statement)在什麼情況下為假呢？只有當下雨（p 為真）但地面不濕（q 為假）時，這個條件句 (Conditional Statement)才為假。在其他所有情況下，這個條件句 (Conditional Statement)都為真。</p>
+                    <h2>Conditional Statements</h2>
+                    <p>The conditional p → q is false only when p is true and q is false.</p>
                 </section>
-                
+
                 <section id="biconditional" class="course-section">
-                    <h2>雙條件句 (Conditional Statement) (Biconditional Statement)</h2>
-                    <p>雙條件句 (Conditional Statement) (Biconditional Statement)用來表示「當且僅當」的關係，它連接 (Conjunction)兩個陳述句 (Statement)，形成一個複合陳述句 (Statement) (Compound Statement)。</p>
-                    
-                    <h3>符號與表示</h3>
-                    <p>雙條件詞通常用符號「↔」表示。如果 p 和 q 是兩個陳述句 (Statement)，那麼「p ↔ q」表示「p 當且僅當 q」。</p>
-                    
-                    <h3>真值 (Truth Value)條件</h3>
-                    <p>雙條件句 (Conditional Statement) (Biconditional Statement)「p ↔ q」為真的條件是：p 和 q 具有相同的真值 (Truth Value)。也就是說，要麼 p 和 q 都為真，要麼 p 和 q 都為假。</p>
-                    
-                    <p>雙條件詞的真值 (Truth Value)表：</p>
-                    <table class="truth-table">
-                        <tr>
-                            <th>p</th>
-                            <th>q</th>
-                            <th>p ↔ q</th>
-                        </tr>
-                        <tr>
-                            <td>真</td>
-                            <td>真</td>
-                            <td>真</td>
-                        </tr>
-                        <tr>
-                            <td>真</td>
-                            <td>假</td>
-                            <td>假</td>
-                        </tr>
-                        <tr>
-                            <td>假</td>
-                            <td>真</td>
-                            <td>假</td>
-                        </tr>
-                        <tr>
-                            <td>假</td>
-                            <td>假</td>
-                            <td>真</td>
-                        </tr>
-                    </table>
-                    
-                    <h3>例子</h3>
-                    <p>例如，考慮以下陳述句 (Statement)：</p>
-                    <ul>
-                        <li>p：一個數是偶數。</li>
-                        <li>q：這個數能被2整除。</li>
-                    </ul>
-                    
-                    <p>那麼「p ↔ q」表示「一個數是偶數當且僅當這個數能被2整除」。這個雙條件句 (Conditional Statement) (Biconditional Statement)為真，因為一個數是偶數和這個數能被2整除是等價的。</p>
+                    <h2>Biconditional Statements</h2>
+                    <p>The biconditional p ↔ q is true when p and q have the same truth value.</p>
                 </section>
-                
+
                 <section id="truth-tables" class="course-section">
-                    <h2>真值 (Truth Value)表</h2>
-                    <p>真值 (Truth Value)表是一種用來分析複合陳述句 (Statement) (Compound Statement)真值 (Truth Value)條件的工具。它列出了所有可能的真值 (Truth Value)組合，並顯示在每種組合下複合陳述句 (Statement) (Compound Statement)的真值 (Truth Value)。</p>
-                    
-                    <h3>真值 (Truth Value)表的構建步驟</h3>
-                    <ol>
-                        <li>確定陳述句 (Statement)中的簡單陳述句 (Statement)（原子命題 (Proposition)）</li>
-                        <li>列出所有可能的真值 (Truth Value)組合</li>
-                        <li>根據邏輯連接 (Conjunction)詞 (Connective)的真值 (Truth Value)條件，計算複合陳述句 (Statement) (Compound Statement)的真值 (Truth Value)</li>
-                    </ol>
-                    
-                    <h3>例子</h3>
-                    <p>讓我們構建「(p ∧ q) → r」的真值 (Truth Value)表。</p>
-                    
-                    <p>首先，我們確定簡單陳述句 (Statement)：p、q 和 r。</p>
-                    
-                    <p>然後，我們列出所有可能的真值 (Truth Value)組合：</p>
-                    <table class="truth-table">
-                        <tr>
-                            <th>p</th>
-                            <th>q</th>
-                            <th>r</th>
-                            <th>p ∧ q</th>
-                            <th>(p ∧ q) → r</th>
-                        </tr>
-                        <tr>
-                            <td>真</td>
-                            <td>真</td>
-                            <td>真</td>
-                            <td>真</td>
-                            <td>真</td>
-                        </tr>
-                        <tr>
-                            <td>真</td>
-                            <td>真</td>
-                            <td>假</td>
-                            <td>真</td>
-                            <td>假</td>
-                        </tr>
-                        <tr>
-                            <td>真</td>
-                            <td>假</td>
-                            <td>真</td>
-                            <td>假</td>
-                            <td>真</td>
-                        </tr>
-                        <tr>
-                            <td>真</td>
-                            <td>假</td>
-                            <td>假</td>
-                            <td>假</td>
-                            <td>真</td>
-                        </tr>
-                        <tr>
-                            <td>假</td>
-                            <td>真</td>
-                            <td>真</td>
-                            <td>假</td>
-                            <td>真</td>
-                        </tr>
-                        <tr>
-                            <td>假</td>
-                            <td>真</td>
-                            <td>假</td>
-                            <td>假</td>
-                            <td>真</td>
-                        </tr>
-                        <tr>
-                            <td>假</td>
-                            <td>假</td>
-                            <td>真</td>
-                            <td>假</td>
-                            <td>真</td>
-                        </tr>
-                        <tr>
-                            <td>假</td>
-                            <td>假</td>
-                            <td>假</td>
-                            <td>假</td>
-                            <td>真</td>
-                        </tr>
-                    </table>
-                    
-                    <p>從真值 (Truth Value)表中，我們可以看到「(p ∧ q) → r」在大多數情況下為真，只有當 p 為真、q 為真、r 為假時，它才為假。</p>
+                    <h2>Truth Tables</h2>
+                    <p>Truth tables list all possible truth values for compound statements. They are useful for checking validity.</p>
                 </section>
-                
+
                 <section id="summary" class="course-section">
-                    <h2>課程總結</h2>
-                    <p>在今天的課程中，我們學習了：</p>
+                    <h2>Course Summary</h2>
+                    <p>Today we learned:</p>
                     <ul>
-                        <li>五種基本邏輯連接 (Conjunction)詞 (Connective)：連言詞（且，∧）、選言 (Disjunction)詞（或，∨）、否定 (Negation)詞（非，¬）、條件詞（如果...那麼，→）和雙條件詞（當且僅當，↔）</li>
-                        <li>每種邏輯連接 (Conjunction)詞 (Connective)的含義和真值 (Truth Value)條件</li>
-                        <li>如何使用邏輯連接 (Conjunction)詞 (Connective)構建複合陳述句 (Statement) (Compound Statement)</li>
-                        <li>如何使用真值 (Truth Value)表分析複合陳述句 (Statement) (Compound Statement)的真值 (Truth Value)條件</li>
+                        <li>The meanings of the five logical connectives</li>
+                        <li>How to form compound statements</li>
+                        <li>How to evaluate conditionals and biconditionals</li>
+                        <li>How truth tables help analyze logical relationships</li>
                     </ul>
-                    
-                    <p>這些知識為我們理解更複雜的邏輯結構和推理 (Inference)規則奠定了基礎。</p>
-                    
+                    <p>These ideas lay the groundwork for understanding deductive reasoning.</p>
+
                     <div class="course-links">
                         <a href="day3_slides.html" class="course-btn">View Slides</a>
                         <a href="day3_quiz.html" class="course-btn">Practice Quiz</a>
@@ -423,31 +124,31 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>邏輯學 (Logic)入門</h3>
-                    <p>基於Irving M. Copi的《邏輯學 (Logic)入門》，為國中生設計的五天邏輯學 (Logic)課程。</p>
+                    <h3>Introduction to Logic</h3>
+                    <p>A five-day logic course for middle school students inspired by Irving M. Copi's "Introduction to Logic."</p>
                 </div>
                 <div class="footer-column">
-                    <h3>快速連結</h3>
+                    <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="index.html">首頁</a></li>
-                        <li><a href="courses.html">課程內容</a></li>
-                        <li><a href="terminology.html">術語表</a></li>
-                        <li><a href="about.html">關於課程</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="terminology.html">Terminology</a></li>
+                        <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>課程資源</h3>
+                    <h3>Course Resources</h3>
                     <ul class="footer-links">
-                        <li><a href="day1.html">第一天：邏輯學 (Logic)基礎與語言</a></li>
-                        <li><a href="day2.html">第二天：論證 (Argument)與謬誤 (Fallacy)</a></li>
-                        <li><a href="day3.html">第三天：邏輯連接 (Conjunction)詞 (Connective)與複合陳述句 (Statement) (Compound Statement)</a></li>
-                        <li><a href="day4.html">第四天：演繹推理 (Inference) (Deductive Reasoning)與邏輯規則</a></li>
-                        <li><a href="day5.html">第五天：歸納推理 (Inference) (Inductive Reasoning)與批判性思考 (Critical Thinking)</a></li>
+                        <li><a href="day1.html">Day 1: Logic Basics and Language</a></li>
+                        <li><a href="day2.html">Day 2: Arguments and Fallacies</a></li>
+                        <li><a href="day3.html">Day 3: Logical Connectives and Compound Statements</a></li>
+                        <li><a href="day4.html">Day 4: Deductive Reasoning and Logical Rules</a></li>
+                        <li><a href="day5.html">Day 5: Inductive Reasoning and Critical Thinking</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 邏輯學 (Logic)入門課程. 保留所有權利。</p>
+                <p>&copy; 2025 Introduction to Logic Course. All rights reserved.</p>
             </div>
         </div>
     </footer>
