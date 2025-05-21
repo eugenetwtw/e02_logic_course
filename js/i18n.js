@@ -35,6 +35,22 @@ function applyLang() {
       setLang(this.value);
     });
   }
+
+  updateLinks();
+}
+
+function updateLinks() {
+  const lang = getCurrentLang();
+  const links = document.querySelectorAll('a[href]');
+  links.forEach(a => {
+    const href = a.getAttribute('href');
+    if (!href || href.startsWith('http') || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) {
+      return;
+    }
+    const url = new URL(href, window.location.origin);
+    url.searchParams.set('lang', lang);
+    a.setAttribute('href', url.pathname + url.search + url.hash);
+  });
 }
 
 document.addEventListener('DOMContentLoaded', applyLang);
