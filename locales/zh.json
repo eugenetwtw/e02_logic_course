@@ -836,6 +836,115 @@
         "語言有多種功能，包括資訊功能、指令功能、表達功能和儀式功能",
         "在邏輯學 (Logic) 中，我們主要關注語言的資訊功能"
       ]
+    },
+    "day5": {
+      "title": "第五天測驗：歸納推理 (Inductive Reasoning) 與批判性思考 (Critical Thinking)",
+      "instructions": [
+        "本測驗共10題，總分100分",
+        "每題10分，答錯不倒扣",
+        "選擇題請選擇最適合的一個答案"
+      ],
+      "questions": {
+        "q1": {
+          "text": "歸納推理 (Inductive Reasoning) 的特點是：",
+          "options": [
+            "A. 從一般到特殊",
+            "B. 從特殊到一般",
+            "C. 結論 (Conclusion) 必然為真",
+            "D. 不增加新信息"
+          ]
+        },
+        "q2": {
+          "text": "類比推理 (Argument by Analogy) 的強度主要取決於：",
+          "options": [
+            "A. 比較對象的數量",
+            "B. 相似性的相關程度和差異性的重要程度",
+            "C. 結論 (Conclusion) 的複雜性",
+            "D. 前提 (Premise) 的數量"
+          ]
+        },
+        "q3": {
+          "text": "因果關係推理 (Causal Reasoning) 中，「後此謬誤」(Post Hoc Fallacy) 是指：",
+          "options": [
+            "A. 混淆原因和結果",
+            "B. 認為時間上的先後關係就是因果關係",
+            "C. 忽略其他可能的原因",
+            "D. 誇大因果關係的強度"
+          ]
+        },
+        "q4": {
+          "text": "密爾的「一致法」(Method of Agreement) 是指：",
+          "options": [
+            "A. 如果現象出現的場合都有某個因素存在，該因素可能是原因",
+            "B. 如果現象出現和不出現的場合只有一個因素不同，該因素可能是原因",
+            "C. 如果兩個現象同時變化，它們之間可能有因果關係",
+            "D. 排除已知原因後，剩餘因素可能是未知現象的原因"
+          ]
+        },
+        "q5": {
+          "text": "密爾的「差異法」(Method of Difference) 是指：",
+          "options": [
+            "A. 如果現象出現的場合都有某個因素存在，該因素可能是原因",
+            "B. 如果現象出現和不出現的場合只有一個因素不同，該因素可能是原因",
+            "C. 如果兩個現象同時變化，它們之間可能有因果關係",
+            "D. 排除已知原因後，剩餘因素可能是未知現象的原因"
+          ]
+        },
+        "q6": {
+          "text": "科學方法 (Scientific Method) 的基本步驟不包括：",
+          "options": [
+            "A. 觀察現象",
+            "B. 提出假設 (Hypothesis)",
+            "C. 接受權威觀點",
+            "D. 驗證假設 (Hypothesis)"
+          ]
+        },
+        "q7": {
+          "text": "一個好的假設 (Hypothesis) 應該具備的特點是：",
+          "options": [
+            "A. 複雜且難以理解",
+            "B. 可以被證實但不能被證偽",
+            "C. 可以被測試和證偽",
+            "D. 基於個人信念而非證據"
+          ]
+        },
+        "q8": {
+          "text": "批判性思考 (Critical Thinking) 的基本態度不包括：",
+          "options": [
+            "A. 開放性",
+            "B. 好奇心",
+            "C. 固執己見",
+            "D. 懷疑精神"
+          ]
+        },
+        "q9": {
+          "text": "在評估類比推理 (Argument by Analogy) 時，下列哪一項最重要？",
+          "options": [
+            "A. 比較對象的相似性是否與結論 (Conclusion) 相關",
+            "B. 比較對象的數量是否足夠多",
+            "C. 結論 (Conclusion) 是否令人滿意",
+            "D. 前提 (Premise) 是否容易理解"
+          ]
+        },
+        "q10": {
+          "text": "歸納推理 (Inductive Reasoning) 與演繹推理 (Deductive Reasoning) 的主要區別是：",
+          "options": [
+            "A. 歸納推理 (Inductive Reasoning) 更可靠",
+            "B. 演繹推理 (Deductive Reasoning) 更實用",
+            "C. 歸納推理 (Inductive Reasoning) 的結論 (Conclusion) 超出前提 (Premise) 的信息範圍",
+            "D. 演繹推理 (Deductive Reasoning) 需要更多前提 (Premise)"
+          ]
+        }
+      },
+      "reviewPoints": [
+        "歸納推理 (Inductive Reasoning)：從特殊到一般，結論 (Conclusion) 的確定性較低但增加新信息",
+        "類比推理 (Argument by Analogy)：基於相似性進行推理，強度取決於相似性的相關程度",
+        "因果關係推理 (Causal Reasoning)：要避免後此謬誤 (Post Hoc Fallacy) 和其他因果謬誤",
+        "密爾方法 (Mill's Methods)：一致法、差異法、共變法、剩餘法和合併法",
+        "科學方法 (Scientific Method)：觀察、假設 (Hypothesis)、預測、實驗、驗證",
+        "批判性思考 (Critical Thinking)：開放性、好奇心、懷疑精神、謙遜、系統性",
+        "假設 (Hypothesis) 的特點：可測試性、可證偽性、簡潔性、解釋力"
+      ]
     }
   },
   "slides": {
