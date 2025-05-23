@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 Quiz: Logic Fundamentals and Language - Introduction to Logic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Introduction to Logic</a>
+                <button class="mobile-menu-btn">☰</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="terminology.html">Terminology</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <h1>Day 1 Quiz: Logic Fundamentals and Language</h1>
+            </div>
+            
+            <div class="quiz-instructions">
+                <p>This quiz has 10 questions, total score 100 points</p>
+                <p>Each question is worth 10 points, no penalty for wrong answers</p>
+                <p>For multiple choice questions, please select the most appropriate answer</p>
+            </div>
+            
+            <form id="quiz-form">
+                <div class="quiz-question" data-correct="B">
+                    <p class="question-text">1. What does Logic primarily study?</p>
+                    <ul class="quiz-options">
+                        <li class="quiz-option" data-answer="A">A. Human emotional expression</li>
+                        <li class="quiz-option" data-answer="B">B. Methods of valid inference</li>
+                        <li class="quiz-option" data-answer="C">C. Historical development of language</li>
+                        <li class="quiz-option" data-answer="D">D. Analysis of literary works</li>
+                    </ul>
+                </div>
+                
+                <div class="quiz-question" data-correct="C">
+                    <p class="question-text">2. Which of the following is a statement?</p>
+                    <ul class="quiz-options">
+                        <li class="quiz-option" data-answer="A">A. Please close the door</li>
+                        <li class="quiz-option" data-answer="B">B. How is the weather today?</li>
+                        <li class="quiz-option" data-answer="C">C. Taipei is the capital of Taiwan</li>
+                        <li class="quiz-option" data-answer="D">D. What a beautiful scenery!</li>
+                    </ul>
+                </div>
+                
+                <div class="quiz-question" data-correct="C">
+                    <p class="question-text">3. Which of the following is NOT a statement?</p>
+                    <ul class="quiz-options">
+                        <li class="quiz-option" data-answer="A">A. The Earth revolves around the Sun</li>
+                        <li class="quiz-option" data-answer="B">B. The chemical formula for water is H2O</li>
+                        <li class="quiz-option" data-answer="C">C. Happy birthday to you</li>
+                        <li class="quiz-option" data-answer="D">D. All humans are mortal</li>
+                    </ul>
+                </div>
+                
+                <div class="quiz-question" data-correct="A">
+                    <p class="question-text">4. In an argument, statements used to support the conclusion are called:</p>
+                    <ul class="quiz-options">
+                        <li class="quiz-option" data-answer="A">A. Premises</li>
+                        <li class="quiz-option" data-answer="B">B. Assumptions</li>
+                        <li class="quiz-option" data-answer="C">C. Inferences</li>
+                        <li class="quiz-option" data-answer="D">D. Evidence</li>
+                    </ul>
+                </div>
+                
+                <div class="quiz-question" data-correct="D">
+                    <p class="question-text">5. Which of the following words is typically used to introduce a conclusion?</p>
+                    <ul class="quiz-options">
+                        <li class="quiz-option" data-answer="A">A. Because</li>
+                        <li class="quiz-option" data-answer="B">B. Since</li>
+                        <li class="quiz-option" data-answer="C">C. Given that</li>
+                        <li class="quiz-option" data-answer="D">D. Therefore</li>
+                    </ul>
+                </div>
+                
+                <div class="quiz-question" data-correct="B">
+                    <p class="question-text">6. Which function of language is most relevant to Logic?</p>
+                    <ul class="quiz-options">
+                        <li class="quiz-option" data-answer="A">A. Expressive function</li>
+                        <li class="quiz-option" data-answer="B">B. Informative function</li>
+                        <li class="quiz-option" data-answer="C">C. Directive function</li>
+                        <li class="quiz-option" data-answer="D">D. Ceremonial function</li>
+                    </ul>
+                </div>
+                
+                <div class="quiz-question" data-correct="D">
+                    <p class="question-text">7. Read the following paragraph and identify the conclusion: "Due to continuous rain, the water level in the river has risen. As the water level has risen, the dam is in danger of breaking. Therefore, residents should evacuate to a safe area."</p>
+                    <ul class="quiz-options">
+                        <li class="quiz-option" data-answer="A">A. Continuous rain</li>
+                        <li class="quiz-option" data-answer="B">B. The water level in the river has risen</li>
+                        <li class="quiz-option" data-answer="C">C. The dam is in danger of breaking</li>
+                        <li class="quiz-option" data-answer="D">D. Residents should evacuate to a safe area</li>
+                    </ul>
+                </div>
+                
+                <div class="quiz-question" data-correct="A">
+                    <p class="question-text">8. Read the following paragraph and identify the premises: "All mammals have lungs. Whales are mammals. Therefore, whales have lungs."</p>
+                    <ul class="quiz-options">
+                        <li class="quiz-option" data-answer="A">A. All mammals have lungs; Whales are mammals</li>
+                        <li class="quiz-option" data-answer="B">B. Whales have lungs</li>
+                        <li class="quiz-option" data-answer="C">C. All mammals have lungs</li>
+                        <li class="quiz-option" data-answer="D">D. Whales are mammals</li>
+                    </ul>
+                </div>
+                
+                <div class="quiz-question" data-correct="C">
+                    <p class="question-text">9. Which of the following is NOT an application of Logic in daily life?</p>
+                    <ul class="quiz-options">
+                        <li class="quiz-option" data-answer="A">A. Evaluating the credibility of news reports</li>
+                        <li class="quiz-option" data-answer="B">B. Analyzing arguments in debates</li>
+                        <li class="quiz-option" data-answer="C">C. Expressing personal emotions</li>
+                        <li class="quiz-option" data-answer="D">D. Solving mathematical problems</li>
+                    </ul>
+                </div>
+                
+                <div class="quiz-question" data-correct="B">
+                    <p class="question-text">10. Which of the following best explains the importance of Logic?</p>
+                    <ul class="quiz-options">
+                        <li class="quiz-option" data-answer="A">A. It helps us better express our emotions</li>
+                        <li class="quiz-option" data-answer="B">B. It enables us to distinguish between good and bad arguments</li>
+                        <li class="quiz-option" data-answer="C">C. It improves our social skills</li>
+                        <li class="quiz-option" data-answer="D">D. It enhances our memory</li>
+                    </ul>
+                </div>
+                
+                <div class="quiz-buttons">
+                    <button type="button" class="quiz-btn quiz-submit">Submit Quiz</button>
+                </div>
+                
+                <div class="quiz-results" style="display: none;">
+                    <h2>Quiz Results</h2>
+                    <div class="quiz-score">0/100 points</div>
+                    <p class="quiz-feedback">Please complete the quiz to see your results.</p>
+                    
+                    <div class="review-points">
+                        <h3>Review Points</h3>
+                        <ol>
+                            <li>Logic is the study of valid inference, helping us distinguish between good and bad arguments</li>
+                            <li>Statements are sentences that can be judged as true or false, while non-statements cannot</li>
+                            <li>Arguments consist of premises and conclusions, with premises supporting the conclusion</li>
+                            <li>Conclusion indicators include: therefore, thus, hence, consequently, it follows that</li>
+                            <li>Premise indicators include: because, since, given that, considering that</li>
+                            <li>Language has multiple functions, including informative, directive, expressive, and ceremonial functions</li>
+                            <li>In logic, we mainly focus on the informative function of language</li>
+                        </ol>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Introduction to Logic</h3>
+                    <p>Based on Irving M. Copi's "Introduction to Logic", a five-day logic course designed for middle school students.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="terminology.html">Terminology</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Course Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="day1.html">Day 1: Logic Fundamentals and Language</a></li>
+                        <li><a href="day2.html">Day 2: Arguments and Fallacies</a></li>
+                        <li><a href="day3.html">Day 3: Logical Connectives and Compound Statements</a></li>
+                        <li><a href="day4.html">Day 4: Deductive Reasoning and Logical Rules</a></li>
+                        <li><a href="day5.html">Day 5: Inductive Reasoning and Critical Thinking</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Introduction to Logic Course. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Override the translation system to use hardcoded English content
+        document.addEventListener('DOMContentLoaded', function() {
+            // Prevent the translation system from overriding our hardcoded content
+            window.t = function(key) {
+                return key; // Return the key itself, which will be ignored
+            };
+            
+            // Make sure the submit button uses the hardcoded text
+            const submitBtn = document.querySelector('.quiz-submit');
+            if (submitBtn) {
+                submitBtn.textContent = 'Submit Quiz';
+            }
+            
+            // Initialize the quiz functionality
+            initializeQuiz();
+        });
+        
+        // Copy of the quiz initialization function from main.js
+        function initializeQuiz() {
+            const quizContainer = document.querySelector('.quiz-container');
+            if (!quizContainer) return;
+            
+            const quizOptions = document.querySelectorAll('.quiz-option');
+            const submitBtn = document.querySelector('.quiz-submit');
+            const resultsContainer = document.querySelector('.quiz-results');
+            const scoreElement = document.querySelector('.quiz-score');
+            const feedbackElement = document.querySelector('.quiz-feedback');
+            
+            // Option selection
+            quizOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    // Remove selected state from other options in the same question
+                    const questionOptions = this.closest('.quiz-question').querySelectorAll('.quiz-option');
+                    questionOptions.forEach(opt => opt.classList.remove('selected'));
+                    
+                    // Select current option
+                    this.classList.add('selected');
+                });
+            });
+            
+            // Submit quiz
+            if (submitBtn) {
+                submitBtn.addEventListener('click', function() {
+                    // Calculate score
+                    const questions = document.querySelectorAll('.quiz-question');
+                    let correctCount = 0;
+                    let answeredCount = 0;
+                    
+                    questions.forEach((question, index) => {
+                        const selectedOption = question.querySelector('.quiz-option.selected');
+                        if (selectedOption) {
+                            answeredCount++;
+                            const selectedAnswer = selectedOption.getAttribute('data-answer');
+                            const correctAnswer = question.getAttribute('data-correct');
+                            
+                            if (selectedAnswer === correctAnswer) {
+                                correctCount++;
+                                selectedOption.style.backgroundColor = '#2ecc71'; // Correct answer shows green
+                            } else {
+                                selectedOption.style.backgroundColor = '#e74c3c'; // Wrong answer shows red
+                                
+                                // Highlight correct answer
+                                const options = question.querySelectorAll('.quiz-option');
+                                options.forEach(opt => {
+                                    if (opt.getAttribute('data-answer') === correctAnswer) {
+                                        opt.style.backgroundColor = '#2ecc71';
+                                    }
+                                });
+                            }
+                        }
+                    });
+                    
+                    // Calculate score (total 100 points)
+                    const totalQuestions = questions.length;
+                    const score = Math.round((correctCount / totalQuestions) * 100);
+                    
+                    // Show results
+                    scoreElement.textContent = `${score}/100 points`;
+                    
+                    // Provide feedback based on score
+                    if (score >= 90) {
+                        feedbackElement.textContent = 'Excellent! You have a great understanding of this topic!';
+                    } else if (score >= 70) {
+                        feedbackElement.textContent = 'Well done! You\'ve mastered most of the concepts.';
+                    } else if (score >= 50) {
+                        feedbackElement.textContent = 'Good try! Please review the questions you got wrong.';
+                    } else {
+                        feedbackElement.textContent = 'Needs more practice. It\'s recommended to re-read the course materials.';
+                    }
+                    
+                    // Show results area
+                    resultsContainer.style.display = 'block';
+                    
+                    // Disable submit button
+                    submitBtn.disabled = true;
+                    
+                    // Scroll to results area
+                    resultsContainer.scrollIntoView({ behavior: 'smooth' });
+                });
+            }
+        }
+    </script>
+</body>
+</html>

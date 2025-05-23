@@ -29,11 +29,19 @@ let currentLanguage = '';
 
 // 初始化i18n
 async function initializeI18n() {
-    // 從URL獲取語言設置
+    // 從路徑或URL獲取語言設置
+    const pathSegments = window.location.pathname.split('/');
+    let langFromPath = '';
+    if (pathSegments.includes('zh')) {
+        langFromPath = 'zh';
+    } else if (pathSegments.includes('en')) {
+        langFromPath = 'en';
+    }
+
     const urlParams = new URLSearchParams(window.location.search);
-    let lang = urlParams.get('lang');
-    
-    // 如果URL中沒有語言參數，則從localStorage獲取或使用默認語言
+    let lang = urlParams.get('lang') || langFromPath;
+
+    // 如果路徑與URL都沒有語言參數，則從localStorage獲取或使用默認語言
     if (!lang) {
         lang = localStorage.getItem('language') || 'zh';
     }
@@ -1050,35 +1058,30 @@ function addLanguageSelector() {
 async function changeLanguage(lang) {
     // 保存語言設置
     localStorage.setItem('language', lang);
-    
-    // 更新URL
-    const newUrl = updateUrlWithLanguage(window.location.href, lang);
-    window.history.replaceState({}, '', newUrl);
-    
-    // 重新載入翻譯
-    await loadTranslations(lang);
-    
-    // 更新頁面內容
-    updatePageContent();
+
+    // 取得當前檔案名稱
+    const filename = window.location.pathname.split('/').pop() || 'index.html';
+
+    // 重新導向到對應語言的子目錄
+    window.location.href = `/${lang}/${filename}`;
 }
 
 // 更新URL以包含語言參數
 function updateUrlWithLanguage(url, lang) {
     lang = lang || currentLanguage;
-    
-    // 解析URL
-    let urlObj;
+
+    // 忽略完整的URL
     try {
-        urlObj = new URL(url, window.location.origin);
+        const test = new URL(url);
+        if (test.origin !== window.location.origin) {
+            return url;
+        }
     } catch (e) {
-        // 如果URL不完整，添加基本URL
-        urlObj = new URL(url, window.location.origin);
+        // url 為相對路徑，無需處理
     }
-    
-    // 設置語言參數
-    urlObj.searchParams.set('lang', lang);
-    
-    return urlObj.toString();
+
+    const file = url.split('/').pop() || 'index.html';
+    return `/${lang}/${file}`;
 }
 
 // 測驗功能
