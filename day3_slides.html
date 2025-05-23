@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 Slides: Logical Connectives and Compound Statements - Introduction to Logic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Introduction to Logic</a>
+                <button class="mobile-menu-btn">☰</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="terminology.html">Terminology</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="slide-container">
+            <h1>Day 3: Logical Connectives and Compound Statements</h1>
+            
+            <div class="slide-content">
+                <div class="slide" id="slide-1">
+                    <h2>Course Objectives</h2>
+                    <ul>
+                        <li>Understand the meaning and usage of the five basic logical connectives</li>
+                        <li>Use logical connectives to construct compound statements</li>
+                        <li>Analyze the logical structure of conditional and biconditional statements</li>
+                        <li>Use truth tables to analyze the truth conditions of compound statements</li>
+                    </ul>
+                </div>
+                
+                <div class="slide" id="slide-2" style="display: none;">
+                    <h2>Logical Connectives Basics</h2>
+                    <p>Logical connectives are words used to connect simple statements to form compound statements. In logic, there are five basic logical connectives:</p>
+                    <ul>
+                        <li><strong>Conjunction (And, ∧):</strong> Expresses the relationship of "and"</li>
+                        <li><strong>Disjunction (Or, ∨):</strong> Expresses the relationship of "or"</li>
+                        <li><strong>Negation (Not, ¬):</strong> Expresses the relationship of "not"</li>
+                        <li><strong>Conditional (If...then, →):</strong> Expresses the relationship of "if...then..."</li>
+                        <li><strong>Biconditional (If and only if, ↔):</strong> Expresses the relationship of "if and only if"</li>
+                    </ul>
+                </div>
+                
+                <div class="slide" id="slide-3" style="display: none;">
+                    <h2>Conjunction (And, ∧)</h2>
+                    <p>Conjunction is used to express the relationship of "and".</p>
+                    <p>Symbol: ∧</p>
+                    <p>Example: p ∧ q means "p and q"</p>
+                    <p>Truth condition: p ∧ q is true only when p is true and q is true</p>
+                </div>
+                
+                <div class="slide" id="slide-4" style="display: none;">
+                    <h2>Truth Table for Conjunction</h2>
+                    <table class="truth-table">
+                        <tr>
+                            <th>p</th>
+                            <th>q</th>
+                            <th>p ∧ q</th>
+                        </tr>
+                        <tr>
+                            <td>True</td>
+                            <td>True</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                        </tr>
+                        <tr>
+                            <td>False</td>
+                            <td>True</td>
+                            <td>False</td>
+                        </tr>
+                        <tr>
+                            <td>False</td>
+                            <td>False</td>
+                            <td>False</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="slide" id="slide-5" style="display: none;">
+                    <h2>Disjunction (Or, ∨)</h2>
+                    <p>Disjunction is used to express the relationship of "or".</p>
+                    <p>Symbol: ∨</p>
+                    <p>Example: p ∨ q means "p or q"</p>
+                    <p>Truth condition: p ∨ q is true when p is true or q is true (or both are true)</p>
+                </div>
+                
+                <div class="slide" id="slide-6" style="display: none;">
+                    <h2>Truth Table for Disjunction</h2>
+                    <table class="truth-table">
+                        <tr>
+                            <th>p</th>
+                            <th>q</th>
+                            <th>p ∨ q</th>
+                        </tr>
+                        <tr>
+                            <td>True</td>
+                            <td>True</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>False</td>
+                            <td>True</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>False</td>
+                            <td>False</td>
+                            <td>False</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="slide" id="slide-7" style="display: none;">
+                    <h2>Negation (Not, ¬)</h2>
+                    <p>Negation is used to express the relationship of "not".</p>
+                    <p>Symbol: ¬</p>
+                    <p>Example: ¬p means "not p" or "p is not the case"</p>
+                    <p>Truth condition: The truth value of ¬p is the opposite of the truth value of p</p>
+                </div>
+                
+                <div class="slide" id="slide-8" style="display: none;">
+                    <h2>Truth Table for Negation</h2>
+                    <table class="truth-table">
+                        <tr>
+                            <th>p</th>
+                            <th>¬p</th>
+                        </tr>
+                        <tr>
+                            <td>True</td>
+                            <td>False</td>
+                        </tr>
+                        <tr>
+                            <td>False</td>
+                            <td>True</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="slide" id="slide-9" style="display: none;">
+                    <h2>Conditional (If...then, →)</h2>
+                    <p>Conditional is used to express the relationship of "if...then...".</p>
+                    <p>Symbol: →</p>
+                    <p>Example: p → q means "if p, then q"</p>
+                    <p>Truth condition: p → q is false only when p is true and q is false</p>
+                </div>
+                
+                <div class="slide" id="slide-10" style="display: none;">
+                    <h2>Truth Table for Conditional</h2>
+                    <table class="truth-table">
+                        <tr>
+                            <th>p</th>
+                            <th>q</th>
+                            <th>p → q</th>
+                        </tr>
+                        <tr>
+                            <td>True</td>
+                            <td>True</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                        </tr>
+                        <tr>
+                            <td>False</td>
+                            <td>True</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>False</td>
+                            <td>False</td>
+                            <td>True</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="slide" id="slide-11" style="display: none;">
+                    <h2>Biconditional (If and only if, ↔)</h2>
+                    <p>Biconditional is used to express the relationship of "if and only if".</p>
+                    <p>Symbol: ↔</p>
+                    <p>Example: p ↔ q means "p if and only if q"</p>
+                    <p>Truth condition: p ↔ q is true when p and q have the same truth value</p>
+                </div>
+                
+                <div class="slide" id="slide-12" style="display: none;">
+                    <h2>Truth Table for Biconditional</h2>
+                    <table class="truth-table">
+                        <tr>
+                            <th>p</th>
+                            <th>q</th>
+                            <th>p ↔ q</th>
+                        </tr>
+                        <tr>
+                            <td>True</td>
+                            <td>True</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                        </tr>
+                        <tr>
+                            <td>False</td>
+                            <td>True</td>
+                            <td>False</td>
+                        </tr>
+                        <tr>
+                            <td>False</td>
+                            <td>False</td>
+                            <td>True</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="slide" id="slide-13" style="display: none;">
+                    <h2>Truth Tables</h2>
+                    <p>Truth tables are tools for analyzing the truth conditions of compound statements.</p>
+                    <p>Steps for constructing a truth table:</p>
+                    <ol>
+                        <li>Identify the simple statements (atomic propositions) in the statement</li>
+                        <li>List all possible combinations of truth values</li>
+                        <li>Calculate the truth value of the compound statement based on the truth conditions of the logical connectives</li>
+                    </ol>
+                </div>
+                
+                <div class="slide" id="slide-14" style="display: none;">
+                    <h2>Example of a Truth Table for a Compound Statement</h2>
+                    <p>Truth table for "(p ∧ q) → r":</p>
+                    <table class="truth-table">
+                        <tr>
+                            <th>p</th>
+                            <th>q</th>
+                            <th>r</th>
+                            <th>p ∧ q</th>
+                            <th>(p ∧ q) → r</th>
+                        </tr>
+                        <tr>
+                            <td>True</td>
+                            <td>True</td>
+                            <td>True</td>
+                            <td>True</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>True</td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>True</td>
+                            <td>False</td>
+                        </tr>
+                        <tr>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>False</td>
+                            <td>True</td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>False</td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>False</td>
+                            <td>False</td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>True</td>
+                        </tr>
+                        <tr>
+                            <td>False</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td>True</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="slide" id="slide-15" style="display: none;">
+                    <h2>Course Summary</h2>
+                    <p>In today's course, we learned:</p>
+                    <ul>
+                        <li>The five basic logical connectives: conjunction (AND, ∧), disjunction (OR, ∨), negation (NOT, ¬), conditional (IF...THEN, →), and biconditional (IF AND ONLY IF, ↔)</li>
+                        <li>The meaning and truth conditions of each logical connective</li>
+                        <li>How to use logical connectives to construct compound statements</li>
+                        <li>How to use truth tables to analyze the truth conditions of compound statements</li>
+                    </ul>
+                </div>
+                
+                <div class="slide" id="slide-16" style="display: none;">
+                    <h2>Mind Map Overview</h2>
+                    <img src="images/logic_mindmap_day3.png" alt="Logical Connectives and Compound Statements Mind Map">
+                </div>
+            </div>
+            
+            <div class="slide-controls">
+                <button class="quiz-btn secondary slide-prev" disabled>Previous</button>
+                <button class="quiz-btn slide-next">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Introduction to Logic</h3>
+                    <p>Based on Irving M. Copi's "Introduction to Logic", a five-day logic course designed for middle school students.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="terminology.html">Terminology</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Course Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="day1.html">Day 1: Logic Fundamentals and Language</a></li>
+                        <li><a href="day2.html">Day 2: Arguments and Fallacies</a></li>
+                        <li><a href="day3.html">Day 3: Logical Connectives and Compound Statements</a></li>
+                        <li><a href="day4.html">Day 4: Deductive Reasoning and Logical Rules</a></li>
+                        <li><a href="day5.html">Day 5: Inductive Reasoning and Critical Thinking</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Introduction to Logic Course. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Custom script to handle slide navigation without relying on the translation system
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.querySelector('.slide-prev');
+            const nextBtn = document.querySelector('.slide-next');
+            let currentSlide = 0;
+            
+            function showSlide(index) {
+                // Hide all slides
+                slides.forEach(slide => {
+                    slide.style.display = 'none';
+                });
+                
+                // Show the current slide
+                slides[index].style.display = 'block';
+                
+                // Update button states
+                prevBtn.disabled = index === 0;
+                nextBtn.textContent = index === slides.length - 1 ? 'Finish' : 'Next';
+            }
+            
+            // Initialize with the first slide
+            showSlide(currentSlide);
+            
+            // Previous button click handler
+            prevBtn.addEventListener('click', function() {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+            
+            // Next button click handler
+            nextBtn.addEventListener('click', function() {
+                if (currentSlide < slides.length - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 Slides: Deductive Reasoning and Logical Rules - Introduction to Logic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Introduction to Logic</a>
+                <button class="mobile-menu-btn">☰</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="terminology.html">Terminology</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="slide-container">
+            <h1>Day 4: Deductive Reasoning and Logical Rules</h1>
+            
+            <div class="slide-content">
+                <div class="slide" id="slide-1">
+                    <h2>Course Objectives</h2>
+                    <ul>
+                        <li>Understand the characteristics and applications of deductive reasoning</li>
+                        <li>Analyze the structure and validity of syllogisms</li>
+                        <li>Use basic logical symbols to express propositions and arguments</li>
+                        <li>Apply basic rules of inference for valid reasoning</li>
+                        <li>Use Venn diagrams to analyze the validity of syllogisms</li>
+                    </ul>
+                </div>
+                
+                <div class="slide" id="slide-2" style="display: none;">
+                    <h2>Deductive Reasoning Basics</h2>
+                    <p>Deductive reasoning is the process of reasoning from general principles to specific instances.</p>
+                    <p>Characteristics:</p>
+                    <ul>
+                        <li>From general to specific</li>
+                        <li>Necessity: If the premises are true, the conclusion must be true</li>
+                        <li>Certainty: High certainty of conclusion</li>
+                        <li>No new information: The information in the conclusion is already implicit in the premises</li>
+                    </ul>
+                </div>
+                
+                <div class="slide" id="slide-3" style="display: none;">
+                    <h2>Example of Deductive Reasoning</h2>
+                    <blockquote>
+                        All mammals have hearts. (General principle)<br>
+                        All dogs are mammals. (General principle)<br>
+                        Therefore, all dogs have hearts. (Specific instance)
+                    </blockquote>
+                </div>
+                
+                <div class="slide" id="slide-4" style="display: none;">
+                    <h2>Structure of Syllogisms</h2>
+                    <ul>
+                        <li><strong>Major premise:</strong> A proposition containing the major term and the middle term</li>
+                        <li><strong>Minor premise:</strong> A proposition containing the minor term and the middle term</li>
+                        <li><strong>Conclusion:</strong> A proposition containing the minor term and the major term</li>
+                    </ul>
+                    <p>Where:</p>
+                    <ul>
+                        <li><strong>Major term:</strong> The term that serves as the predicate in the conclusion</li>
+                        <li><strong>Middle term:</strong> The term that appears in both premises but not in the conclusion</li>
+                        <li><strong>Minor term:</strong> The term that serves as the subject in the conclusion</li>
+                    </ul>
+                </div>
+                
+                <div class="slide" id="slide-5" style="display: none;">
+                    <h2>Example of a Syllogism</h2>
+                    <blockquote>
+                        All humans are mortal. (Major premise: middle term "human" and major term "mortal")<br>
+                        Socrates is human. (Minor premise: minor term "Socrates" and middle term "human")<br>
+                        Therefore, Socrates is mortal. (Conclusion: minor term "Socrates" and major term "mortal")
+                    </blockquote>
+                    <p>In this example:</p>
+                    <ul>
+                        <li>Major term is "mortal"</li>
+                        <li>Middle term is "human"</li>
+                        <li>Minor term is "Socrates"</li>
+                    </ul>
+                </div>
+                
+                <div class="slide" id="slide-6" style="display: none;">
+                    <h2>Validity of Syllogisms</h2>
+                    <p>The validity of a syllogism depends on its form, not its content.</p>
+                    <p>Some basic rules for the validity of syllogisms:</p>
+                    <ol>
+                        <li>The middle term must be distributed in at least one premise</li>
+                        <li>If a term is distributed in the conclusion, it must be distributed in the corresponding premise</li>
+                        <li>At least one premise must be affirmative</li>
+                        <li>If one premise is negative, the conclusion must be negative</li>
+                        <li>Two negative premises cannot yield a valid conclusion</li>
+                    </ol>
+                </div>
+                
+                <div class="slide" id="slide-7" style="display: none;">
+                    <h2>Basic Logical Symbols</h2>
+                    <p>Propositional logic symbols:</p>
+                    <ul>
+                        <li><strong>∧</strong>: Conjunction, represents "and"</li>
+                        <li><strong>∨</strong>: Disjunction, represents "or"</li>
+                        <li><strong>¬</strong>: Negation, represents "not"</li>
+                        <li><strong>→</strong>: Conditional, represents "if...then..."</li>
+                        <li><strong>↔</strong>: Biconditional, represents "if and only if"</li>
+                    </ul>
+                </div>
+                
+                <div class="slide" id="slide-8" style="display: none;">
+                    <h2>Predicate Logic Symbols</h2>
+                    <p>Predicate logic symbols:</p>
+                    <ul>
+                        <li><strong>∀</strong>: Universal quantifier, represents "for all..."</li>
+                        <li><strong>∃</strong>: Existential quantifier, represents "there exists..."</li>
+                        <li><strong>P(x)</strong>: Predicate, represents "x has property P"</li>
+                    </ul>
+                </div>
+                
+                <div class="slide" id="slide-9" style="display: none;">
+                    <h2>Expressing Propositions with Logical Symbols</h2>
+                    <p>"All humans are mortal" can be represented as:</p>
+                    <p>∀x(H(x) → M(x))</p>
+                    <p>where H(x) means "x is human" and M(x) means "x is mortal".</p>
+                    <p>"Some students like mathematics" can be represented as:</p>
+                    <p>∃x(S(x) ∧ L(x, m))</p>
+                    <p>where S(x) means "x is a student" and L(x, m) means "x likes mathematics".</p>
+                </div>
+                
+                <div class="slide" id="slide-10" style="display: none;">
+                    <h2>Modus Ponens</h2>
+                    <p>If p → q is true, and p is true, then q is true.</p>
+                    <blockquote>
+                        If it rains, then the ground will be wet. (p → q)<br>
+                        It is raining. (p)<br>
+                        Therefore, the ground is wet. (q)
+                    </blockquote>
+                </div>
+                
+                <div class="slide" id="slide-11" style="display: none;">
+                    <h2>Modus Tollens</h2>
+                    <p>If p → q is true, and q is false, then p is false.</p>
+                    <blockquote>
+                        If it rains, then the ground will be wet. (p → q)<br>
+                        The ground is not wet. (¬q)<br>
+                        Therefore, it is not raining. (¬p)
+                    </blockquote>
+                </div>
+                
+                <div class="slide" id="slide-12" style="display: none;">
+                    <h2>Hypothetical Syllogism</h2>
+                    <p>If p → q is true, and q → r is true, then p → r is true.</p>
+                    <blockquote>
+                        If it rains, then the ground will be wet. (p → q)<br>
+                        If the ground is wet, then shoes will get dirty. (q → r)<br>
+                        Therefore, if it rains, then shoes will get dirty. (p → r)
+                    </blockquote>
+                </div>
+                
+                <div class="slide" id="slide-13" style="display: none;">
+                    <h2>Disjunctive Syllogism</h2>
+                    <p>If p ∨ q is true, and ¬p is true, then q is true.</p>
+                    <blockquote>
+                        Either it is raining or it is snowing. (p ∨ q)<br>
+                        It is not raining. (¬p)<br>
+                        Therefore, it is snowing. (q)
+                    </blockquote>
+                </div>
+                
+                <div class="slide" id="slide-14" style="display: none;">
+                    <h2>Validity Proofs</h2>
+                    <p>Prove the validity of the following argument:</p>
+                    <blockquote>
+                        1. If it rains, then the ground will be wet. (p → q)<br>
+                        2. If the ground is wet, then shoes will get dirty. (q → r)<br>
+                        3. It is raining. (p)<br>
+                        4. Therefore, shoes will get dirty. (r)
+                    </blockquote>
+                    <p>Proof:</p>
+                    <ol>
+                        <li>p → q (Premise 1)</li>
+                        <li>q → r (Premise 2)</li>
+                        <li>p (Premise 3)</li>
+                        <li>q (From 1 and 3, using Modus Ponens)</li>
+                        <li>r (From 2 and 4, using Modus Ponens)</li>
+                    </ol>
+                </div>
+                
+                <div class="slide" id="slide-15" style="display: none;">
+                    <h2>Venn Diagrams</h2>
+                    <p>Venn diagrams are graphical representations of set relationships that can be used to analyze the validity of syllogisms.</p>
+                    <p>For example, we can use Venn diagrams to analyze the following syllogism:</p>
+                    <blockquote>
+                        All humans are mortal. (Major premise)<br>
+                        Socrates is human. (Minor premise)<br>
+                        Therefore, Socrates is mortal. (Conclusion)
+                    </blockquote>
+                </div>
+                
+                <div class="slide" id="slide-16" style="display: none;">
+                    <h2>Course Summary</h2>
+                    <p>In today's course, we learned:</p>
+                    <ul>
+                        <li>The characteristics and applications of deductive reasoning</li>
+                        <li>The structure and validity of syllogisms</li>
+                        <li>The use of basic logical symbols</li>
+                        <li>Basic rules of inference, such as Modus Ponens, Modus Tollens, Hypothetical Syllogism, etc.</li>
+                        <li>How to conduct simple validity proofs</li>
+                        <li>How to use Venn diagrams to analyze the validity of syllogisms</li>
+                    </ul>
+                </div>
+                
+                <div class="slide" id="slide-17" style="display: none;">
+                    <h2>Mind Map Overview</h2>
+                    <img src="images/logic_mindmap_day4.png" alt="Deductive Reasoning and Logical Rules Mind Map">
+                </div>
+            </div>
+            
+            <div class="slide-controls">
+                <button class="quiz-btn secondary slide-prev" disabled>Previous</button>
+                <button class="quiz-btn slide-next">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Introduction to Logic</h3>
+                    <p>Based on Irving M. Copi's "Introduction to Logic", a five-day logic course designed for middle school students.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="terminology.html">Terminology</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Course Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="day1.html">Day 1: Logic Fundamentals and Language</a></li>
+                        <li><a href="day2.html">Day 2: Arguments and Fallacies</a></li>
+                        <li><a href="day3.html">Day 3: Logical Connectives and Compound Statements</a></li>
+                        <li><a href="day4.html">Day 4: Deductive Reasoning and Logical Rules</a></li>
+                        <li><a href="day5.html">Day 5: Inductive Reasoning and Critical Thinking</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Introduction to Logic Course. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Custom script to handle slide navigation without relying on the translation system
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.querySelector('.slide-prev');
+            const nextBtn = document.querySelector('.slide-next');
+            let currentSlide = 0;
+            
+            function showSlide(index) {
+                // Hide all slides
+                slides.forEach(slide => {
+                    slide.style.display = 'none';
+                });
+                
+                // Show the current slide
+                slides[index].style.display = 'block';
+                
+                // Update button states
+                prevBtn.disabled = index === 0;
+                nextBtn.textContent = index === slides.length - 1 ? 'Finish' : 'Next';
+            }
+            
+            // Initialize with the first slide
+            showSlide(currentSlide);
+            
+            // Previous button click handler
+            prevBtn.addEventListener('click', function() {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+            
+            // Next button click handler
+            nextBtn.addEventListener('click', function() {
+                if (currentSlide < slides.length - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
