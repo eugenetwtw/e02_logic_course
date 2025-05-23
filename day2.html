@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 2: Arguments and Fallacies - Introduction to Logic</title>
+    <title data-i18n="day2.title">Loading...</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -11,13 +11,13 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="index.html" class="logo">Introduction to Logic</a>
+                <a href="index.html" class="logo" data-i18n="home.title">Loading...</a>
                 <button class="mobile-menu-btn">☰</button>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="terminology.html">Terminology</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Loading...</a></li>
+                    <li><a href="courses.html" data-i18n="nav.courses">Loading...</a></li>
+                    <li><a href="terminology.html" data-i18n="nav.terminology">Loading...</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">Loading...</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,245 +26,51 @@
     <div class="container">
         <div class="course-container">
             <aside class="sidebar">
-                <h3 class="sidebar-title">Course Navigation</h3>
+                <h3 class="sidebar-title" data-i18n="day2.navigation">Loading...</h3>
                 <ul class="sidebar-links">
-                    <li><a href="#course-intro" class="active">Course Introduction</a></li>
-                    <li><a href="#arguments">Argument Structure and Types</a></li>
-                    <li><a href="#valid-invalid">Valid and Invalid Arguments</a></li>
-                    <li><a href="#deductive-inductive">Deductive and Inductive Reasoning</a></li>
-                    <li><a href="#fallacies">Common Logical Fallacies</a></li>
-                    <li><a href="#critical-thinking">Critical Thinking Basics</a></li>
-                    <li><a href="#summary">Course Summary</a></li>
-                    <li><a href="day2_slides.html">View Slides</a></li>
-                    <li><a href="day2_quiz.html">Practice Quiz</a></li>
+                    <li><a href="#course-intro" class="active" data-i18n="day2.sections.intro">Loading...</a></li>
+                    <li><a href="#arguments" data-i18n="day2.sections.arguments">Loading...</a></li>
+                    <li><a href="#valid-invalid" data-i18n="day2.sections.valid-invalid">Loading...</a></li>
+                    <li><a href="#deductive-inductive" data-i18n="day2.sections.deductive-inductive">Loading...</a></li>
+                    <li><a href="#fallacies" data-i18n="day2.sections.fallacies">Loading...</a></li>
+                    <li><a href="#critical-thinking" data-i18n="day2.sections.critical-thinking">Loading...</a></li>
+                    <li><a href="#summary" data-i18n="day2.sections.summary">Loading...</a></li>
+                    <li><a href="day2_slides.html" data-i18n="day2.summary.slides">Loading...</a></li>
+                    <li><a href="day2_quiz.html" data-i18n="day2.summary.quiz">Loading...</a></li>
                 </ul>
             </aside>
             
             <main class="course-content-main">
                 <div class="course-header">
-                    <h1>Day 2: Arguments and Fallacies</h1>
-                    <p>Understand the difference between valid and invalid arguments, learn the features of deductive and inductive reasoning, and identify common logical fallacies.</p>
+                    <h1 data-i18n="day2.title">Loading...</h1>
+                    <p data-i18n="day2.description">Loading...</p>
                 </div>
                 
                 <div class="mindmap-container">
-                    <img src="images/logic_mindmap_day2.png" alt="Arguments and Fallacies Mind Map" class="mindmap-image">
-                    <p class="mindmap-caption">Mind map of arguments and fallacies</p>
+                    <img src="images/logic_mindmap_day2.png" alt="" class="mindmap-image">
+                    <p class="mindmap-caption" data-i18n="day2.title">Loading...</p>
                 </div>
                 
                 <section id="course-intro" class="course-section">
-                    <h2>Course Objectives</h2>
-                    <p>This lesson helps students understand the structure and types of arguments, distinguish valid from invalid reasoning, recognize deductive and inductive reasoning, and identify common logical fallacies. These skills build a foundation for critical thinking.</p>
-
-                    <p>After completing this lesson, students will be able to:</p>
-                    <ul>
-                        <li>Analyze the structure of arguments, identifying premises and conclusions</li>
-                        <li>Distinguish between valid and invalid arguments</li>
-                        <li>Understand the difference between deductive and inductive reasoning</li>
-                        <li>Recognize common logical fallacies</li>
-                        <li>Apply critical thinking to evaluate arguments</li>
-                    </ul>
-                </section>
-                
-                <section id="arguments" class="course-section">
-                    <h2>Argument Structure and Types</h2>
-                    <p>An argument consists of a set of statements. Some statements (premises) support another statement (the conclusion). Yesterday we learned how to identify premises and conclusions. Today we'll look deeper into how arguments are organized.</p>
-                    
-                    <h3>Basic Structure</h3>
-                    <p>A complete argument usually contains the following parts:</p>
-                    <ul>
-                        <li>Premise: Statements used to support the conclusion, there may be one or more</li>
-                        <li>Inference process: The thought process from premises to conclusion</li>
-                        <li>Conclusion: The statement that the argument attempts to prove or support</li>
-                    </ul>
-                    
-                    <h3>Types of Arguments</h3>
-                    <p>Depending on the form of reasoning, arguments can be divided into two main types:</p>
-                    <ul>
-                        <li><strong>Deductive Argument</strong>: If the premises are true, then the conclusion must be true</li>
-                        <li><strong>Inductive Argument</strong>: If the premises are true, the conclusion may be true, but not necessarily</li>
-                    </ul>
-                </section>
-                
-                <section id="valid-invalid" class="course-section">
-                    <h2>Valid and Invalid Arguments</h2>
-                    <p>The validity of an argument is an important standard for evaluating its quality.</p>
-                    
-                    <h3>Valid Argument</h3>
-                    <p>A valid argument is one in which, if all the premises are true, the conclusion must also be true. In other words, the conclusion follows necessarily from the premises.</p>
-                    
-                    <p>Example of a valid argument:</p>
-                    <blockquote>
-                        All humans are mortal. (Premise)<br>
-                        Socrates is human. (Premise)<br>
-                        Therefore, Socrates is mortal. (Conclusion)
-                    </blockquote>
-                    
-                    <p>In this argument, if the premises "All humans are mortal" and "Socrates is human" are true, then the conclusion "Socrates is mortal" must also be true.</p>
-                    
-                    <h3>Invalid Argument</h3>
-                    <p>An invalid argument is one where even if all the premises are true, the conclusion could still be false.</p>
-                    
-                    <p>Example of an invalid argument:</p>
-                    <blockquote>
-                        If it rains, the ground gets wet. (Premise)<br>
-                        The ground is wet. (Premise)<br>
-                        Therefore, it rained. (Conclusion)
-                    </blockquote>
-                    
-                    <p>In this case, even if the premises are true, the conclusion may still be false because the ground could be wet for other reasons such as sprinklers or a broken pipe.</p>
-                    
-                    <h3>Sound Argument</h3>
-                    <p>A sound argument is both valid and has true premises. In other words, a sound argument is a valid argument with all true premises.</p>
-                    
-                    <p>Example of a sound argument:</p>
-                    <blockquote>
-                        All mammals have lungs. (Premise, true)<br>
-                        Whales are mammals. (Premise, true)<br>
-                        Therefore, whales have lungs. (Conclusion, true)
-                    </blockquote>
-                    
-                    <p>This argument is valid in form and its premises are true, so it is sound.</p>
-                </section>
-                
-                <section id="deductive-inductive" class="course-section">
-                    <h2>Deductive and Inductive Reasoning</h2>
-                    <p>Deductive and inductive reasoning are two basic forms of inference used in daily life and in scientific research.</p>
-                    
-                    <h3>Deductive Reasoning</h3>
-                    <p>Deductive reasoning moves from general principles to specific cases. If the premises are true, the conclusion must be true.</p>
-                    
-                    <p>Characteristics of deductive reasoning:</p>
-                    <ul>
-                        <li><strong>From general to specific</strong>: Reasoning from general principles to specific cases</li>
-                        <li><strong>High certainty of conclusion</strong>: If the premises are true, the conclusion must be true</li>
-                        <li><strong>No new information</strong>: Only reveals information already implicit in the premises</li>
-                    </ul>
-                    
-                    <p>Example of deductive reasoning:</p>
-                    <blockquote>
-                        All metals expand when heated. (General principle)<br>
-                        Copper is a metal. (Specific case)<br>
-                        Therefore, copper expands when heated. (Conclusion)
-                    </blockquote>
-                    
-                    <h3>Inductive Reasoning</h3>
-                    <p>Inductive reasoning moves from specific cases to general principles. Even if the premises are true, the conclusion is only probably true.</p>
-                    
-                    <p>Characteristics of inductive reasoning:</p>
-                    <ul>
-                        <li><strong>From specific to general</strong>: Reasoning from specific cases to general principles</li>
-                        <li><strong>Lower certainty of conclusion</strong>: Even if the premises are true, the conclusion may not be true</li>
-                        <li><strong>Adds new information</strong>: Goes beyond the information contained in the premises</li>
-                    </ul>
-                    
-                    <p>Example of inductive reasoning:</p>
-                    <blockquote>
-                        Every crow we have observed is black. (Specific case)<br>
-                        Therefore, all crows are black. (General principle)
-                    </blockquote>
-                    
-                    <p>In this example, even though all observed crows are black, we cannot be certain that every crow is black because we have not seen them all.</p>
-                </section>
-                
-                <section id="fallacies" class="course-section">
-                    <h2>Common Logical Fallacies</h2>
-                    <p>A logical fallacy is an error in reasoning that renders an argument invalid or unsound. Knowing common fallacies helps us recognize and avoid these mistakes.</p>
-                    
-                    <h3>Ad Hominem</h3>
-                    <p>The ad hominem fallacy attacks the person making an argument rather than the argument itself.</p>
-                    
-                    <p>Example:</p>
-                    <blockquote>
-                        John says we should exercise more, but he rarely does, so his suggestion isn't worth listening to.
-                    </blockquote>
-                    
-                    <p>This is fallacious because John's personal habits have nothing to do with whether his advice is sound.</p>
-                    
-                    <h3>Appeal to Authority</h3>
-                    <p>The appeal to authority fallacy assumes a claim is true simply because an authority figure says so.</p>
-                    
-                    <p>Example:</p>
-                    <blockquote>
-                        A famous actor says this diet pill works, so it must work.
-                    </blockquote>
-                    
-                    <p>This is fallacious because the actor is not a medical expert and lacks authority on the subject.</p>
-                    
-                    <h3>Straw Man Fallacy</h3>
-                    <p>The straw man fallacy distorts an opponent's argument to make it easier to attack.</p>
-                    
-                    <p>Example:</p>
-                    <blockquote>
-                        Alice: I think the school should offer more sports options.<br>
-                        Bob: How can you say studying isn't important? We're here to learn, not to play.
-                    </blockquote>
-                    
-                    <p>This is fallacious because Bob misrepresents Alice's point. She never said studying wasn't important.</p>
-                    
-                    <h3>Slippery Slope</h3>
-                    <p>The slippery slope fallacy claims that taking one step will inevitably trigger a chain of uncontrollable events leading to disaster.</p>
-                    
-                    <p>Example:</p>
-                    <blockquote>
-                        If students can use phones in class, they'll play all day, stop learning, and eventually fail.
-                    </blockquote>
-                    
-                    <p>This is fallacious because allowing phones doesn't necessarily mean students will play all day or fail.</p>
-                    
-                    <h3>Appeal to Emotion</h3>
-                    <p>The appeal to emotion fallacy attempts to persuade by arousing feelings rather than providing logical reasons.</p>
-                    
-                    <p>Example:</p>
-                    <blockquote>
-                        You don't support this policy? Don't you care about people who need help?
-                    </blockquote>
-                    
-                    <p>This is fallacious because it tries to induce guilt instead of presenting sound reasons.</p>
-                </section>
-                
-                <section id="critical-thinking" class="course-section">
-                    <h2>Critical Thinking Basics</h2>
-                    <p>Critical thinking is a rational and reflective way of reasoning that helps us make wiser judgments and decisions.</p>
-                    
-                    <div class="course-image-container">
-                        <img src="images/critical_thinking.png" alt="Critical thinking process" class="course-image">
-                    </div>
-                    
-                    <h3>Basic Steps of Critical Thinking</h3>
-                    <ol>
-                        <li><strong>Identify the problem</strong>: Clearly define the problem you want to solve or the argument you want to evaluate</li>
-                        <li><strong>Gather information</strong>: Find relevant facts, data, and perspectives</li>
-                        <li><strong>Evaluate evidence</strong>: Check the reliability and relevance of the evidence</li>
-                        <li><strong>Consider alternative explanations</strong>: Think about other possible explanations or viewpoints</li>
-                        <li><strong>Form a conclusion</strong>: Draw a conclusion based on evidence and reasoning</li>
-                    </ol>
-                    
-                    <h3>Attitudes for Critical Thinking</h3>
-                    <ul>
-                        <li><strong>Openness</strong>: Willingness to consider different perspectives and possibilities</li>
-                        <li><strong>Curiosity</strong>: Maintaining curiosity about the nature and causes of things</li>
-                        <li><strong>Skepticism</strong>: Not easily accepting unverified claims</li>
-                        <li><strong>Humility</strong>: Acknowledging the limitations of one's knowledge and understanding</li>
-                        <li><strong>Systematicity</strong>: Thinking about problems in an organized way</li>
+                    <h2 data-i18n="day2.courseGoals.title">Loading...</h2>
+                    <p data-i18n="day2.courseGoals.description">Loading...</p>
+                    <p data-i18n="day2.courseGoals.afterCompletion">Loading...</p>
+                    <ul class="course-goals-list">
+                        <!-- Goals will be populated by JavaScript -->
                     </ul>
                 </section>
                 
                 <section id="summary" class="course-section">
-                    <h2>Course Summary</h2>
-                    <p>Today we learned:</p>
-                    <ul>
-                        <li>The structure and types of arguments, including premises, inference process, and conclusion</li>
-                        <li>The distinction between valid and invalid arguments and the idea of soundness</li>
-                        <li>Characteristics and differences between deductive and inductive reasoning</li>
-                        <li>Common logical fallacies such as ad hominem, appeal to authority, straw man, slippery slope, and appeal to emotion</li>
-                        <li>The basic steps and attitudes of critical thinking</li>
+                    <h2 data-i18n="day2.summary.title">Loading...</h2>
+                    <p data-i18n="day2.summary.description">Loading...</p>
+                    <ul class="summary-points-list">
+                        <!-- Points will be populated by JavaScript -->
                     </ul>
-                    
-                    <p>These skills will help you analyze and evaluate arguments, avoid common fallacies, and develop critical thinking.</p>
+                    <p data-i18n="day2.summary.foundation">Loading...</p>
                     
                     <div class="course-links">
-                        <a href="day2_slides.html" class="course-btn">View Slides</a>
-                        <a href="day2_quiz.html" class="course-btn">Practice Quiz</a>
+                        <a href="day2_slides.html" class="course-btn" data-i18n="day2.summary.slides">Loading...</a>
+                        <a href="day2_quiz.html" class="course-btn" data-i18n="day2.summary.quiz">Loading...</a>
                     </div>
                 </section>
             </main>
@@ -275,31 +81,31 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Introduction to Logic</h3>
-                    <p>A five-day logic course for middle school students inspired by Irving M. Copi's "Introduction to Logic."</p>
+                    <h3 data-i18n="home.title">Loading...</h3>
+                    <p data-i18n="footer.description">Loading...</p>
                 </div>
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
+                    <h3 data-i18n="footer.quickLinks">Loading...</h3>
                     <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="terminology.html">Terminology</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html" data-i18n="nav.home">Loading...</a></li>
+                        <li><a href="courses.html" data-i18n="nav.courses">Loading...</a></li>
+                        <li><a href="terminology.html" data-i18n="nav.terminology">Loading...</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">Loading...</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Course Resources</h3>
+                    <h3 data-i18n="footer.courseResources">Loading...</h3>
                     <ul class="footer-links">
-                        <li><a href="day1.html">Day 1: Logic Basics and Language</a></li>
-                        <li><a href="day2.html">Day 2: Arguments and Fallacies</a></li>
-                        <li><a href="day3.html">Day 3: Logical Connectives and Compound Statements</a></li>
-                        <li><a href="day4.html">Day 4: Deductive Reasoning and Logical Rules</a></li>
-                        <li><a href="day5.html">Day 5: Inductive Reasoning and Critical Thinking</a></li>
+                        <li><a href="day1.html" data-i18n="footer.day1">Loading...</a></li>
+                        <li><a href="day2.html" data-i18n="footer.day2">Loading...</a></li>
+                        <li><a href="day3.html" data-i18n="footer.day3">Loading...</a></li>
+                        <li><a href="day4.html" data-i18n="footer.day4">Loading...</a></li>
+                        <li><a href="day5.html" data-i18n="footer.day5">Loading...</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Introduction to Logic Course. All rights reserved.</p>
+                <p data-i18n="footer.copyright">Loading...</p>
             </div>
         </div>
     </footer>
