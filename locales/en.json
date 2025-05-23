@@ -394,14 +394,232 @@
       "quiz": "Practice Quiz"
     }
   },
-  "quiz": {
+    "quiz": {
     "submit": "Submit",
     "score": "Score",
+    "results": "Quiz Results",
     "feedback": {
       "excellent": "Excellent! You have a great understanding of this topic!",
       "good": "Well done! You've mastered most of the concepts.",
       "fair": "Good try! Please review the questions you got wrong.",
       "needsWork": "Needs more practice. It's recommended to re-read the course materials."
+    },
+    "day2": {
+      "title": "Day 2 Quiz: Arguments and Fallacies",
+      "instructions": [
+        "This quiz has 10 questions, for a total of 100 points",
+        "Each question is worth 10 points, with no penalty for wrong answers",
+        "For multiple choice questions, please select the most appropriate answer"
+      ],
+      "questions": {
+        "q1": {
+          "text": "Which of the following is a characteristic of a Valid Argument?",
+          "options": [
+            "A. If all premises are true, then the conclusion must be true",
+            "B. All premises and the conclusion must be true",
+            "C. The conclusion must contain new information",
+            "D. There must be at least three premises"
+          ]
+        },
+        "q2": {
+          "text": "The definition of a Sound Argument is:",
+          "options": [
+            "A. An argument where all premises are true",
+            "B. An argument where the conclusion is true",
+            "C. An argument that is both valid and has true premises",
+            "D. An argument without logical fallacies"
+          ]
+        },
+        "q3": {
+          "text": "The characteristic of Deductive Reasoning is:",
+          "options": [
+            "A. From specific to general",
+            "B. From general to specific",
+            "C. Lower certainty of conclusion",
+            "D. Adding new information"
+          ]
+        },
+        "q4": {
+          "text": "The characteristic of Inductive Reasoning is:",
+          "options": [
+            "A. From specific to general",
+            "B. The conclusion must be true",
+            "C. Not adding new information",
+            "D. From general to specific"
+          ]
+        },
+        "q5": {
+          "text": "\"Xiao Ming says we should exercise more, but he rarely exercises himself, so his advice is not worth listening to.\" What type of logical fallacy is this?",
+          "options": [
+            "A. Appeal to Authority",
+            "B. Straw Man",
+            "C. Slippery Slope",
+            "D. Ad Hominem"
+          ]
+        },
+        "q6": {
+          "text": "\"Famous actor Xiao Hua says this weight loss pill is effective, so it must be effective.\" What type of logical fallacy is this?",
+          "options": [
+            "A. Appeal to Authority",
+            "B. Straw Man",
+            "C. Slippery Slope",
+            "D. Ad Hominem"
+          ]
+        },
+        "q7": {
+          "text": "\"If we allow students to use phones in class, they will play with their phones all day, not study, and ultimately fail academically.\" What type of logical fallacy is this?",
+          "options": [
+            "A. Appeal to Authority",
+            "B. Straw Man",
+            "C. Slippery Slope",
+            "D. Ad Hominem"
+          ]
+        },
+        "q8": {
+          "text": "Read the following dialogue and identify the logical fallacy: \"Xiao Li: I think the school should provide more sports activity options. Xiao Zhang: How can you think that studying is not important? We come to school to study, not to play.\"",
+          "options": [
+            "A. Appeal to Authority",
+            "B. Straw Man",
+            "C. Slippery Slope",
+            "D. Ad Hominem"
+          ]
+        },
+        "q9": {
+          "text": "Which of the following is an example of an Invalid Argument?",
+          "options": [
+            "A. All mammals have lungs. Whales are mammals. Therefore, whales have lungs.",
+            "B. If it rains, the ground will be wet. The ground is wet. Therefore, it has rained.",
+            "C. All metals expand when heated. Copper is a metal. Therefore, copper expands when heated.",
+            "D. All humans are mortal. Socrates is human. Therefore, Socrates is mortal."
+          ]
+        },
+        "q10": {
+          "text": "Which of the following is NOT a basic step in Critical Thinking?",
+          "options": [
+            "A. Identifying the problem",
+            "B. Gathering information",
+            "C. Accepting authority views",
+            "D. Evaluating evidence"
+          ]
+        }
+      },
+      "reviewPoints": [
+        "Valid Argument: If all premises are true, then the conclusion must be true",
+        "Sound Argument: An argument that is both valid and has true premises",
+        "Deductive Reasoning: From general to specific, with high certainty of conclusion",
+        "Inductive Reasoning: From specific to general, with lower certainty of conclusion",
+        "Common Logical Fallacies: Ad Hominem, Appeal to Authority, Straw Man, Slippery Slope, Appeal to Emotion",
+        "Basic steps of Critical Thinking: Identifying problems, gathering information, evaluating evidence, considering alternative explanations, forming conclusions",
+        "Attitudes of Critical Thinking: Openness, curiosity, skepticism, humility, systematic approach"
+      ]
+    },
+    "day3": {
+      "title": "Day 3 Quiz: Logical Connectives and Compound Statements",
+      "instructions": [
+        "This quiz has 10 questions, for a total of 100 points",
+        "Each question is worth 10 points, with no penalty for wrong answers",
+        "For multiple choice questions, please select the most appropriate answer"
+      ],
+      "questions": {
+        "q1": {
+          "text": "In logic, the symbol \"∧\" represents:",
+          "options": [
+            "A. Or",
+            "B. Not",
+            "C. And",
+            "D. If...then"
+          ]
+        },
+        "q2": {
+          "text": "In logic, the symbol \"∨\" represents:",
+          "options": [
+            "A. Or",
+            "B. Not",
+            "C. And",
+            "D. If...then"
+          ]
+        },
+        "q3": {
+          "text": "In logic, the symbol \"¬\" represents:",
+          "options": [
+            "A. Or",
+            "B. Not",
+            "C. And",
+            "D. If...then"
+          ]
+        },
+        "q4": {
+          "text": "In logic, the symbol \"→\" represents:",
+          "options": [
+            "A. Or",
+            "B. Not",
+            "C. And",
+            "D. If...then"
+          ]
+        },
+        "q5": {
+          "text": "The condition for a conjunction \"p ∧ q\" to be true is:",
+          "options": [
+            "A. p is true or q is true",
+            "B. p is false or q is false",
+            "C. p is true and q is true",
+            "D. p is false and q is false"
+          ]
+        },
+        "q6": {
+          "text": "The condition for a disjunction \"p ∨ q\" to be true is:",
+          "options": [
+            "A. p is true or q is true (or both are true)",
+            "B. p is false or q is false",
+            "C. p is true and q is true",
+            "D. p is false and q is false"
+          ]
+        },
+        "q7": {
+          "text": "The only condition for a conditional statement \"p → q\" to be false is:",
+          "options": [
+            "A. p is true and q is true",
+            "B. p is true and q is false",
+            "C. p is false and q is true",
+            "D. p is false and q is false"
+          ]
+        },
+        "q8": {
+          "text": "The condition for a biconditional statement \"p ↔ q\" to be true is:",
+          "options": [
+            "A. p is true or q is true",
+            "B. p is false or q is false",
+            "C. p is true and q is true",
+            "D. p and q have the same truth value"
+          ]
+        },
+        "q9": {
+          "text": "If p is true and q is false, then the truth value of \"p → q\" is:",
+          "options": [
+            "A. True",
+            "B. False",
+            "C. Uncertain",
+            "D. Both true and false"
+          ]
+        },
+        "q10": {
+          "text": "If p is false and q is true, then the truth value of \"p → q\" is:",
+          "options": [
+            "A. True",
+            "B. False",
+            "C. Uncertain",
+            "D. Both true and false"
+          ]
+        }
+      },
+      "reviewPoints": [
+        "Conjunction (And, ∧): p ∧ q is true only when p is true and q is true",
+        "Disjunction (Or, ∨): p ∨ q is true when p is true or q is true (or both are true)",
+        "Negation (Not, ¬): The truth value of ¬p is the opposite of the truth value of p",
+        "Conditional (If...then, →): p → q is false only when p is true and q is false",
+        "Biconditional (If and only if, ↔): p ↔ q is true when p and q have the same truth value",
+        "Truth tables are tools for analyzing the truth conditions of compound statements by listing all possible truth value combinations"
+      ]
     },
     "day4": {
       "title": "Day 4 Quiz: Deductive Reasoning and Logical Rules",
